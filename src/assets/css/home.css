@@ -35,3 +35,7 @@
         overflow-y: hidden;
     }
 }
+/* hide the scroll bar in categories section */
+#categories-images::-webkit-scrollbar{
+    display: none;
+}
