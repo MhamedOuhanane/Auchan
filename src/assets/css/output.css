@@ -838,8 +838,12 @@ html{
     height: 2rem;
   }
 
-  .max-md\:h-\[40\%\]{
-    height: 40%;
+  .max-md\:h-\[200px\]{
+    height: 200px;
+  }
+
+  .max-md\:h-\[250px\]{
+    height: 250px;
   }
 
   .max-md\:w-full{
@@ -864,8 +868,16 @@ html{
     display: none;
   }
 
+  .max-sm\:h-\[100px\]{
+    height: 100px;
+  }
+
   .max-sm\:h-\[30\%\]{
     height: 30%;
+  }
+
+  .max-sm\:h-\[200px\]{
+    height: 200px;
   }
 
   .max-sm\:gap-2{
