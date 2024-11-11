@@ -4,104 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Auchan</title>
-    <link rel="stylesheet" href="../assets/css/output.css">
-    <link rel="stylesheet" href="../assets/css/input.css">
-    <link rel="stylesheet" href="assets/css/output.css" />
-    <link rel="stylesheet" href="assets/css/input.css" />
-    <link rel="stylesheet" href="assets/css/home.css">
-    <script type="module" src="assets/js/home.js" defer></script>
-  </head>
-  <body>
+    <link
+        rel="shortcut icon"
+        href="assets/images/favicons/favicon.ico"
+        type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../assets/css/output.css" />
+    <link rel="stylesheet" href="../assets/css/input.css" />
+    <link rel="stylesheet" href="../assets/css/home.css">
+    <script type="module" src="../assets/js/home.js" defer></script>
+</head>
+<body>
     
     <!-- header -->
     <header class="bg-white border-b h-10 center text-[1rem ] select-none">
-      <div class="container h-full flex justify-between">
-        <div class="flex gap-2 h-full">
-          <div class="flex items-center">
-            <img
-              class="h-full p-2"
-              src="assets/images/icons/phone.svg"
-              title="+212-654-504356"
-              alt="phone-icon"
-            />
-            <p class="max-sm:hidden">+212-654-504356</p>
-          </div>
-          <div class="flex items-center">
-            <img
-              class="h-full p-2"
-              src="assets/images/icons/email.svg"
-              title="auchan-maroc@contact.com"
-              alt="phone-icon"
-            />
-            <p class="max-sm:hidden">auchan-maroc@contact.com</p>
-          </div>
+        <div class="container h-full flex justify-between">
+            <div class="flex gap-2 h-full">
+                <div class="flex items-center">
+                    <img
+                        class="h-full p-2"
+                        src="assets/images/icons/phone.svg"
+                        title="+212-654-504356"
+                        alt="phone-icon"
+                    />
+                    <p class="max-sm:hidden">+212-654-504356</p>
+                </div>
+                <div class="flex items-center">
+                    <img
+                        class="h-full p-2"
+                        src="assets/images/icons/email.svg"
+                        title="auchan-maroc@contact.com"
+                        alt="phone-icon"
+                    />
+                    <p class="max-sm:hidden">auchan-maroc@contact.com</p>
+                </div>
+            </div>
+            <div class="flex gap-2 h-full">
+                <div class="flex items-center">
+                    <a href="pages/panier.html" class="h-full">
+                    <img
+                        class="h-full p-2"
+                        src="assets/images/icons/cart.svg"
+                        title="Panier"
+                        alt="phone-icon"
+                    />
+                    </a>
+                    <p class="max-sm:hidden">
+                        <a href="pages/panier.html">Panier</a>
+                    </p>
+                </div>
+                <div class="flex items-center">
+                    <img
+                        class="h-full p-2"
+                        src="assets/images/icons/user.svg"
+                        title="Compte"
+                        alt="phone-icon"
+                    />
+                    <p class="max-sm:hidden">Compte</p>
+                </div>
+            </div>
         </div>
-        <div class="flex gap-2 h-full">
-          <div class="flex items-center">
-            <a href="pages/panier.html" class="h-full">
-              <img
-                class="h-full p-2"
-                src="assets/images/icons/cart.svg"
-                title="Panier"
-                alt="phone-icon"
-              />
-            </a>
-            <p class="max-sm:hidden">
-              <a href="pages/panier.html">Panier</a>
-            </p>
-          </div>
-          <div class="flex items-center">
-            <img
-              class="h-full p-2"
-              src="assets/images/icons/user.svg"
-              title="Compte"
-              alt="phone-icon"
-            />
-            <p class="max-sm:hidden">Compte</p>
-          </div>
-        </div>
-      </div>
     </header>
-    
-    <!-- navigation -->
-    <nav class="bg-white shadow-md h-14 center select-none">
-      <div class="container flex items-center justify-between h-full">
-        <a href="index.html" class="h-full pb-1">
-          <img
-            src="assets/images/large-logo.png"
-            class="h-full max-sm:p-2"
-            alt="auchan large logo"
-          />
-          <!-- <img
-            src="assets/images/auchan-mobile-logo.png"
-            class="h-full hidden max-sm:block"
-            alt="auchan small logo"
-          /> -->
-        </a>
-
-        <ul class="menu" id="menu">
-          <li class="active">
-            <a href="index.html">Acceuill</a>
-          </li>
-          <li class="">
-            <a href="pages/catalogue.html">Catalogue</a>
-          </li>
-          <li class="">
-            <a href="pages/promotion.html">Promotion</a>
-          </li>
-          <li class="">
-            <a href="pages/contact.html">Contactez-nous</a>
-          </li>
-        </ul>
-
-        <img
-          id="menu-icon"
-          src="assets/images/icons/burger-menu.svg"
-          class="z-10 h-full p-4 hidden max-md:block"
-          alt="burger menu icon"
-        />
-      </div>
-    </nav>
     <!-- Panier section -->
     <section class="border-2 border-solid border-black h-1/4 w-8/12 rounded-lg flex flex-col items-center justify-evenly min-h-[20vh]">
         <img class="w-2/12" src="../assets/images/icône-panier.png" alt="logo de panier">
