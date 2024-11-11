@@ -556,6 +556,14 @@ video {
   display: none;
 }
 
+.visible{
+  visibility: visible;
+}
+
+.invisible{
+  visibility: hidden;
+}
+
 .absolute{
   position: absolute;
 }
@@ -637,6 +645,10 @@ video {
 
 .mb-\[5rem\]{
   margin-bottom: 5rem;
+}
+
+.mt-10{
+  margin-top: 2.5rem;
 }
 
 .block{
