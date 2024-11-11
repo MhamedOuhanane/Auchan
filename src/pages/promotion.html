@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Auchan - Promotion</title>
   <link rel="stylesheet" href="../assets/css/output.css" />
+  <link rel="shortcut icon" href="../assets/images/favicons/favicon.ico" type="image/x-icon" />
+
   <link rel="stylesheet" href="../assets/css/input.css" />
   <link rel="stylesheet" href="../assets/css/home.css">
   <script type="module" src="../assets/js/home.js" defer></script>
@@ -103,22 +105,19 @@
       </button>
     </div>
     <div id="right" class="flex items-center gap-1">
-      <div class="cursor-pointer">
+      <div id="grille" class="transition-all cursor-pointer hover:scale-110">
         <img src="../assets/images/list.png" alt="list icon" class="w-8 h-8" />
-
-        <div class="overlay"></div>
-
-        <div id="plus">+</div>
       </div>
-      <div class="bg-[#EDBEF5] p-1 rounded-sm cursor-pointer">
+      <div id="block" class="bg-[#EDBEF5] p-1 rounded-sm cursor-pointer transition-all hover:scale-110">
         <img src="../assets/images/block.png" alt="Block icon" class="w-6 h-6" />
       </div>
     </div>
   </section>
 
-  <!-- LIST DES CARTES -->
+  <!-- LIST DES CARTES GRILLE-->
 
-  <section id="list-cards" class="mt-[4rem] grid grid-cols-4 gap-x-16 gap-y-5 place-self-center mb-10">
+  <section id="list-grille-cards"
+    class="mt-[4rem] grid lg:grid-cols-4 gap-x-16 gap-y-10 place-self-center mb-10 grid-cols-1 sm:grid-cols-2">
     <div class="promotion-card w-[200px]">
       <div class="relative img">
         <img src="../assets/images/watch.png" alt="image de camera" class="w-[200px] h-[220px]" />
@@ -128,10 +127,10 @@
         <div id="plus">+</div>
 
         <div class="absolute top-[20px] left-[20px] content">
-          <p class="w-[60px] h-[25px] flex text-xs items-center justify-center bg-white shadow-xl">
+          <p class="w-[60px] h-[25px] flex text-sm items-center justify-center bg-white shadow-xl">
             Tech
           </p>
-          <p class="w-[60px] h-[25px] flex text-xs items-center justify-center bg-white mt-2 shadow-xl">
+          <p class="w-[60px] h-[25px] flex text-sm items-center justify-center bg-white mt-2 shadow-xl">
             -12%
           </p>
         </div>
@@ -150,10 +149,10 @@
         <div id="plus">+</div>
 
         <div class="absolute top-[20px] left-[20px] content">
-          <p class="w-[60px] h-[25px] flex text-xs items-center justify-center bg-white shadow-xl">
+          <p class="w-[60px] h-[25px] flex text-sm items-center justify-center bg-white shadow-xl">
             Tech
           </p>
-          <p class="w-[60px] h-[25px] flex text-xs items-center justify-center bg-white mt-2 shadow-xl">
+          <p class="w-[60px] h-[25px] flex text-sm items-center justify-center bg-white mt-2 shadow-xl">
             -12%
           </p>
         </div>
@@ -173,10 +172,10 @@
         <div id="plus">+</div>
 
         <div class="absolute top-[20px] left-[20px] content">
-          <p class="w-[60px] h-[25px] flex text-xs items-center justify-center bg-white shadow-xl">
+          <p class="w-[60px] h-[25px] flex text-sm items-center justify-center bg-white shadow-xl">
             Tech
           </p>
-          <p class="w-[60px] h-[25px] flex text-xs items-center justify-center bg-white mt-2 shadow-xl">
+          <p class="w-[60px] h-[25px] flex text-sm items-center justify-center bg-white mt-2 shadow-xl">
             -12%
           </p>
         </div>
@@ -196,10 +195,10 @@
         <div id="plus">+</div>
 
         <div class="absolute top-[20px] left-[20px] content">
-          <p class="w-[60px] h-[25px] flex text-xs items-center justify-center bg-white shadow-xl">
+          <p class="w-[60px] h-[25px] flex text-sm items-center justify-center bg-white shadow-xl">
             Tech
           </p>
-          <p class="w-[60px] h-[25px] flex text-xs items-center justify-center bg-white mt-2 shadow-xl">
+          <p class="w-[60px] h-[25px] flex text-sm items-center justify-center bg-white mt-2 shadow-xl">
             -12%
           </p>
         </div>
@@ -217,10 +216,10 @@
 
         <div id="plus">+</div>
         <div class="absolute top-[20px] left-[20px] content">
-          <p class="w-[60px] h-[25px] flex text-xs items-center justify-center bg-white shadow-xl">
+          <p class="w-[60px] h-[25px] flex text-sm items-center justify-center bg-white shadow-xl">
             Tech
           </p>
-          <p class="w-[60px] h-[25px] flex text-xs items-center justify-center bg-white mt-2 shadow-xl">
+          <p class="w-[60px] h-[25px] flex text-sm items-center justify-center bg-white mt-2 shadow-xl">
             -12%
           </p>
         </div>
@@ -238,10 +237,10 @@
 
         <div id="plus">+</div>
         <div class="absolute top-[20px] left-[20px] content">
-          <p class="w-[60px] h-[25px] flex text-xs items-center justify-center bg-white shadow-xl">
+          <p class="w-[60px] h-[25px] flex text-sm items-center justify-center bg-white shadow-xl">
             Tech
           </p>
-          <p class="w-[60px] h-[25px] flex text-xs items-center justify-center bg-white mt-2 shadow-xl">
+          <p class="w-[60px] h-[25px] flex text-sm items-center justify-center bg-white mt-2 shadow-xl">
             -12%
           </p>
         </div>
@@ -259,10 +258,10 @@
 
         <div id="plus">+</div>
         <div class="absolute top-[20px] left-[20px] content">
-          <p class="w-[60px] h-[25px] flex text-xs items-center justify-center bg-white shadow-xl">
+          <p class="w-[60px] h-[25px] flex text-sm items-center justify-center bg-white shadow-xl">
             Tech
           </p>
-          <p class="w-[60px] h-[25px] flex text-xs items-center justify-center bg-white mt-2 shadow-xl">
+          <p class="w-[60px] h-[25px] flex text-sm items-center justify-center bg-white mt-2 shadow-xl">
             -12%
           </p>
         </div>
@@ -280,10 +279,10 @@
 
         <div id="plus">+</div>
         <div class="absolute top-[20px] left-[20px] content">
-          <p class="w-[60px] h-[25px] flex text-xs items-center justify-center bg-white shadow-xl">
+          <p class="w-[60px] h-[25px] flex text-sm items-center justify-center bg-white shadow-xl">
             Tech
           </p>
-          <p class="w-[60px] h-[25px] flex text-xs items-center justify-center bg-white mt-2 shadow-xl">
+          <p class="w-[60px] h-[25px] flex text-sm items-center justify-center bg-white mt-2 shadow-xl">
             -12%
           </p>
         </div>
@@ -295,6 +294,21 @@
     </div>
   </section>
 
+
+  <!-- LIST DES CARTES LIST  -->
+
+  <section id="liste-cards">
+
+    <div class="">
+      <img src="../assets/images/camera.png" alt="image camera">
+    </div>
+    <div class="">
+      <div>
+        <p>Tech</p>
+        <p>-12%</p>
+      </div>
+    </div>
+  </section>
 
   <!-- footer -->
   <footer class="bg-white w-full h-auto center flex-col border text-[1rem]">
@@ -383,6 +397,9 @@
       <p class="text-white">Auchan 2024 © Tous droits réservés</p>
     </div>
   </footer>
+
+
+  <script src="../assets/js/promotion.js"></script>
 </body>
 
 </html>

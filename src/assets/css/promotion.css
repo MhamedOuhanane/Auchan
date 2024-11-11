@@ -28,6 +28,7 @@
 }
 
 .relative.img {
+    cursor: pointer;
     position: relative;
 
 
