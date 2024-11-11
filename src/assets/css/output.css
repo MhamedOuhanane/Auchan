@@ -694,6 +694,14 @@ video {
   min-height: 20vh;
 }
 
+.min-h-\[30vh\] {
+  min-height: 30vh;
+}
+
+.min-h-\[15vh\] {
+  min-height: 15vh;
+}
+
 .w-10 {
   width: 2.5rem;
 }
@@ -740,6 +748,10 @@ video {
 
 .w-8\/12 {
   width: 66.666667%;
+}
+
+.w-48 {
+  width: 12rem;
 }
 
 .min-w-5 {
