@@ -7,11 +7,10 @@
   <title>Auchan - Promotion</title>
   <link rel="stylesheet" href="../assets/css/output.css" />
   <link rel="stylesheet" href="../assets/css/input.css" />
-  <link rel="stylesheet" href="../assets/css/promotion.css">
+  <link rel="stylesheet" href="../assets/css/promotion.css" />
 </head>
 
 <body class="bg-[#F8F8F8]">
-
   <!-- HERO SECTION -->
   <section class="text-center text-xl bg-gradient-to-r from-[#EDBEF5] to-[#FFE5FA] py-7">
     <h1>Promotion</h1>
@@ -20,120 +19,211 @@
   <!-- FILTRAGE SECTION ET BTN DE GRILLE ET LIST-->
   <section id="filtrage" class="flex items-center justify-around mt-[4rem]">
     <div id="left" class="flex items-center gap-4">
-      <button class="bg-[#EDBEF5] w-[100px] h-[30px] text-xs rounded-3xl">Tech</button>
-      <button class="bg-[#fff] w-[100px] h-[30px] text-xs rounded-3xl hover:bg-[#EDBEF5] transition">Cuisine</button>
-      <button class="bg-[#fff] w-[100px] h-[30px] text-xs rounded-3xl hover:bg-[#EDBEF5] transition">Boissons</button>
-      <button class="bg-[#fff] w-[100px] h-[30px] text-xs rounded-3xl hover:bg-[#EDBEF5] transition">Nettoyage</button>
-      <button class="bg-[#fff] w-[100px] h-[30px] text-xs rounded-3xl hover:bg-[#EDBEF5] transition">Vêtements</button>
+      <button class="bg-[#EDBEF5] w-[100px] h-[30px] text-xs rounded-3xl">
+        Tech
+      </button>
+      <button class="bg-[#fff] w-[100px] h-[30px] text-xs rounded-3xl hover:bg-[#EDBEF5] transition">
+        Cuisine
+      </button>
+      <button class="bg-[#fff] w-[100px] h-[30px] text-xs rounded-3xl hover:bg-[#EDBEF5] transition">
+        Boissons
+      </button>
+      <button class="bg-[#fff] w-[100px] h-[30px] text-xs rounded-3xl hover:bg-[#EDBEF5] transition">
+        Nettoyage
+      </button>
+      <button class="bg-[#fff] w-[100px] h-[30px] text-xs rounded-3xl hover:bg-[#EDBEF5] transition">
+        Vêtements
+      </button>
     </div>
     <div id="right" class="flex items-center gap-1">
       <div class="cursor-pointer">
-        <img src="../assets/images/list.png" alt="list icon" class="w-8 h-8">
+        <img src="../assets/images/list.png" alt="list icon" class="w-8 h-8" />
+
+        <div class="overlay"></div>
+
+        <div id="plus">+</div>
       </div>
       <div class="bg-[#EDBEF5] p-1 rounded-sm cursor-pointer">
-        <img src="../assets/images/block.png" alt="Block icon" class="w-6 h-6">
+        <img src="../assets/images/block.png" alt="Block icon" class="w-6 h-6" />
       </div>
     </div>
   </section>
-
 
   <!-- LIST DES CARTES -->
 
   <section id="list-cards" class="mt-[4rem] grid grid-cols-4 gap-x-10 gap-y-5 place-self-center">
     <div class="promotion-card w-[200px]">
       <div class="relative img">
-        <img src="../assets/images/watch.png" alt="image de camera" class="w-[200px] h-[220px]">
+        <img src="../assets/images/watch.png" alt="image de camera" class="w-[200px] h-[220px]" />
+
+        <div class="overlay"></div>
+
+        <div id="plus">+</div>
+
         <div class="absolute top-[20px] left-[20px] content">
-          <p class="w-[60px] h-[25px] flex text-xs items-center justify-center bg-white shadow-xl">Tech</p>
-          <p class="w-[60px] h-[25px] flex text-xs items-center justify-center bg-white mt-2 shadow-xl">-12%</p>
+          <p class="w-[60px] h-[25px] flex text-xs items-center justify-center bg-white shadow-xl">
+            Tech
+          </p>
+          <p class="w-[60px] h-[25px] flex text-xs items-center justify-center bg-white mt-2 shadow-xl">
+            -12%
+          </p>
         </div>
       </div>
       <p class="mt-2 text-xs text-center w-[85%] m-auto">
-        un appareil de prise de vues destiné à enregistrer ou à reproduire des images photographiques
+        un appareil de prise de vues destiné à enregistrer ou à reproduire des
+        images photographiques
       </p>
     </div>
     <div class="promotion-card w-[200px]">
       <div class="relative img">
-        <img src="../assets/images/camera.png" alt="image de camera" class="w-[200px] h-[220px]">
+        <img src="../assets/images/camera.png" alt="image de camera" class="w-[200px] h-[220px]" />
+
+        <div class="overlay"></div>
+
+        <div id="plus">+</div>
+
         <div class="absolute top-[20px] left-[20px] content">
-          <p class="w-[60px] h-[25px] flex text-xs items-center justify-center bg-white shadow-xl">Tech</p>
-          <p class="w-[60px] h-[25px] flex text-xs items-center justify-center bg-white mt-2 shadow-xl">-12%</p>
+          <p class="w-[60px] h-[25px] flex text-xs items-center justify-center bg-white shadow-xl">
+            Tech
+          </p>
+          <p class="w-[60px] h-[25px] flex text-xs items-center justify-center bg-white mt-2 shadow-xl">
+            -12%
+          </p>
         </div>
       </div>
       <p class="mt-2 text-xs text-center w-[85%] m-auto">
-        un appareil de prise de vues destiné à enregistrer ou à reproduire des images photographiques
+        un appareil de prise de vues destiné à enregistrer ou à reproduire des
+        images photographiques
+      </p>
+    </div>
+    <div class="promotion-card w-[200px]">
+
+      <div class="relative img">
+        <img src="../assets/images/cup.png" alt="image de camera" class="w-[200px] h-[220px]" />
+
+        <div class="overlay"></div>
+
+        <div id="plus">+</div>
+
+        <div class="absolute top-[20px] left-[20px] content">
+          <p class="w-[60px] h-[25px] flex text-xs items-center justify-center bg-white shadow-xl">
+            Tech
+          </p>
+          <p class="w-[60px] h-[25px] flex text-xs items-center justify-center bg-white mt-2 shadow-xl">
+            -12%
+          </p>
+        </div>
+
+      </div>
+      <p class="mt-2 text-xs text-center w-[85%] m-auto">
+        un appareil de prise de vues destiné à enregistrer ou à reproduire des
+        images photographiques
       </p>
     </div>
     <div class="promotion-card w-[200px]">
       <div class="relative img">
-        <img src="../assets/images/cup.png" alt="image de camera" class="w-[200px] h-[220px]">
+        <img src="../assets/images/t-chert.png" alt="image de camera" class="w-[200px] h-[220px]" />
+
+        <div class="overlay"></div>
+
+        <div id="plus">+</div>
+
         <div class="absolute top-[20px] left-[20px] content">
-          <p class="w-[60px] h-[25px] flex text-xs items-center justify-center bg-white shadow-xl">Tech</p>
-          <p class="w-[60px] h-[25px] flex text-xs items-center justify-center bg-white mt-2 shadow-xl">-12%</p>
+          <p class="w-[60px] h-[25px] flex text-xs items-center justify-center bg-white shadow-xl">
+            Tech
+          </p>
+          <p class="w-[60px] h-[25px] flex text-xs items-center justify-center bg-white mt-2 shadow-xl">
+            -12%
+          </p>
         </div>
       </div>
       <p class="mt-2 text-xs text-center w-[85%] m-auto">
-        un appareil de prise de vues destiné à enregistrer ou à reproduire des images photographiques
+        un appareil de prise de vues destiné à enregistrer ou à reproduire des
+        images photographiques
       </p>
     </div>
     <div class="promotion-card w-[200px]">
       <div class="relative img">
-        <img src="../assets/images/t-chert.png" alt="image de camera" class="w-[200px] h-[220px]">
+        <img src="../assets/images/watch.png" alt="image de camera" class="w-[200px]" />
+
+        <div class="overlay"></div>
+
+        <div id="plus">+</div>
         <div class="absolute top-[20px] left-[20px] content">
-          <p class="w-[60px] h-[25px] flex text-xs items-center justify-center bg-white shadow-xl">Tech</p>
-          <p class="w-[60px] h-[25px] flex text-xs items-center justify-center bg-white mt-2 shadow-xl">-12%</p>
+          <p class="w-[60px] h-[25px] flex text-xs items-center justify-center bg-white shadow-xl">
+            Tech
+          </p>
+          <p class="w-[60px] h-[25px] flex text-xs items-center justify-center bg-white mt-2 shadow-xl">
+            -12%
+          </p>
         </div>
       </div>
       <p class="mt-2 text-xs text-center w-[85%] m-auto">
-        un appareil de prise de vues destiné à enregistrer ou à reproduire des images photographiques
+        un appareil de prise de vues destiné à enregistrer ou à reproduire des
+        images photographiques
       </p>
     </div>
     <div class="promotion-card w-[200px]">
       <div class="relative img">
-        <img src="../assets/images/watch.png" alt="image de camera" class="w-[200px]">
+        <img src="../assets/images/camera.png" alt="image de camera" class="w-[200px]" />
+
+        <div class="overlay"></div>
+
+        <div id="plus">+</div>
         <div class="absolute top-[20px] left-[20px] content">
-          <p class="w-[60px] h-[25px] flex text-xs items-center justify-center bg-white shadow-xl">Tech</p>
-          <p class="w-[60px] h-[25px] flex text-xs items-center justify-center bg-white mt-2 shadow-xl">-12%</p>
+          <p class="w-[60px] h-[25px] flex text-xs items-center justify-center bg-white shadow-xl">
+            Tech
+          </p>
+          <p class="w-[60px] h-[25px] flex text-xs items-center justify-center bg-white mt-2 shadow-xl">
+            -12%
+          </p>
         </div>
       </div>
       <p class="mt-2 text-xs text-center w-[85%] m-auto">
-        un appareil de prise de vues destiné à enregistrer ou à reproduire des images photographiques
+        un appareil de prise de vues destiné à enregistrer ou à reproduire des
+        images photographiques
       </p>
     </div>
     <div class="promotion-card w-[200px]">
       <div class="relative img">
-        <img src="../assets/images/watch.png" alt="image de camera" class="w-[200px]">
+        <img src="../assets/images/cup.png" alt="image de camera" class="w-[200px]" />
+
+        <div class="overlay"></div>
+
+        <div id="plus">+</div>
         <div class="absolute top-[20px] left-[20px] content">
-          <p class="w-[60px] h-[25px] flex text-xs items-center justify-center bg-white shadow-xl">Tech</p>
-          <p class="w-[60px] h-[25px] flex text-xs items-center justify-center bg-white mt-2 shadow-xl">-12%</p>
+          <p class="w-[60px] h-[25px] flex text-xs items-center justify-center bg-white shadow-xl">
+            Tech
+          </p>
+          <p class="w-[60px] h-[25px] flex text-xs items-center justify-center bg-white mt-2 shadow-xl">
+            -12%
+          </p>
         </div>
       </div>
       <p class="mt-2 text-xs text-center w-[85%] m-auto">
-        un appareil de prise de vues destiné à enregistrer ou à reproduire des images photographiques
+        un appareil de prise de vues destiné à enregistrer ou à reproduire des
+        images photographiques
       </p>
     </div>
     <div class="promotion-card w-[200px]">
       <div class="relative img">
-        <img src="../assets/images/watch.png" alt="image de camera" class="w-[200px]">
+        <img src="../assets/images/t-chert.png" alt="image de camera" class="w-[200px]" />
+
+        <div class="overlay"></div>
+
+        <div id="plus">+</div>
         <div class="absolute top-[20px] left-[20px] content">
-          <p class="w-[60px] h-[25px] flex text-xs items-center justify-center bg-white shadow-xl">Tech</p>
-          <p class="w-[60px] h-[25px] flex text-xs items-center justify-center bg-white mt-2 shadow-xl">-12%</p>
+          <p class="w-[60px] h-[25px] flex text-xs items-center justify-center bg-white shadow-xl">
+            Tech
+          </p>
+          <p class="w-[60px] h-[25px] flex text-xs items-center justify-center bg-white mt-2 shadow-xl">
+            -12%
+          </p>
         </div>
       </div>
       <p class="mt-2 text-xs text-center w-[85%] m-auto">
-        un appareil de prise de vues destiné à enregistrer ou à reproduire des images photographiques
-      </p>
-    </div>
-    <div class="promotion-card w-[200px]">
-      <div class="relative img">
-        <img src="../assets/images/watch.png" alt="image de camera" class="w-[200px]">
-        <div class="absolute top-[20px] left-[20px] content">
-          <p class="w-[60px] h-[25px] flex text-xs items-center justify-center bg-white shadow-xl">Tech</p>
-          <p class="w-[60px] h-[25px] flex text-xs items-center justify-center bg-white mt-2 shadow-xl">-12%</p>
-        </div>
-      </div>
-      <p class="mt-2 text-xs text-center w-[85%] m-auto">
-        un appareil de prise de vues destiné à enregistrer ou à reproduire des images photographiques
+        un appareil de prise de vues destiné à enregistrer ou à reproduire des
+        images photographiques
       </p>
     </div>
   </section>
