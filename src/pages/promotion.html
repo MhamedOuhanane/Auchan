@@ -117,6 +117,8 @@
 
   <!-- LIST DES CARTES GRILLE-->
 
+  <div class="absolute inset-0 hidden loader top-1/2 left-1/2" id="loader"></div>
+
   <section id="list-grille-cards"
     class="mt-[4rem] grid lg:grid-cols-4 gap-x-16 gap-y-10 place-self-center mb-10 grid-cols-1 sm:grid-cols-2">
     <div class="promotion-card w-[200px]">
@@ -369,17 +371,17 @@
 
   <!-- Subscribe Section -->
 
-  <section id="subscribe" class="flex items-center justify-evenly my-[5rem]">
+  <section id="subscribe" class="flex items-center justify-evenly my-[5rem] flex-wrap gap-10 xl:flex-nowrap">
     <div id="left">
       <p class="my-2 text-xl text-center">Lorem ipsum dolor sit amet consectetur</p>
-      <div class="flex gap-4">
+      <div class="flex flex-wrap justify-center gap-4">
         <img src="../assets/images/chair.png" alt="chare image" class="w-[230.37px] h-[180px]">
         <img src="../assets/images/workplace.png" alt="workplace image" class="w-[230.37px] h-[180px]">
       </div>
     </div>
     <div id="right" class="text-center">
       <h3 class="my-2 text-2xl text-[#6A1E78]">Subscribe</h3>
-      <p class="my-2 text-base">Lorem ipsum dolor sit amet consectetur elit.</p>
+      <p class="my-2 text-xl">Lorem ipsum dolor sit amet consectetur elit.</p>
       <input type="text" placeholder="Enter your email"
         class="my-2 w-[100%] h-[20px] border border-black rounded-xl p-5">
       <div
