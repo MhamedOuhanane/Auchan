@@ -9,13 +9,12 @@
   <link rel="shortcut icon" href="../assets/images/favicons/favicon.ico" type="image/x-icon" />
 
   <link rel="stylesheet" href="../assets/css/input.css" />
-  <link rel="stylesheet" href="../assets/css/home.css">
+  <link rel="stylesheet" href="../assets/css/home.css" />
   <script type="module" src="../assets/js/home.js" defer></script>
   <link rel="stylesheet" href="../assets/css/promotion.css" />
 </head>
 
 <body class="bg-[#F8F8F8]">
-
   <!-- header -->
   <header class="bg-white border-b h-10 center text-[1rem ] select-none">
     <div class="container flex justify-between h-full">
@@ -32,11 +31,11 @@
       </div>
       <div class="flex h-full gap-2">
         <div class="flex items-center">
-          <a href="pages/panier.html" class="h-full">
+          <a href="../pages/panier.html" class="h-full">
             <img class="h-full p-2" src="../assets/images/icons/cart.svg" title="Panier" alt="phone-icon" />
           </a>
           <p class="max-sm:hidden">
-            <a href="pages/panier.html">Panier</a>
+            <a href="../pages/panier.html">Panier</a>
           </p>
         </div>
         <div class="flex items-center">
@@ -50,7 +49,7 @@
   <!-- navigation -->
   <nav class="bg-white shadow-md select-none h-14 center">
     <div class="container flex items-center justify-between h-full">
-      <a href="index.html" class="h-full pb-1">
+      <a href="../index.html" class="h-full pb-1">
         <img src="../assets/images/large-logo.png" class="h-full max-sm:p-2" alt="auchan large logo" />
         <!-- <img
             src="../assets/images/auchan-mobile-logo.png"
@@ -61,16 +60,16 @@
 
       <ul class="menu" id="menu">
         <li class="active">
-          <a href="index.html">Acceuill</a>
+          <a href="../index.html">Acceuill</a>
         </li>
         <li class="">
-          <a href="pages/catalogue.html">Catalogue</a>
+          <a href="../pages/catalogue.html">Catalogue</a>
         </li>
         <li class="">
-          <a href="pages/promotion.html">Promotion</a>
+          <a href="../pages/promotion.html">Promotion</a>
         </li>
         <li class="">
-          <a href="pages/contact.html">Contactez-nous</a>
+          <a href="../pages/contact.html">Contactez-nous</a>
         </li>
       </ul>
 
@@ -78,7 +77,6 @@
         alt="burger menu icon" />
     </div>
   </nav>
-
 
   <!-- HERO SECTION -->
   <section
@@ -166,7 +164,6 @@
       </p>
     </div>
     <div class="promotion-card w-[200px]">
-
       <div class="relative img">
         <img src="../assets/images/cup.png" alt="image de camera" class="w-[200px] h-[220px]" />
 
@@ -182,7 +179,6 @@
             -12%
           </p>
         </div>
-
       </div>
       <p class="mt-2 text-sm text-center w-[85%] m-auto">
         un appareil de prise de vues destiné à enregistrer ou à reproduire des
@@ -297,96 +293,121 @@
     </div>
   </section>
 
-
   <!-- LIST DES CARTES LIST  -->
 
   <section id="liste-cards" class="mb-[5rem] hidden opacity-0 mt-10">
+    <div class="flex card-list w-[73%] m-auto card-shadow my-4">
+      <div class="w-[250px] md:w-[180px] h-[140px] md:h-[160px] lg:h-[200px]">
+        <img src="../assets/images/cup.png" alt="image camera"
+          class="w-[250px] md:w-[180px] h-[140px] md:h-[160px] lg:h-[200px]" />
+      </div>
+      <div class="flex flex-col ml-10 justify-evenly">
+        <div class="flex gap-10">
+          <span
+            class="w-[40px] md:w-[50px] h-[20px] md:h-[25px] flex text-xs md:text-sm lg:text-lg items-center justify-center bg-white shadow-xl">Tech</span>
+          <span
+            class="w-[40px] md:w-[50px] h-[20px] md:h-[25px] flex text-xs md:text-sm lg:text-lg items-center justify-center bg-white shadow-xl">-12%</span>
+        </div>
+        <p class="text-xs font-bold md:text-sm lg:text-lg">
+          un appareil de prise de vues destiné à enregistrer ou à reproduire
+          des images photographiques
+        </p>
+        <div
+          class="w-[100px] lg:w-[150px] h-[2rem] lg:h-[3rem] text-sm lg:text-lg flex items-center justify-center font-bold bg-white shadow-xl">
+          Order Now
+        </div>
+      </div>
+    </div>
+    <div class="flex card-list w-[73%] m-auto card-shadow my-4">
+      <div class="w-[250px] md:w-[180px] h-[140px] md:h-[160px] lg:h-[200px]">
+        <img src="../assets/images/t-chert.png" alt="image camera"
+          class="w-[250px] md:w-[180px] h-[140px] md:h-[160px] lg:h-[200px]" />
+      </div>
+      <div class="flex flex-col ml-10 justify-evenly">
+        <div class="flex gap-10">
+          <span
+            class="w-[40px] md:w-[50px] h-[20px] md:h-[25px] flex text-xs md:text-sm lg:text-lg items-center justify-center bg-white shadow-xl">Tech</span>
+          <span
+            class="w-[40px] md:w-[50px] h-[20px] md:h-[25px] flex text-xs md:text-sm lg:text-lg items-center justify-center bg-white shadow-xl">-12%</span>
+        </div>
+        <p class="text-xs font-bold md:text-sm lg:text-lg">
+          un appareil de prise de vues destiné à enregistrer ou à reproduire
+          des images photographiques
+        </p>
+        <div
+          class="w-[100px] lg:w-[150px] h-[2rem] lg:h-[3rem] text-sm lg:text-lg flex items-center justify-center font-bold bg-white shadow-xl">
+          Order Now
+        </div>
+      </div>
+    </div>
+    <div class="flex card-list w-[73%] m-auto card-shadow my-4">
+      <div class="w-[250px] md:w-[180px] h-[140px] md:h-[160px] lg:h-[200px]">
+        <img src="../assets/images/watch.png" alt="image camera"
+          class="w-[250px] md:w-[180px] h-[140px] md:h-[160px] lg:h-[200px]" />
+      </div>
+      <div class="flex flex-col ml-10 justify-evenly">
+        <div class="flex gap-10">
+          <span
+            class="w-[40px] md:w-[50px] h-[20px] md:h-[25px] flex text-xs md:text-sm lg:text-lg items-center justify-center bg-white shadow-xl">Tech</span>
+          <span
+            class="w-[40px] md:w-[50px] h-[20px] md:h-[25px] flex text-xs md:text-sm lg:text-lg items-center justify-center bg-white shadow-xl">-12%</span>
+        </div>
+        <p class="text-xs font-bold md:text-sm lg:text-lg">
+          un appareil de prise de vues destiné à enregistrer ou à reproduire
+          des images photographiques
+        </p>
+        <div
+          class="w-[100px] lg:w-[150px] h-[2rem] lg:h-[3rem] text-sm lg:text-lg flex items-center justify-center font-bold bg-white shadow-xl">
+          Order Now
+        </div>
+      </div>
+    </div>
+    <div class="flex card-list w-[73%] m-auto card-shadow my-4">
+      <div class="w-[250px] md:w-[180px] h-[140px] md:h-[160px] lg:h-[200px]">
+        <img src="../assets/images/camera.png" alt="image camera"
+          class="w-[250px] md:w-[180px] h-[140px] md:h-[160px] lg:h-[200px]" />
+      </div>
+      <div class="flex flex-col ml-10 justify-evenly">
+        <div class="flex gap-10">
+          <span
+            class="w-[40px] md:w-[50px] h-[20px] md:h-[25px] flex text-xs md:text-sm lg:text-lg items-center justify-center bg-white shadow-xl">Tech</span>
+          <span
+            class="w-[40px] md:w-[50px] h-[20px] md:h-[25px] flex text-xs md:text-sm lg:text-lg items-center justify-center bg-white shadow-xl">-12%</span>
+        </div>
+        <p class="text-xs font-bold md:text-sm lg:text-lg">
+          un appareil de prise de vues destiné à enregistrer ou à reproduire
+          des images photographiques
+        </p>
+        <div
+          class="w-[100px] lg:w-[150px] h-[2rem] lg:h-[3rem] text-sm lg:text-lg flex items-center justify-center font-bold bg-white shadow-xl">
+          Order Now
+        </div>
+      </div>
+    </div>
 
-    <div class="flex card-list w-[73%] m-auto card-shadow my-4">
-      <div class="w-[180px] h-[200px]">
-        <img src="../assets/images/camera.png" alt="image camera" class="w-[180px] h-[200px]">
-      </div>
-      <div class="flex flex-col ml-10 justify-evenly">
-        <div class="flex gap-10">
-          <span class="w-[60px] h-[25px] flex text-lg items-center justify-center bg-white shadow-xl">Tech</span>
-          <span class="w-[60px] h-[25px] flex text-lg items-center justify-center bg-white shadow-xl">-12%</span>
-        </div>
-        <p class="text-lg font-bold">un appareil de prise de vues destiné à enregistrer ou à reproduire des images
-          photographiques</p>
-        <div class="w-[150px] h-[3.5rem] text-lg flex items-center justify-center font-bold bg-white shadow-xl">Order
-          Now
-        </div>
-      </div>
-    </div>
-    <div class="flex card-list w-[73%] m-auto card-shadow my-4">
-      <div class="w-[180px] h-[200px]">
-        <img src="../assets/images/watch.png" alt="image camera" class="w-[180px] h-[200px]">
-      </div>
-      <div class="flex flex-col ml-10 justify-evenly">
-        <div class="flex gap-10">
-          <span class="w-[60px] h-[25px] flex text-lg items-center justify-center bg-white shadow-xl">Tech</span>
-          <span class="w-[60px] h-[25px] flex text-lg items-center justify-center bg-white shadow-xl">-12%</span>
-        </div>
-        <p class="text-lg font-bold">un appareil de prise de vues destiné à enregistrer ou à reproduire des images
-          photographiques</p>
-        <div class="w-[150px] h-[3.5rem] text-lg flex items-center justify-center font-bold bg-white shadow-xl">Order
-          Now
-        </div>
-      </div>
-    </div>
-    <div class="flex card-list w-[73%] m-auto card-shadow my-4">
-      <div class="w-[180px] h-[200px]">
-        <img src="../assets/images/cup.png" alt="image camera" class="w-[180px] h-[200px]">
-      </div>
-      <div class="flex flex-col ml-10 justify-evenly">
-        <div class="flex gap-10">
-          <span class="w-[60px] h-[25px] flex text-lg items-center justify-center bg-white shadow-xl">Tech</span>
-          <span class="w-[60px] h-[25px] flex text-lg items-center justify-center bg-white shadow-xl">-12%</span>
-        </div>
-        <p class="text-lg font-bold">un appareil de prise de vues destiné à enregistrer ou à reproduire des images
-          photographiques</p>
-        <div class="w-[150px] h-[3.5rem] text-lg flex items-center justify-center font-bold bg-white shadow-xl">Order
-          Now
-        </div>
-      </div>
-    </div>
-    <div class="flex card-list w-[73%] m-auto card-shadow my-4">
-      <div class="w-[180px] h-[200px]">
-        <img src="../assets/images/t-chert.png" alt="image camera" class="w-[180px] h-[200px]">
-      </div>
-      <div class="flex flex-col ml-10 justify-evenly">
-        <div class="flex gap-10">
-          <span class="w-[60px] h-[25px] flex text-lg items-center justify-center bg-white shadow-xl">Tech</span>
-          <span class="w-[60px] h-[25px] flex text-lg items-center justify-center bg-white shadow-xl">-12%</span>
-        </div>
-        <p class="text-lg font-bold">un appareil de prise de vues destiné à enregistrer ou à reproduire des images
-          photographiques</p>
-        <div class="w-[150px] h-[3.5rem] text-lg flex items-center justify-center font-bold bg-white shadow-xl">Order
-          Now
-        </div>
-      </div>
-    </div>
   </section>
-
 
   <!-- Subscribe Section -->
 
   <section id="subscribe" class="flex items-center justify-evenly my-[5rem] flex-wrap gap-10 xl:flex-nowrap">
     <div id="left">
-      <p class="my-2 text-xl text-center">Lorem ipsum dolor sit amet consectetur</p>
+      <p class="my-2 text-xl text-center">
+        Lorem ipsum dolor sit amet consectetur
+      </p>
       <div class="flex flex-wrap justify-center gap-4">
-        <img src="../assets/images/chair.png" alt="chare image" class="w-[230.37px] h-[180px]">
-        <img src="../assets/images/workplace.png" alt="workplace image" class="w-[230.37px] h-[180px]">
+        <img src="../assets/images/chair.png" alt="chare image" class="w-[230.37px] h-[180px]" />
+        <img src="../assets/images/workplace.png" alt="workplace image" class="w-[230.37px] h-[180px]" />
       </div>
     </div>
     <div id="right" class="text-center">
       <h3 class="my-2 text-2xl text-[#6A1E78]">Subscribe</h3>
       <p class="my-2 text-xl">Lorem ipsum dolor sit amet consectetur elit.</p>
       <input type="text" placeholder="Enter your email"
-        class="my-2 w-[100%] h-[20px] border border-black rounded-xl p-5">
+        class="my-2 w-[100%] h-[20px] border border-black rounded-xl p-5" />
       <div
         class="bg-[#6A1E78] w-[150px] h-[3rem] text-lg flex items-center justify-center text-white m-auto rounded-full my-2">
-        Subscribe</div>
+        Subscribe
+      </div>
     </div>
   </section>
 
@@ -412,11 +433,11 @@
         <div class="flex flex-col w-1/4 gap-4 max-md:w-full">
           <strong class="text-darkViolet text-lg max-md:text-[1rem] pt-2">Liens directs</strong>
           <ul class="flex flex-col gap-1">
-            <li><a href="index.html">Accueill</a></li>
-            <li><a href="pages/catalogue.html">Catalogue</a></li>
-            <li><a href="pages/promotion.html">Promotion</a></li>
-            <li><a href="pages/contact.html">Contactez-nous</a></li>
-            <li><a href="index.html">Profile</a></li>
+            <li><a href="../index.html">Accueill</a></li>
+            <li><a href="../pages/catalogue.html">Catalogue</a></li>
+            <li><a href="../pages/promotion.html">Promotion</a></li>
+            <li><a href="../pages/contact.html">Contactez-nous</a></li>
+            <li><a href="../index.html">Profile</a></li>
           </ul>
         </div>
         <div class="flex flex-col w-1/4 gap-4 max-md:w-full">
