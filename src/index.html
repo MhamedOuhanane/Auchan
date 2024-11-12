@@ -1,67 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Auchan magasin</title>
-    <link
-      rel="shortcut icon"
-      href="assets/images/favicons/favicon.ico"
-      type="image/x-icon"
-    />
-    <link rel="stylesheet" href="assets/css/output.css" />
-    <link rel="stylesheet" href="assets/css/input.css" />
-    <link rel="stylesheet" href="assets/css/home.css">
-    <script type="module" src="assets/js/home.js" defer></script>
-  </head>
-  <body>
-    
-    <!-- header -->
-    <header class="bg-white border-b h-10 center text-[1rem ] select-none">
-      <div class="container h-full flex justify-between">
-        <div class="flex gap-2 h-full">
-          <div class="flex items-center">
-            <img
-              class="h-full p-2"
-              src="assets/images/icons/phone.svg"
-              title="+212-654-504356"
-              alt="phone-icon"
-            />
-            <p class="max-sm:hidden">+212-654-504356</p>
-          </div>
-          <div class="flex items-center">
-            <img
-              class="h-full p-2"
-              src="assets/images/icons/email.svg"
-              title="auchan-maroc@contact.com"
-              alt="phone-icon"
-            />
-            <p class="max-sm:hidden">auchan-maroc@contact.com</p>
-          </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Auchan magasin</title>
+  <link rel="shortcut icon" href="assets/images/favicons/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="assets/css/output.css" />
+  <link rel="stylesheet" href="assets/css/input.css" />
+  <link rel="stylesheet" href="assets/css/home.css">
+  <script type="module" src="assets/js/home.js" defer></script>
+</head>
+
+<body>
+
+  <!-- header -->
+  <header class="bg-white border-b h-10 center text-[1rem ] select-none">
+    <div class="container flex justify-between h-full">
+      <div class="flex h-full gap-2">
+        <div class="flex items-center">
+          <img class="h-full p-2" src="assets/images/icons/phone.svg" title="+212-654-504356" alt="phone-icon" />
+          <p class="max-sm:hidden">+212-654-504356</p>
         </div>
-        <div class="flex gap-2 h-full">
-          <div class="flex items-center">
-            <a href="pages/panier.html" class="h-full">
-              <img
-                class="h-full p-2"
-                src="assets/images/icons/cart.svg"
-                title="Panier"
-                alt="phone-icon"
-              />
-            </a>
-            <p class="max-sm:hidden">
-              <a href="pages/panier.html">Panier</a>
-            </p>
-          </div>
-          <div class="flex items-center">
-            <img
-              class="h-full p-2"
-              src="assets/images/icons/user.svg"
-              title="Compte"
-              alt="phone-icon"
-            />
-            <p class="max-sm:hidden">Compte</p>
-          </div>
+        <div class="flex items-center">
+          <img class="h-full p-2" src="assets/images/icons/email.svg" title="auchan-maroc@contact.com"
+            alt="phone-icon" />
+          <p class="max-sm:hidden">auchan-maroc@contact.com</p>
+        </div>
+      </div>
+      <div class="flex h-full gap-2">
+        <div class="flex items-center">
+          <a href="pages/panier.html" class="h-full">
+            <img class="h-full p-2" src="assets/images/icons/cart.svg" title="Panier" alt="phone-icon" />
+          </a>
+          <p class="max-sm:hidden">
+            <a href="pages/panier.html">Panier</a>
+          </p>
+        </div>
+        <div class="flex items-center">
+          <img class="h-full p-2" src="assets/images/icons/user.svg" title="Compte" alt="phone-icon" />
+          <p class="max-sm:hidden">Compte</p>
         </div>
       </div>
     </header>
@@ -77,214 +55,131 @@
           />
           <!-- <img
             src="assets/images/auchan-mobile-logo.png"
-            class="h-full hidden max-sm:block"
+            class="hidden h-full max-sm:block"
             alt="auchan small logo"
           /> -->
-        </a>
+      </a>
 
-        <ul class="menu" id="menu">
-          <li class="active">
-            <a href="index.html">Acceuill</a>
-          </li>
-          <li class="">
-            <a href="pages/catalogue.html">Catalogue</a>
-          </li>
-          <li class="">
-            <a href="pages/promotion.html">Promotion</a>
-          </li>
-          <li class="">
-            <a href="pages/contact.html">Contactez-nous</a>
-          </li>
-        </ul>
+      <ul class="menu" id="menu">
+        <li class="active">
+          <a href="index.html">Acceuill</a>
+        </li>
+        <li class="">
+          <a href="pages/catalogue.html">Catalogue</a>
+        </li>
+        <li class="">
+          <a href="pages/promotion.html">Promotion</a>
+        </li>
+        <li class="">
+          <a href="pages/contact.html">Contactez-nous</a>
+        </li>
+      </ul>
 
-        <img
-          id="menu-icon"
-          src="assets/images/icons/burger-menu.svg"
-          class="z-10 h-full p-4 hidden max-md:block"
-          alt="burger menu icon"
-        />
-      </div>
-    </nav>
+      <img id="menu-icon" src="assets/images/icons/burger-menu.svg" class="z-10 hidden h-full p-4 max-md:block"
+        alt="burger menu icon" />
+    </div>
+  </nav>
 
-    <!-- TODO: sections (categories, products populaire, sponsors) -->
-    <!-- carousel section -->
-    <main
-      class="h-[300px] max-sm:h-[30%] max-md:h-[40%] w-full center relative"
-    >
-      <img
-        id="image-carousel"
-        src="assets/images/ads/boissons.jpeg"
-        class="h-full w-full object-cover"
-        alt="image-categories"
-      />
-      <img
-        src="assets/images/icons/chevron-left.svg"
-        class="absolute left-0 size-12 max-lg:size-12 max-md:size-8 hover:bg-black active:bg-gray-800 bg-black/50 rounded-full p-2"
-        alt="chevron left icon"
-        id="chevron-left"
-      />
-      <img
-        src="assets/images/icons/chevron-right.svg"
-        class="absolute right-0 size-12 max-lg:size-12 max-md:size-8 hover:bg-black active:bg-gray-800 bg-black/50 rounded-full p-2"
-        alt="chevron right icon"
-        id="chevron-right"
-      />
-    </main>
+  <!-- TODO: sections (categories, products populaire, sponsors) -->
+  <!-- carousel section -->
+  <main class="h-[300px] max-sm:h-[30%] max-md:h-[40%] w-full center relative">
+    <img id="image-carousel" src="assets/images/ads/boissons.jpeg" class="object-cover w-full h-full"
+      alt="image-categories" />
+    <img src="assets/images/icons/chevron-left.svg"
+      class="absolute left-0 p-2 rounded-full size-12 max-lg:size-12 max-md:size-8 hover:bg-black active:bg-gray-800 bg-black/50"
+      alt="chevron left icon" id="chevron-left" />
+    <img src="assets/images/icons/chevron-right.svg"
+      class="absolute right-0 p-2 rounded-full size-12 max-lg:size-12 max-md:size-8 hover:bg-black active:bg-gray-800 bg-black/50"
+      alt="chevron right icon" id="chevron-right" />
+  </main>
 
-    <!-- footer -->
-    <footer class="bg-white w-full h-auto center flex-col border text-[1rem]">
-      <div class="container h-full flex flex-col max-sm:px-4">
-        <div class="flex justify-between gap-6 py-8 max-md:flex-col">
-          <div class="flex flex-col gap-4 max-sm:gap-2 w-2/4 max-md:w-full">
-            <div class="h-10">
-              <img
-                src="assets/images/large-logo.png"
-                class="h-full max-sm:py-2"
-                alt="auchan large logo"
-              />
-            </div>
-            <p class="w-5/6 max-md:w-full">
-              Auchan est un groupe de distribution français fondé en 1961,
-              spécialisé dans les hypermarchés, les supermarchés, et les
-              magasins de proximité. Avec une forte présence en France et en
-              Europe, il propose une large gamme de produits alimentaires et non
-              alimentaires, souvent à des prix attractifs. Auchan se distingue
-              aussi par ses initiatives en matière de développement durable, en
-              encourageant les produits locaux et en réduisant son empreinte
-              environnementale.
-            </p>
+  <!-- footer -->
+  <footer class="bg-white w-full h-auto center flex-col border text-[1rem]">
+    <div class="container flex flex-col h-full max-sm:px-4">
+      <div class="flex justify-between gap-6 py-8 max-md:flex-col">
+        <div class="flex flex-col w-2/4 gap-4 max-sm:gap-2 max-md:w-full">
+          <div class="h-10">
+            <img src="assets/images/large-logo.png" class="h-full max-sm:py-2" alt="auchan large logo" />
           </div>
-          <div class="flex flex-col gap-4 w-1/4 max-md:w-full">
-            <strong class="text-darkViolet text-lg max-md:text-[1rem] pt-2"
-              >Liens directs</strong
-            >
-            <ul class="flex flex-col gap-1">
-              <li><a href="index.html">Accueill</a></li>
-              <li><a href="pages/catalogue.html">Catalogue</a></li>
-              <li><a href="pages/promotion.html">Promotion</a></li>
-              <li><a href="pages/contact.html">Contactez-nous</a></li>
-              <li><a href="index.html">Profile</a></li>
-            </ul>
-          </div>
-          <div class="flex flex-col gap-4 w-1/4 max-md:w-full">
-            <strong class="text-darkViolet text-lg max-md:text-[1rem] pt-2"
-              >Nous Suivre</strong
-            >
-            <!-- social media links -->
-            <ul class="flex flex-col gap-1 max-md:hidden">
-              <li>
-                <a target="_blank" href="https://www.facebook.com/auchan"
-                  >Facebook</a
-                >
-              </li>
-              <li>
-                <a
-                  target="_blank"
-                  href="https://www.instagram.com/auchan_france/"
-                  >Instagram</a
-                >
-              </li>
-              <li>
-                <a target="_blank" href="https://twitter.com/AUCHAN_France"
-                  >Twitter</a
-                >
-              </li>
-              <li>
-                <a
-                  target="_blank"
-                  href="https://www.youtube.com/user/AuchanFrance"
-                  >Youtube</a
-                >
-              </li>
-              <li>
-                <a target="_blank" href="https://www.tiktok.com/@auchan_fr/"
-                  >TikTok</a
-                >
-              </li>
-              <li>
-                <a
-                  target="_blank"
-                  href="https://www.pinterest.fr/auchanfrance/_saved/"
-                  >Pinterest</a
-                >
-              </li>
-            </ul>
+          <p class="w-5/6 max-md:w-full">
+            Auchan est un groupe de distribution français fondé en 1961,
+            spécialisé dans les hypermarchés, les supermarchés, et les
+            magasins de proximité. Avec une forte présence en France et en
+            Europe, il propose une large gamme de produits alimentaires et non
+            alimentaires, souvent à des prix attractifs. Auchan se distingue
+            aussi par ses initiatives en matière de développement durable, en
+            encourageant les produits locaux et en réduisant son empreinte
+            environnementale.
+          </p>
+        </div>
+        <div class="flex flex-col w-1/4 gap-4 max-md:w-full">
+          <strong class="text-darkViolet text-lg max-md:text-[1rem] pt-2">Liens directs</strong>
+          <ul class="flex flex-col gap-1">
+            <li><a href="index.html">Accueill</a></li>
+            <li><a href="pages/catalogue.html">Catalogue</a></li>
+            <li><a href="pages/promotion.html">Promotion</a></li>
+            <li><a href="pages/contact.html">Contactez-nous</a></li>
+            <li><a href="index.html">Profile</a></li>
+          </ul>
+        </div>
+        <div class="flex flex-col w-1/4 gap-4 max-md:w-full">
+          <strong class="text-darkViolet text-lg max-md:text-[1rem] pt-2">Nous Suivre</strong>
+          <!-- social media links -->
+          <ul class="flex flex-col gap-1 max-md:hidden">
+            <li>
+              <a target="_blank" href="https://www.facebook.com/auchan">Facebook</a>
+            </li>
+            <li>
+              <a target="_blank" href="https://www.instagram.com/auchan_france/">Instagram</a>
+            </li>
+            <li>
+              <a target="_blank" href="https://twitter.com/AUCHAN_France">Twitter</a>
+            </li>
+            <li>
+              <a target="_blank" href="https://www.youtube.com/user/AuchanFrance">Youtube</a>
+            </li>
+            <li>
+              <a target="_blank" href="https://www.tiktok.com/@auchan_fr/">TikTok</a>
+            </li>
+            <li>
+              <a target="_blank" href="https://www.pinterest.fr/auchanfrance/_saved/">Pinterest</a>
+            </li>
+          </ul>
 
-            <!-- social media icons for mobile device -->
-            <ul class="hidden max-md:flex gap-4 h-6">
-              <li>
-                <a
-                  target="_blank"
-                  href="https://www.facebook.com/auchan"
-                  class="h-full"
-                  ><img
-                    class="h-full"
-                    src="assets/images/icons/facebook.svg"
-                    alt=""
-                /></a>
-              </li>
-              <li>
-                <a
-                  target="_blank"
-                  href="https://www.instagram.com/auchan_france/"
-                  class="h-full"
-                  ><img
-                    class="h-full"
-                    src="assets/images/icons/instagram.svg"
-                    alt=""
-                /></a>
-              </li>
-              <li>
-                <a
-                  target="_blank"
-                  href="https://twitter.com/AUCHAN_France"
-                  class="h-full"
-                  ><img
-                    class="h-full"
-                    src="assets/images/icons/twitter.svg"
-                    alt=""
-                /></a>
-              </li>
-              <li>
-                <a
-                  target="_blank"
-                  href="https://www.youtube.com/user/AuchanFrance"
-                  class="h-full"
-                  ><img
-                    class="h-full"
-                    src="assets/images/icons/youtube.svg"
-                    alt=""
-                /></a>
-              </li>
-              <li>
-                <a
-                  target="_blank"
-                  href="https://www.tiktok.com/@auchan_fr/"
-                  class="h-full"
-                  ><img
-                    class="h-full"
-                    src="assets/images/icons/tiktok.svg"
-                    alt=""
-                /></a>
-              </li>
-              <li>
-                <a
-                  target="_blank"
-                  href="https://www.pinterest.fr/auchanfrance/_saved/"
-                  class="h-full"
-                  ><img
-                    class="h-full"
-                    src="assets/images/icons/pinterest.svg"
-                    alt=""
-                /></a>
-              </li>
-            </ul>
-          </div>
+          <!-- social media icons for mobile device -->
+          <ul class="hidden h-6 gap-4 max-md:flex">
+            <li>
+              <a target="_blank" href="https://www.facebook.com/auchan" class="h-full"><img class="h-full"
+                  src="assets/images/icons/facebook.svg" alt="" /></a>
+            </li>
+            <li>
+              <a target="_blank" href="https://www.instagram.com/auchan_france/" class="h-full"><img class="h-full"
+                  src="assets/images/icons/instagram.svg" alt="" /></a>
+            </li>
+            <li>
+              <a target="_blank" href="https://twitter.com/AUCHAN_France" class="h-full"><img class="h-full"
+                  src="assets/images/icons/twitter.svg" alt="" /></a>
+            </li>
+            <li>
+              <a target="_blank" href="https://www.youtube.com/user/AuchanFrance" class="h-full"><img class="h-full"
+                  src="assets/images/icons/youtube.svg" alt="" /></a>
+            </li>
+            <li>
+              <a target="_blank" href="https://www.tiktok.com/@auchan_fr/" class="h-full"><img class="h-full"
+                  src="assets/images/icons/tiktok.svg" alt="" /></a>
+            </li>
+            <li>
+              <a target="_blank" href="https://www.pinterest.fr/auchanfrance/_saved/" class="h-full"><img class="h-full"
+                  src="assets/images/icons/pinterest.svg" alt="" /></a>
+            </li>
+          </ul>
         </div>
       </div>
-      <div class="bg-darkViolet h-auto py-4 w-full center">
-        <p class="text-white">Auchan 2024 © Tous droits réservés</p>
-      </div>
-    </footer>
-  </body>
+    </div>
+    <div class="w-full h-auto py-4 bg-darkViolet center">
+      <p class="text-white">Auchan 2024 © Tous droits réservés</p>
+    </div>
+  </footer>
+</body>
+
 </html>
