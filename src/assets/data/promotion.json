@@ -1,0 +1,32 @@
+{
+    "promotions": [
+        {
+            "id": 1,
+            "img": "../assets/images/camera.png",
+            "discount": "12%",
+            "category": "Tech",
+            "description": "A high-quality camera for capturing stunning photographs and videos."
+        },
+        {
+            "id": 2,
+            "img": "../assets/images/promotion/cup.png",
+            "discount": "12%",
+            "category": "Tech",
+            "description": "A stylish cup designed for everyday use and special occasions."
+        },
+        {
+            "id": 3,
+            "img": "../assets/images/promotion/t-chert.png",
+            "discount": "12%",
+            "category": "Tech",
+            "description": "A versatile and durable tableware set for all your meal needs."
+        },
+        {
+            "id": 4,
+            "img": "../assets/images/promotion/watch.png",
+            "discount": "12%",
+            "category": "Tech",
+            "description": "A sleek and accurate smartwatch for tracking your time and staying connected."
+        }
+    ]
+}

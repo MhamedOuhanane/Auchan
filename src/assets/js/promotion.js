@@ -43,4 +43,14 @@ block.addEventListener("click", () => {
     setTimeout(() => {
         list_cards.style.display = "none";
     }, 1000);
-})
+});
+
+// Consomation de API avec AXIOX
+
+let Products_Promo = [];
+
+axios.get("http://localhost:3000/promotions").then((res) => {
+    Products_Promo.push(...res.data)
+});
+
+console.table(Products_Promo);
