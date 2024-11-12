@@ -5,31 +5,240 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
     <link rel="stylesheet" href="../assets/css/catalogue.css">
+    <link rel="stylesheet" href="../assets/css/home.css">
     <link rel="stylesheet" href="../assets/css/input.css">
     <link rel="stylesheet" href="../assets/css/output.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="shortcut icon"
+      href="../assets/images/favicons/favicon.ico"
+      type="image/x-icon"
+    />
+    <title>Auchan magasin</title>
 </head>
-<body class="font-Comfortaa">
-    <div class="bg-gradient-to-r from-darkViolet2 to-lightViolet2 py-6">
-        <span class="text-2xl ms-28 font-bold ">Catalogue</span>
-    </div>
-    <div class="container w-4/5 mx-auto">
-        <div class=" py-2 flex content-center flex-wrap">
-            <div class="border-2 rounded-[20px] w-1/5 mb-4 me-8 text-center text-lg active">Tous</div>
-            <div class="border-2 rounded-[20px] w-1/5 mb-4 me-8 text-center text-lg">Tech</div>
-            <div class="border-2 rounded-[20px] w-1/5 mb-4 me-8 text-center text-lg">Cuisine</div>
-            <div class="border-2 rounded-[20px] w-1/5 mb-4 me-8 text-center text-lg">Boissons</div>
-            <div class="border-2 rounded-[20px] w-1/5 me-8 text-center text-lg">Nettoyage</div>
-            <div class="border-2 rounded-[20px] w-1/5 me-8 text-center text-lg">Vêtements</div>
+<body>
+    <header class="bg-white border-b h-10 center text-[1rem] select-none">
+        <div class="container h-full flex justify-between">
+          <div class="flex gap-2 h-full">
+            <div class="flex items-center">
+              <img
+                class="h-full p-2"
+                src="../assets/images/icons/phone.svg"
+                title="+212-654-504356"
+                alt="phone-icon"
+              />
+              <p class="max-sm:hidden">+212-654-504356</p>
+            </div>
+            <div class="flex items-center">
+              <img
+                class="h-full p-2"
+                src="../assets/images/icons/email.svg"
+                title="auchan-maroc@contact.com"
+                alt="phone-icon"
+              />
+              <p class="max-sm:hidden">auchan-maroc@contact.com</p>
+            </div>
+          </div>
+          <div class="flex gap-2 h-full">
+            <div class="flex items-center">
+              <a href="../pages/panier.html" class="h-full">
+                <img
+                  class="h-full p-2"
+                  src="../assets/images/icons/cart.svg"
+                  title="Panier"
+                  alt="phone-icon"
+                />
+              </a>
+              <p class="max-sm:hidden">
+                <a href="../pages/panier.html">Panier</a>
+              </p>
+            </div>
+            <div class="flex items-center">
+              <img
+                class="h-full p-2"
+                src="../assets/images/icons/user.svg"
+                title="Compte"
+                alt="phone-icon"
+              />
+              <p class="max-sm:hidden">Compte</p>
+            </div>
+          </div>
         </div>
-        <div class="container flex justify-end gap-5 w-full">
-            <div>
+    </header>
+    <nav class="bg-white shadow-md h-14 center select-none">
+        <div class="container flex items-center justify-between h-full">
+          <a href="../index.html" class="h-full pb-1">
+            <img
+              src="../assets/images/large-logo.png"
+              class="h-full max-sm:p-2"
+              alt="auchan large logo"
+            />
+            <!-- <img
+              src="assets/images/auchan-mobile-logo.png"
+              class="h-full hidden max-sm:block"
+              alt="auchan small logo"
+            /> -->
+          </a>
+  
+          <ul class="menu" id="menu">
+            <li class="">
+              <a href="../index.html">Acceuill</a>
+            </li>
+            <li class="active">
+              <a href="catalogue.html">Catalogue</a>
+            </li>
+            <li class="">
+              <a href="../pages/promotion.html">Promotion</a>
+            </li>
+            <li class="">
+              <a href="../pages/contact.html">Contactez-nous</a>
+            </li>
+          </ul>
+  
+          <img
+            id="menu-icon"
+            src="../assets/images/icons/burger-menu.svg"
+            class="z-10 h-full p-4 hidden max-md:block"
+            alt="burger menu icon"
+          />
+        </div>
+    </nav>
+    <div class="bg-gradient-to-r from-darkViolet2 to-lightViolet2 h-28 text-center flex items-center justify-center">
+        <span class="text-2xl font-bold">Catalogue</span>
+    </div>
+    <section class="container mx-auto">
+        <div class="flex flex-wrap gap-4 p-4">
+            <button class="px-16 py-2 rounded-[20px] border-2 active10">
+                Tous
+            </button>
+            <button class="px-16 py-2 rounded-full border-2 border-gray-200 text-gray-700">
+                Tech
+            </button>
+            <button class="px-16 py-2 rounded-full border-2 border-gray-200 text-gray-700">
+                Cuisine
+            </button>
+            <button class="px-16 py-2 rounded-full border-2 border-gray-200 text-gray-700">
+                Boissons
+            </button>
+            <button class="px-16 py-2 rounded-full border-2 border-gray-200 text-gray-700">
+                Nettoyage
+            </button>
+            <button class="px-16 py-2 rounded-full border-2 border-gray-200 text-gray-700">
+                Vêtements
+            </button>
+        </div>
+        <div class="flex justify-end gap-5 w-[100%]">
+            <button >
                 <i class="fa-solid fa-bars text-[2.5rem] px-4 py-2 border-2"></i>
-            </div>
-            <div>
-                <i class="fa-solid fa-border-all text-[2.5rem] px-4 py-2 border-2 active2"></i>
-            </div>
+            </button>
+            <button>
+                <i class="fa-solid fa-border-all text-[2.5rem] px-4 py-2 border-2 active11"></i>
+            </button>
         </div>
-    </div>
+        <div class="flex flex-col items-center gap-10 mt-10 ">
+          <div class="bg-white shadow-md rounded-lg p-4 w-full max-w-2xl flex items-center space-x-4">
+            <div class="w-1/4 flex justify-center">
+              <img src="../assets/images/milk.png" alt="Fat Free Milk" class="w-28 h-28 object-contain">
+            </div>
+            <div class="w-3/4">
+              <div class="flex justify-between items-center">
+                <h2 class="text-lg font-bold">Fat Free Milk</h2>
+                <div class="flex items-center space-x-1">
+                    <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+                    <span class="text-[#959595] text-sm font-medium">4.5</span>
+                    <span class="text-[#E4E4E4] text-sm">(12)</span>
+                </div>         
+              </div>
+              <p class="text-sm text-[#959595] mt-1">
+                  Lait naturel lait naturel lait naturel lait naturel
+              </p>
+              <div class="flex justify-between items-center mt-4">
+                <span class="text-xl font-bold text-darkViolet">12.54$</span>
+                <button class="bg-darkViolet text-white px-4 py-2 rounded-md rounded-[20px]">
+                Ajoutez 
+                <i class="fa-solid fa-cart-shopping"></i>  
+                </button>
+              </div>       
+            </div>      
+          </div>
+          <div class="bg-white shadow-md rounded-lg p-4 w-full max-w-2xl flex items-center space-x-4">
+            <div class="w-1/4 flex justify-center">
+              <img src="../assets/images/milk.png" alt="Fat Free Milk" class="w-28 h-28 object-contain">
+            </div>
+            <div class="w-3/4">
+              <div class="flex justify-between items-center">
+                <h2 class="text-lg font-bold">Fat Free Milk</h2>
+                <div class="flex items-center space-x-1">
+                    <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+                    <span class="text-[#959595] text-sm font-medium">4.5</span>
+                    <span class="text-[#E4E4E4] text-sm">(12)</span>
+                </div>         
+              </div>
+              <p class="text-sm text-[#959595] mt-1">
+                  Lait naturel lait naturel lait naturel lait naturel
+              </p>
+              <div class="flex justify-between items-center mt-4">
+                <span class="text-xl font-bold text-darkViolet">12.54$</span>
+                <button class="bg-darkViolet text-white px-4 py-2 rounded-md rounded-[20px]">
+                Ajoutez 
+                <i class="fa-solid fa-cart-shopping"></i>  
+                </button>
+              </div>       
+            </div>      
+          </div>
+          <div class="bg-white shadow-md rounded-lg p-4 w-full max-w-2xl flex items-center space-x-4">
+            <div class="w-1/4 flex justify-center">
+              <img src="../assets/images/milk.png" alt="Fat Free Milk" class="w-28 h-28 object-contain">
+            </div>
+            <div class="w-3/4">
+              <div class="flex justify-between items-center">
+                <h2 class="text-lg font-bold">Fat Free Milk</h2>
+                <div class="flex items-center space-x-1">
+                    <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+                    <span class="text-[#959595] text-sm font-medium">4.5</span>
+                    <span class="text-[#E4E4E4] text-sm">(12)</span>
+                </div>         
+              </div>
+              <p class="text-sm text-[#959595] mt-1">
+                  Lait naturel lait naturel lait naturel lait naturel
+              </p>
+              <div class="flex justify-between items-center mt-4">
+                <span class="text-xl font-bold text-darkViolet">12.54$</span>
+                <button class="bg-darkViolet text-white px-4 py-2 rounded-md rounded-[20px]">
+                Ajoutez 
+                <i class="fa-solid fa-cart-shopping"></i>  
+                </button>
+              </div>       
+            </div>      
+          </div>
+          <div class="bg-white shadow-md rounded-lg p-4 w-full max-w-2xl flex items-center space-x-4">
+            <div class="w-1/4 flex justify-center">
+              <img src="../assets/images/milk.png" alt="Fat Free Milk" class="w-28 h-28 object-contain">
+            </div>
+            <div class="w-3/4">
+              <div class="flex justify-between items-center">
+                <h2 class="text-lg font-bold">Fat Free Milk</h2>
+                <div class="flex items-center space-x-1">
+                    <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
+                    <span class="text-[#959595] text-sm font-medium">4.5</span>
+                    <span class="text-[#E4E4E4] text-sm">(12)</span>
+                </div>         
+              </div>
+              <p class="text-sm text-[#959595] mt-1">
+                  Lait naturel lait naturel lait naturel lait naturel
+              </p>
+              <div class="flex justify-between items-center mt-4">
+                <span class="text-xl font-bold text-darkViolet">12.54$</span>
+                <button class="bg-darkViolet text-white px-4 py-2 rounded-md rounded-[20px]">
+                Ajoutez 
+                <i class="fa-solid fa-cart-shopping"></i>  
+                </button>
+              </div>       
+            </div>      
+          </div>
+        </div>  
+        
+    </section>
+
 </body>
 </html>

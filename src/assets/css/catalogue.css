@@ -1,9 +1,13 @@
-.active{
+.active10{
     border-color: #6a1e78;
     color: #6a1e78;
 }
-.active2{
+.active11{
     background-color: #EDBEF5;
     color: white;
     border: none;
+}
+.active12{
+    background-color: #6a1e78;
+    color: white !important;
 }

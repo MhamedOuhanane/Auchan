@@ -14,6 +14,8 @@ module.exports = {
         lightViolet: "#FCEAFF",
         darkViolet: "#6a1e78",
         blackColor: "#292929",
+        darkViolet2: "#EDBEF5",
+        lightViolet2: "#FFE5FA",
       },
       fontFamily: {
         Comfortaa: ['Comfortaa', 'Sans'],
@@ -22,4 +24,3 @@ module.exports = {
   },
   plugins: [],
 }
-
