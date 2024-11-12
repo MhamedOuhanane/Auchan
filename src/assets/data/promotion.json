@@ -2,7 +2,7 @@
     "promotions": [
         {
             "id": 1,
-            "img": "../assets/images/camera.png",
+            "img": "../assets/images/promotion/camera.png",
             "discount": "12%",
             "category": "Tech",
             "description": "A high-quality camera for capturing stunning photographs and videos."
