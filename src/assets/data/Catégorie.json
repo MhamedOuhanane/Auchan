@@ -6,7 +6,7 @@
       "description": "Casserole robuste en acier inoxydable avec fond épais pour une diffusion uniforme de la chaleur.",
       "taille": "20 cm",
       "prix": 29.99,
-      "image": "https://example.com/casserole_1.jpg"
+      "image": "../images/categories/cuisine/casserol.jpg"
     },
     {
       "id": 2,
@@ -14,7 +14,7 @@
       "description": "Mixeur plongeant puissant avec plusieurs vitesses pour mélanger, mixer et hacher vos ingrédients.",
       "taille": "Mixeur",
       "prix": 49.99,
-      "image": "https://example.com/mixeur_plongeant.jpg"
+      "image": "../images/categories/cuisine/Mixeur plongeant.jpg"
     },
     {
       "id": 3,
@@ -22,7 +22,7 @@
       "description": "Tasse de grande qualité pour les amateurs de café ou de thé.",
       "taille": "300 ml",
       "prix": 8.99,
-      "image": "https://example.com/tasse_ceramique.jpg"
+      "image": "../images/categories/cuisine/Tasse en céramique.jpg"
     },
     {
       "id": 4,
@@ -30,7 +30,7 @@
       "description": "Poêle en fonte pré-assaisonnée pour une cuisson uniforme et une grande durabilité.",
       "taille": "24 cm",
       "prix": 45.50,
-      "image": "https://example.com/poele_fonte.jpg"
+      "image": "../images/categories/cuisine/Poêle en fonte.jpg"
     },
     {
       "id": 5,
@@ -38,7 +38,7 @@
       "description": "Planche à découper en bambou écologique, résistant et facile à nettoyer.",
       "taille": "30 x 20 cm",
       "prix": 19.99,
-      "image": "https://example.com/planche_bambou.jpg"
+      "image": "../images/categories/cuisine/Planche à découper en bambou.jpg"
     },
     {
       "id": 6,
@@ -46,7 +46,7 @@
       "description": "Set de 6 couteaux de cuisine avec poignées ergonomiques et lames en acier inoxydable.",
       "taille": "6 pièces",
       "prix": 69.99,
-      "image": "https://example.com/ensemble_couteaux.jpg"
+      "image": "../images/categories/cuisine/Ensemble de couteaux de cuisine.webp"
     },
     {
       "id": 7,
@@ -54,7 +54,7 @@
       "description": "Grille-pain avec 4 fentes et réglage de brunissage pour un toast parfait à chaque fois.",
       "taille": "4 tranches",
       "prix": 39.99,
-      "image": "https://example.com/grillepain_4.jpg"
+      "image": "../images/categories/cuisine/Grille-pain 4 tranches.jpg"
     },
     {
       "id": 8,
@@ -62,7 +62,7 @@
       "description": "Bouilloire électrique avec contrôle de température et arrêt automatique.",
       "taille": "1,7 L",
       "prix": 24.99,
-      "image": "https://example.com/bouilloire_electrique.jpg"
+      "image": "../images/categories/cuisine/Bouilloire électrique.jpg"
     },
     {
       "id": 9,
@@ -70,7 +70,7 @@
       "description": "Moulin à poivre en bois avec mécanisme en céramique réglable.",
       "taille": "20 cm",
       "prix": 14.99,
-      "image": "https://example.com/moulin_poivre.jpg"
+      "image": "../images/categories/cuisine/Moulin à poivre.jpg"
     },
     {
       "id": 10,
@@ -78,7 +78,7 @@
       "description": "Cafetière à piston en verre borosilicaté pour une infusion parfaite de café.",
       "taille": "1 L",
       "prix": 18.50,
-      "image": "https://example.com/cafetiere_piston.jpg"
+      "image": "../images/categories/cuisine/Cafetière à piston.jpg"
     },
     {
       "id": 11,
@@ -86,7 +86,7 @@
       "description": "Thermomètre numérique pour mesurer la température des viandes et des aliments en toute précision.",
       "taille": "20 cm",
       "prix": 12.99,
-      "image": "https://example.com/thermometre_cuisine.jpg"
+      "image": "../images/categories/cuisine/Thermomètre de cuisine.jpg"
     },
     {
       "id": 12,
@@ -94,7 +94,7 @@
       "description": "Tapis en silicone anti-adhésif pour une cuisson sans huile et facile à nettoyer.",
       "taille": "40 x 30 cm",
       "prix": 9.99,
-      "image": "https://example.com/tapis_silicone.jpg"
+      "image": "../images/categories/cuisine/Tapis de cuisson en silicone.jpg"
     }
   ],
   "vêtements": [
