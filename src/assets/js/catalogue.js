@@ -7,7 +7,7 @@ var listContainer = document.getElementById('list-container');
 
 
 gridBtn.addEventListener('click', function(){
-    gridContainer.style.display = 'flex';
+    gridContainer.style.display = 'grid';
     listContainer.style.display = 'none';
     gridBtn.classList.add = 'active 11';
     listBtn.classList.remove = 'active 11';
