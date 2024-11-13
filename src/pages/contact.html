@@ -82,19 +82,42 @@
     <section class="container mx-auto mt-10 px-6">
         <div class="flex flex-col lg:flex-row lg:justify-center space-y-6 lg:space-y-0 lg:space-x-8">
             <!-- Formulaire -->
-             <div class="bg-white shadow-lg rounded-lg p-6 lg:w-1/2">
+            <div class="bg-white shadow-lg rounded-lg p-6 lg:w-1/2">
                 <h2 class="text-xl font-bold mb-4">Envoyez-nous un message</h2>
                 <form id="contactForm" class="space-y-4">
-                    <div>
-                        <label for="nom" class="block text-gray-700">Nom</label>
-                        <input type="text" id="nom" class="w-full border border-gray-300 rounded-lg p-2 bg-gray-100" placeholder="Votre Nom">
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <label for="nom" class="block text-gray-700">Nom</label>
+                            <input type="text" id="nom" class="w-full border border-gray-300 rounded-lg p-2 bg-gray-100"
+                                placeholder="Votre Nom">
+                        </div>
+                        <div>
+                            <label for="prenom" class="block text-gray-700">Prénom</label>
+                            <input type="text" id="prenom"
+                                class="w-full border border-gray-300 rounded-lg p-2 bg-gray-100"
+                                placeholder="Votre Prénom">
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <label for="telephone" class="block text-gray-700">Numéro de téléphone</label>
+                            <input type="text" id="telephone"
+                                class="w-full border border-gray-300 rounded-lg p-2 bg-gray-100"
+                                placeholder="Votre Numéro de Téléphone">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-gray-700">E-mail</label>
+                            <input type="email" id="email"
+                                class="w-full border border-gray-300 rounded-lg p-2 bg-gray-100"
+                                placeholder="Votre E-mail">
+                        </div>
                     </div>
                     <div>
-                        <label for="prenom" class="block text-gray-700">Prénom</label>
-                        <input type="text" id="prenom" class="w-full border border-gray-300 rounded-lg p-2 bg-gray-100" placeholder="Votre Prénom">
+                        <label></label>
+                        <input type="text">
                     </div>
                 </form>
-             </div>
+            </div>
         </div>
 
     </section>
@@ -202,7 +225,7 @@
                         </li>
                         <li>
                             <a target="_blank" href="https://www.pinterest.fr/auchanfrance/_saved/" class="h-full">
-                                <img class="h-full" src="../assets/images/icons/pinterest.svg" />
+                                <img class="h-full" src="../assets/images/icons/pinterest.svg" alt="" />
                             </a>
                         </li>
                     </ul>
