@@ -1,7 +1,20 @@
-let CarouselPanier = document.querySelector(".carouselpanier ");
-let buttonleft = document.querySelector("#buttonleft");
-let buttonright = document.querySelector("#buttonright");
+let CarouselPanier = document.querySelector('#carouselpanier');
+let buttonleft = document.querySelector('#buttonleft');
+let buttonright = document.querySelector('#buttonright');
+console.log(buttonleft,buttonright)
 
-buttonleft.addEventListener('click' , () =>{
-    CarouselPanier.className.add("")
-});
+console.log(CarouselPanier);
+
+CarouselPanier.addEventListener("wheel" , (evt)=>{
+    evt.preventDefault();
+    CarouselPanier.scrollLeft += evt.deltaY;
+})
+
+buttonleft.onclick = ()=>{
+    console.log(CarouselPanier.scrollLeft);
+    CarouselPanier.scrollLeft += 20;
+};
+buttonright.onclick = ()=>{
+    console.log(CarouselPanier.scrollLeft);
+    CarouselPanier.scrollLeft -= 20;
+};
