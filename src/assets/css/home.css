@@ -35,3 +35,8 @@
         overflow-y: hidden;
     }
 }
+/* hide the scroll bar in categories and partenaires sections */
+#categories-images::-webkit-scrollbar,
+#sponsors-images::-webkit-scrollbar {
+    display: none;
+}
