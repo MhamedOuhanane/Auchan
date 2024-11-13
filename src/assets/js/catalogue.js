@@ -20,14 +20,14 @@ var listContainer = document.getElementById('list-container');
 
 
 gridBtn.addEventListener('click', function(){
-    gridContainer.style.display = 'grid';
+    gridContainer.style.display = 'block';
     listContainer.style.display = 'none';
     gridBtn.classList.add('active11');
     listBtn.classList.remove('active11');
 })
 listBtn.addEventListener('click', function(){
     gridContainer.style.display = 'none';
-    listContainer.style.display = 'flex';
+    listContainer.style.display = 'block';
     gridBtn.classList.remove('active11');
     listBtn.classList.add('active11');
 })
