@@ -150,13 +150,13 @@
                             <label for="nom" class="block text-black max-sm:text-[.9rem]">Nom</label>
                             <input type="text" id="nom"
                                 class="w-full border border-gray-300 rounded-lg p-2 bg-gray-100 max-sm:text-[.8rem]"
-                                placeholder="Votre Nom">
+                                placeholder="Votre Nom" required>
                         </div>
                         <div>
                             <label for="prenom" class="block text-black max-sm:text-[.9rem]">Prénom</label>
                             <input type="text" id="prenom"
                                 class="w-full border border-gray-300 rounded-lg p-2 bg-gray-100 max-sm:text-[.8rem]"
-                                placeholder="Votre Prénom">
+                                placeholder="Votre Prénom" required>
                         </div>
                     </div>
                     <div class="grid grid-cols-2 gap-4">
@@ -164,26 +164,26 @@
                             <label for="telephone" class="block text-black max-sm:text-[.9rem]">Téléphone</label>
                             <input type="text" id="telephone"
                                 class="w-full border border-gray-300 rounded-lg p-2 bg-gray-100 max-sm:text-[.8rem]"
-                                placeholder="Votre Numéro de Téléphone">
+                                placeholder="Votre Numéro de Téléphone" required>
                         </div>
                         <div>
                             <label for="email" class="block text-black max-sm:text-[.9rem]">E-mail</label>
                             <input type="email" id="email"
                                 class="w-full border border-gray-300 rounded-lg p-2 bg-gray-100 max-sm:text-[.8rem]"
-                                placeholder="Votre E-mail">
+                                placeholder="Votre E-mail" required>
                         </div>
                     </div>
                     <div>
                         <label for="message" class="block text-black max-sm:text-[.9rem]">Message</label>
                         <textarea id="message"
                             class="w-full border border-gray-300 rounded-lg p-2 bg-gray-100 h-24 max-sm:text-[.8rem]"
-                            placeholder="Votre Message ..."></textarea>
+                            placeholder="Votre Message ..." required></textarea>
                     </div>
                     <div class="flex space-x-4">
                         <button type="submit"
-                            class="bg-darkViolet text-white font-bold rounded-lg px-4 py-2 max-sm:text-[.9rem]">Envoyer</button>
+                            class="bg-darkViolet text-white font-bold rounded-lg px-4 py-2 max-sm:text-[.9rem] hover:bg-lightViolet hover:text-darkViolet">Envoyer</button>
                         <button type="button" id="autoFill"
-                            class="bg-darkViolet text-white font-bold rounded-lg px-4 py-2 max-sm:text-[.9rem]">Remplir
+                            class="bg-darkViolet text-white font-bold rounded-lg px-4 py-2 max-sm:text-[.9rem] hover:bg-lightViolet hover:text-darkViolet">Remplir
                             auto</button>
                     </div>
                 </form>
@@ -198,8 +198,10 @@
                 <p class="flex items-center text-black mb-4 max-sm:text-[.9rem]"><span class="mr-2">📍</span> Auchan
                     France</p>
                 <div class="flex space-x-4 mt-4">
-                    <button class="bg-darkViolet text-white rounded-lg px-4 py-2 max-sm:text-[.9rem]">Support</button>
-                    <button class="bg-darkViolet text-white rounded-lg px-4 py-2 max-sm:text-[.9rem]">Direction</button>
+                    <button
+                        class="bg-darkViolet text-white rounded-lg px-4 py-2 max-sm:text-[.9rem] hover:bg-lightViolet hover:text-darkViolet">Support</button>
+                    <button
+                        class="bg-darkViolet text-white rounded-lg px-4 py-2 max-sm:text-[.9rem] hover:bg-lightViolet hover:text-darkViolet">Direction</button>
                 </div>
             </div>
         </div>
@@ -242,13 +244,6 @@
             </div>
         </div>
     </section>
-
-
-
-
-
-
-
 
     <!-- Footer -->
     <footer class="bg-white w-full h-auto center flex-col border text-[1rem]">
@@ -344,6 +339,6 @@
         </div>
     </footer>
 
+    <script src="../assets/js/contact.js"></script>
 </body>
-
 </html>
