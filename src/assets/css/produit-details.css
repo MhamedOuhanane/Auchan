@@ -1,0 +1,14 @@
+.sizes input[type="radio"] {
+    display: none;
+}
+.sizes label {
+    background-color: #e5e7eb;
+    /* hover color: #FCEAFF */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .6rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+}   
