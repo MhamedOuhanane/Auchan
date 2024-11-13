@@ -121,41 +121,47 @@
     </div>
     
     <!-- Liste des produit du panier -->
-    <div class="bg-white w-[100%] min-h-[20vh] border-[1px] border-solid border-black rounded-lg flex flex-col items-center justify-evenly">
-        <div class="w-[100%] h-[15%] flex sm:justify-center md:justify-between px-[2%]">
-            <img class="w-[10%]" src="../assets/images/icône-panier.png" alt="logo de panier">
-
+    <div class=" w-[100%] min-h-[20vh] border-[1px] border-solid border-black rounded-lg">
+        <div class="bg-white w-[100%] h-[15%] sm:flex md:grid md:grid-cols-8 items-center sm:justify-center p-[2%] ">
+            <div class="col-start-1 col-end-7 grid grid-cols-12">
+                <img class="w-[60%] col-start-1 col-end-2" src="../assets/images/icône-panier.png" alt="logo de panier">
+                <h2 class="md:text-2xl lg:text-3xl col-start-2 col-end-3">Panier</h2>
+            </div>
+            <h3 class="md:text-2xl lg:text-3xl col-start-8 col-end-9"><span>666.</span>99 $</h3>
         </div>
         <div></div>
     </div>
 
-    <!-- devision des Méthodes de paiement -->
-    <div class="bg-white w-[100%] h-auto border-[1px] border-solid border-black rounded-lg p-[2vw] gap-[2vw]">
-        <h2 class="md:text-2xl lg:text-3xl">Nous acceptons</h2>
-        <div class="w-[65vw] h-[80%] m-[2%] gap-[2%] flex flex-wrap">
-            <img class="w-[20%] md:w-[8rem] shadow-2xl hover:scale-[95%]" src="../assets/images/payments/CASH.webp" alt="paiement-CASH">
-            <img class="w-[20%] md:w-[8rem] shadow-2xl hover:scale-[95%]" src="../assets/images/payments/Visa.webp" alt="paiement-VISA">
-            <img class="w-[20%] md:w-[8rem] shadow-2xl hover:scale-[95%]" src="../assets/images/payments/mastercard.webp" alt="paiement-mastercard">
-            <img class="w-[20%] md:w-[8rem] shadow-2xl hover:scale-[95%]" src="../assets/images/payments/meastro.webp" alt="paiement-maestro">
-            <img class="w-[20%] md:w-[8rem] shadow-2xl hover:scale-[95%]" src="../assets/images/payments/PayPal.webp" alt="paiement-PayPal">
-            <img class="w-[20%] md:w-[8rem] shadow-2xl hover:scale-[95%]" src="../assets/images/payments/tabby.webp" alt="paiement-tabby">
-            <img class="w-[20%] md:w-[8rem] shadow-2xl hover:scale-[95%]" src="../assets/images/payments/Play.webp" alt="paiement-Play">
-            <img class="w-[20%] md:w-[8rem] shadow-2xl hover:scale-[95%]" src="../assets/images/payments/tamara.webp" alt="paiement-tamara">
-            <img class="w-[20%] md:w-[8rem] shadow-2xl hover:scale-[95%]" src="../assets/images/payments/JSB.webp" alt="paiement-tamara">
+    <div class="flex flex-col gap-[2vw] mb-[2vw]">
+        
+        <!-- devision des Méthodes de paiement -->
+        <div class="bg-white h-auto border-[1px] border-solid border-black rounded-lg p-[2vw] gap-[2vw]">
+            <h2 class="md:text-2xl lg:text-3xl">Nous acceptons</h2>
+            <div class="h-[80%] m-[2%] gap-[2%] flex flex-wrap">
+                <img class="w-[25%] md:w-[8rem] shadow-2xl hover:scale-[95%]" src="../assets/images/payments/CASH.webp" alt="paiement-CASH">
+                <img class="w-[25%] md:w-[8rem] shadow-2xl hover:scale-[95%]" src="../assets/images/payments/Visa.webp" alt="paiement-VISA">
+                <img class="w-[25%] md:w-[8rem] shadow-2xl hover:scale-[95%]" src="../assets/images/payments/mastercard.webp" alt="paiement-mastercard">
+                <img class="w-[25%] md:w-[8rem] shadow-2xl hover:scale-[95%]" src="../assets/images/payments/meastro.webp" alt="paiement-maestro">
+                <img class="w-[25%] md:w-[8rem] shadow-2xl hover:scale-[95%]" src="../assets/images/payments/PayPal.webp" alt="paiement-PayPal">
+                <img class="w-[25%] md:w-[8rem] shadow-2xl hover:scale-[95%]" src="../assets/images/payments/tabby.webp" alt="paiement-tabby">
+                <img class="w-[25%] md:w-[8rem] shadow-2xl hover:scale-[95%]" src="../assets/images/payments/Play.webp" alt="paiement-Play">
+                <img class="w-[25%] md:w-[8rem] shadow-2xl hover:scale-[95%]" src="../assets/images/payments/tamara.webp" alt="paiement-tamara">
+                <img class="w-[25%] md:w-[8rem] shadow-2xl hover:scale-[95%]" src="../assets/images/payments/JSB.webp" alt="paiement-tamara">
+            </div>
         </div>
-    </div>
-
-    <!-- devition de description pour la page Panier  -->
-    <div class="bg-white w-[100%] min-h-[20vh] border-[1px] border-solid border-black rounded-lg flex justify-center flex-wrap gap-4 p-[3vw]">
-        <p class="text-center lg:w-[65%]">
-            Avant de passer à la caisse, prenez un moment pour vous 
-            assurer que tout est en ordre. Si vous avez des questions 
-            sur nos produits ou sur la procédure de paiement, n'hésitez 
-            pas à consulter notre section d'aide ou à 
-            <a class="text-darkViolet" href="contact.html">nous contacter</a>. 
-            Nous sommes là pour vous aider 
-            à vivre une expérience d'achat simple et agréable.
-        </p>
+    
+        <!-- devition de description pour la page Panier  -->
+        <div class="bg-white w-[100%] min-h-[20vh] border-[1px] border-solid border-black rounded-lg flex justify-center flex-wrap gap-4 p-[3vw]">
+            <p class="text-center md:w-[50%]">
+                Avant de passer à la caisse, prenez un moment pour vous 
+                assurer que tout est en ordre. Si vous avez des questions 
+                sur nos produits ou sur la procédure de paiement, n'hésitez 
+                pas à consulter notre section d'aide ou à 
+                <a class="text-darkViolet" href="contact.html">nous contacter</a>. 
+                Nous sommes là pour vous aider 
+                à vivre une expérience d'achat simple et agréable.
+            </p>
+        </div>
     </div>
 
     <!-- Ajouter la partie de "À découvrir" -->
