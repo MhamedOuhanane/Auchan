@@ -6,3 +6,5 @@ function animateButton(button) {
         button.classList.remove("animate");
     }, 500); //duree en millisecondes
 }
+
+//Remplissage auto de formulaire
