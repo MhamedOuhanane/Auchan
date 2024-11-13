@@ -17,19 +17,19 @@ const chevronRight = document.getElementById("chevron-right");
 
 mainImage.src = carouselData[0].url;
 let index = 0;
-chevronRight.onclick = function nextImage(){
+chevronRight.onclick = function nextImage() {
     index++;
-    if(index == 5) index = 0;
+    if (index == 5) index = 0;
     mainImage.src = carouselData[index].url;
 }
-chevronLeft.onclick = function previousImage(){
+chevronLeft.onclick = function previousImage() {
     index--;
-    if(index == -1) index = carouselData.length - 1;
+    if (index == -1) index = carouselData.length - 1;
     mainImage.src = carouselData[index].url;
 }
 // make images slide itself each 5s
 setInterval(() => {
     index++;
-    if(index == 5) index = 0;
+    if (index == 5) index = 0;
     mainImage.src = carouselData[index].url;
 }, 5000);

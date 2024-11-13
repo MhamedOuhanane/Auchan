@@ -1526,10 +1526,6 @@ html{
     font-size: 0.75rem;
     line-height: 1rem;
   }
-
-  .max-md\:text-\[\]{
-    color: ;
-  }
 }
 
 @media not all and (min-width: 640px){
@@ -1624,10 +1620,6 @@ html{
 
   .max-sm\:text-\[1rem\]{
     font-size: 1rem;
-  }
-
-  .max-sm\:text-\[\]{
-    color: ;
   }
 }
 
