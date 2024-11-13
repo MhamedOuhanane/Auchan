@@ -736,6 +736,10 @@ video {
   height: 100%;
 }
 
+.h-\[150px\]{
+  height: 150px;
+}
+
 .min-h-\[50vh\]{
   min-height: 50vh;
 }
@@ -814,6 +818,26 @@ video {
 
 .w-full{
   width: 100%;
+}
+
+.w-\[50px\]{
+  width: 50px;
+}
+
+.w-\[80px\]{
+  width: 80px;
+}
+
+.w-\[65px\]{
+  width: 65px;
+}
+
+.w-\[70px\]{
+  width: 70px;
+}
+
+.w-\[75px\]{
+  width: 75px;
 }
 
 .min-w-\[180px\]{
@@ -1130,6 +1154,10 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.filter{
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
 .transition{
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
@@ -1415,6 +1443,14 @@ html{
 
   .md\:w-\[50px\]{
     width: 50px;
+  }
+
+  .md\:w-\[60px\]{
+    width: 60px;
+  }
+
+  .md\:w-\[70px\]{
+    width: 70px;
   }
 
   .md\:text-2xl{

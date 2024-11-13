@@ -10,7 +10,7 @@
 
   <link rel="stylesheet" href="../assets/css/input.css" />
   <link rel="stylesheet" href="../assets/css/home.css" />
-  <script type="module" src="../assets/js/home.js" defer></script>
+  <script src="../assets/js/home.js" defer></script>
   <link rel="stylesheet" href="../assets/css/promotion.css" />
 </head>
 
@@ -86,24 +86,29 @@
 
   <!-- FILTRAGE SECTION ET BTN DE GRILLE ET LIST-->
   <section id="filtrage" class="flex items-center justify-around mt-[4rem] sm:flex-row flex-col">
-    <div id="left" class="flex flex-wrap items-center justify-center gap-4 mb-2 xl:mb-0">
-      <button class="bg-[#EDBEF5] w-[100px] h-[30px] text-sm rounded-3xl">
+    <div class="flex flex-wrap items-center justify-center gap-4 mb-2 xl:mb-0">
+      <button id="Tech" class="bg-[#fff] w-[100px] h-[30px] text-sm rounded-3xl hover:bg-[#EDBEF5] transition "
+        onclick="fetch_data('Tech')">
         Tech
       </button>
-      <button class="bg-[#fff] w-[100px] h-[30px] text-sm rounded-3xl hover:bg-[#EDBEF5] transition">
+      <button id="Cuisine" class="bg-[#fff] w-[100px] h-[30px] text-sm rounded-3xl hover:bg-[#EDBEF5] transition"
+        onclick="fetch_data('Cuisine')">
         Cuisine
       </button>
-      <button class="bg-[#fff] w-[100px] h-[30px] text-sm rounded-3xl hover:bg-[#EDBEF5] transition">
+      <button id="Boissons" class="bg-[#fff] w-[100px] h-[30px] text-sm rounded-3xl hover:bg-[#EDBEF5] transition"
+        onclick="fetch_data('Boissons')">
         Boissons
       </button>
-      <button class="bg-[#fff] w-[100px] h-[30px] text-sm rounded-3xl hover:bg-[#EDBEF5] transition">
+      <button id="Nettoyage" class="bg-[#fff] w-[100px] h-[30px] text-sm rounded-3xl hover:bg-[#EDBEF5] transition"
+        onclick="fetch_data('Nettoyage')">
         Nettoyage
       </button>
-      <button class="bg-[#fff] w-[100px] h-[30px] text-sm rounded-3xl hover:bg-[#EDBEF5] transition">
+      <button id="Vetements" class="bg-[#fff] w-[100px] h-[30px] text-sm rounded-3xl hover:bg-[#EDBEF5] transition"
+        onclick="fetch_data('Vetements')">
         Vêtements
       </button>
     </div>
-    <div id="right" class="flex items-center gap-1">
+    <div class="flex items-center gap-1">
       <div id="grille" class="transition-all cursor-pointer hover:scale-110">
         <img src="../assets/images/promotion/list.png" alt="list icon" class="w-8 h-8" />
       </div>
@@ -124,13 +129,12 @@
   <!-- LIST DES CARTES LIST  -->
 
   <section id="liste-cards" class="mb-[5rem] hidden opacity-0 mt-10">
-
   </section>
 
   <!-- Subscribe Section -->
 
   <section id="subscribe" class="flex items-center justify-evenly my-[5rem] flex-wrap gap-10 xl:flex-nowrap">
-    <div id="left">
+    <div>
       <p class="my-2 text-xl text-center">
         Lorem ipsum dolor sit amet consectetur
       </p>
@@ -139,7 +143,7 @@
         <img src="../assets/images/promotion/workplace.png" alt="workplace image" class="w-[230.37px] h-[180px]" />
       </div>
     </div>
-    <div id="right" class="text-center">
+    <div class="text-center">
       <h3 class="my-2 text-2xl text-[#6A1E78]">Subscribe</h3>
       <p class="my-2 text-xl">Lorem ipsum dolor sit amet consectetur elit.</p>
       <input type="text" placeholder="Enter your email"
