@@ -849,6 +849,14 @@ video {
   height: 100;
 }
 
+.h-1{
+  height: 0.25rem;
+}
+
+.h-\[120\%\]{
+  height: 120%;
+}
+
 .max-h-\[\]{
   max-height: ;
 }
@@ -1053,6 +1061,14 @@ video {
   max-width: 50vw;
 }
 
+.max-w-0{
+  max-width: 0px;
+}
+
+.max-w-60{
+  max-width: 15rem;
+}
+
 .cursor-pointer{
   cursor: pointer;
 }
@@ -1091,8 +1107,16 @@ video {
   flex-wrap: wrap;
 }
 
+.items-end{
+  align-items: flex-end;
+}
+
 .items-center{
   align-items: center;
+}
+
+.justify-end{
+  justify-content: flex-end;
 }
 
 .justify-center{
@@ -1171,6 +1195,10 @@ video {
   gap: 1vw;
 }
 
+.gap-\[2\]{
+  gap: 2;
+}
+
 .gap-x-16{
   -moz-column-gap: 4rem;
        column-gap: 4rem;
@@ -1180,8 +1208,16 @@ video {
   row-gap: 2.5rem;
 }
 
+.divide-none > :not([hidden]) ~ :not([hidden]){
+  border-style: none;
+}
+
 .place-self-center{
   place-self: center;
+}
+
+.self-end{
+  align-self: flex-end;
 }
 
 .self-center{
@@ -1220,6 +1256,11 @@ video {
   border-radius: 0.75rem;
 }
 
+.rounded-t-lg{
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
 .border{
   border-width: 1px;
 }
@@ -1228,8 +1269,16 @@ video {
   border-width: 1px;
 }
 
+.border-2{
+  border-width: 2px;
+}
+
 .border-b{
   border-bottom-width: 1px;
+}
+
+.border-s{
+  border-inline-start-width: 1px;
 }
 
 .border-solid{
@@ -1239,6 +1288,11 @@ video {
 .border-black{
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
+}
+
+.border-darkViolet{
+  --tw-border-opacity: 1;
+  border-color: rgb(106 30 120 / var(--tw-border-opacity));
 }
 
 .bg-\[\#6A1E78\]{
@@ -1795,11 +1849,24 @@ html{
   .sm\:justify-center{
     justify-content: center;
   }
+
+  .sm\:text-xs{
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
 }
 
 @media (min-width: 768px){
+  .md\:block{
+    display: block;
+  }
+
   .md\:grid{
     display: grid;
+  }
+
+  .md\:hidden{
+    display: none;
   }
 
   .md\:h-\[160px\]{
@@ -1832,6 +1899,10 @@ html{
 
   .md\:grid-cols-8{
     grid-template-columns: repeat(8, minmax(0, 1fr));
+  }
+
+  .md\:justify-center{
+    justify-content: center;
   }
 
   .md\:text-2xl{
