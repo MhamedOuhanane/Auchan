@@ -1,0 +1,135 @@
+[
+    {
+        "id": 1,
+        "title": "Tropico",
+        "subtitle": "Boisson aux fruits saveur orange et ananas",
+        "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil, deleniti. Autem iste suscipit, molestiae enim natus nesciunt laboriosam dignissimos vero beatae deserunt porro laborum ab?",
+        "categories": "boissons",
+        "rating": 4.5,
+        "reviews": 123,
+        "image": "src/assets/images/products/tropico.webp",
+        "price": 12.5
+    },
+    {
+        "id": 2,
+        "title": "Achan",
+        "subtitle": "Boisson au jus d'orange",
+        "description": "Ingrédients : Eau de source (84.2%), jus de fruits à base de concentrés 12% (orange 10%, pomme 2%), sucre, acidifiants : acide citrique et acide malique, arôme naturel d'orange avec autres arômes naturels, arômes naturels, concentrés de carotte, antioxydant : acide ascorbique.",
+        "categories": "boissons",
+        "rating": 4.5,
+        "reviews": 123,
+        "image": "src/assets/images/products/auchan-jus-orange.webp",
+        "price": 20.5
+    },
+    {
+        "id": 3,
+        "title": "Achan",
+        "subtitle": "Eau minéralle naturelle",
+        "description": "Ingrédients : Composition moyenne en mg/l : Calcium : 234, Magnésium : 70, Sodium : 43, Potassium : 6,5, Bicarbonates : 292, Sulfates : 635, Chlorures : 62, Fluorures : 1,5, Nitrates 1. Résidu sec à 180°C : 1320 mg/l. pH 7,2.",
+        "categories": "boissons",
+        "rating": 4.4,
+        "reviews": 12,
+        "image": "src/assets/images/products/eau-naturelle.webp",
+        "price": 6.9
+    },
+    {
+        "id": 4,
+        "title": "Pepsi zéro",
+        "subtitle": "Boisson gazeuse aux extraits végétaux sans sucres",
+        "description": "eau gazéifiée,colorant (caramel au sulfite d'ammonium),édulcorants (aspartame**, acésulfame K),acidifiants (acide phosphorique, acide citrique),correcteur d'acidité (citrate de sodium),arômes (dont extraits végétaux et caféine),**Contient une source de phénylalanine.",
+        "categories": "boissons",
+        "rating": 4.4,
+        "reviews": 12,
+        "image": "src/assets/images/products/pepsi-zero.webp",
+        "price": 11.9
+    },
+    {
+        "id": 5,
+        "title": "Evian",
+        "subtitle": "Eau minérale naturelle plate",
+        "description": "Ingrédients : Composition moyenne en mg/l : Calcium : 234, Magnésium : 70, Sodium : 43, Potassium : 6,5, Bicarbonates : 292, Sulfates : 635, Chlorures : 62, Fluorures : 1,5, Nitrates 1. Résidu sec à 180°C : 1320 mg/l. pH 7,2.",
+        "categories": "boissons",
+        "rating": 4.4,
+        "reviews": 12,
+        "image": "src/assets/images/products/evian.webp",
+        "price": 11.9
+    },
+    {
+        "id": 6,
+        "title": "Lorina",
+        "subtitle": "Citronnade artisanal",
+        "description": "Eau gazéifiée, sucre, jus de citron concentré (1,5%), acidifiant: acide citrique, jus d’orange concentré (0,5%), antioxydant : acide ascorbique, extrait d’orange, stabilisant : gomme de caroube, arôme naturel.",
+        "categories": "boissons",
+        "rating": 3.4,
+        "reviews": 120,
+        "image": "src/assets/images/products/lorina.webp",
+        "price": 11.9
+    },
+    {
+        "id": 7,
+        "title": "Lipton",
+        "subtitle": "Thé glacé sans sucres saveur pêche",
+        "description": "LIPTON ICE TEA ZÉRO, BOISSON SAVEUR PÊCHE SANS SUCRES : Envie d'une pause pleine de fraîcheur ? Lipton Ice Tea Zéro est la boisson qu'il vous faut ! Ce thé glacé avec son goût légendaire de pêche à base d'extraits de thé, le tout sans sucres et peu calorique. Ce format est à la fois pratique, léger et solide. ",
+        "categories": "boissons",
+        "rating": 3.4,
+        "reviews": 20,
+        "image": "src/assets/images/products/lipton.webp",
+        "price": 19.00
+    },
+    {
+        "id": 8,
+        "title": "Seven-up",
+        "subtitle": "Boisson gazeuse aux extraits de citron arôme mojito",
+        "description": "7UP, BOISSON GAZEUSE ICONIQUE RAFRAÎCHISSANTE : Avec son inimitable saveur Mojito, cette boisson gazeuse vous accorde une pause fraîcheur et un moment de plaisir, le tout sans alcool et sans sucres !",
+        "categories": "boissons",
+        "rating": 3.4,
+        "reviews": 20,
+        "image": "src/assets/images/products/seven-up.webp",
+        "price": 19.00
+    },
+    {
+        "id": 9,
+        "title": "Pop's",
+        "subtitle": "Ice tea saveur grenade",
+        "description": "Vivez l’expérience fruitée des différentes saveurs : Grenade, Pêche, Citron.Découvrez la fraîcheur de nos ice tea ainsi que l’essence même des fruits dans chaque gorgée de Pop’s",
+        "categories": "boissons",
+        "rating": 4.2,
+        "reviews": 2,
+        "image": "src/assets/images/products/pops.webp",
+        "price": 9.00
+    },
+    {
+        "id": 10,
+        "title": "Mountain dew",
+        "subtitle": "Boisson gazeuse au goût d'agrumes et caféiné sans sucre",
+        "description": "eau gazéifiée,acidifiant (acide citrique),arômes (dont caféine),épaississant (pectine),édulcorants (aspartame**, acésulfame K, sucralose),antioxydant (acide ascorbique),correcteur d'acidité (citrate de potassium),conservateur (sorbate de potassium),stabilisants (gomme arabique, ester glycérique de résine de bois),colorant (bêta-carotène),**Contient une source de phénylalanine.",
+        "categories": "boissons",
+        "rating": 4.0,
+        "reviews": 12,
+        "image": "src/assets/images/products/mountain-dew.webp",
+        "price": 15.50
+    },
+    {
+        "id": 11,
+        "title": "Schweppes",
+        "subtitle": "Boisson gazeuse saveur pomme",
+        "description": "Ingrédients : eau gazéifiée, sucre, acidifiants : acide malique et acide citrique, arômes naturels, conservateur : sorbate de potassium, colorants : E150d et carotènes végétaux, édulcorants : acésulfame K et sucralose.",
+        "categories": "boissons",
+        "rating": 3.0,
+        "reviews": 112,
+        "image": "src/assets/images/products/schweppes.webp",
+        "price": 8.50
+    },
+    {
+        "id": 12,
+        "title": "Monster energy",
+        "subtitle": "Boisson énergisante à la taurine et au ginseng boîte",
+        "description": "Ingrédients : eau gazéifiée, sucre, acidifiants : acide malique et acide citrique, arômes naturels, conservateur : sorbate de potassium, colorants : E150d et carotènes végétaux, édulcorants : acésulfame K et sucralose.",
+        "categories": "boissons",
+        "rating": 3.0,
+        "reviews": 112,
+        "image": "src/assets/images/products/schweppes.webp",
+        "price": 8.50
+    }
+    
+]
