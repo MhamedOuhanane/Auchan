@@ -12,6 +12,11 @@ const Boissons_btn = document.querySelector("#Boissons");
 const Nettoyage_btn = document.querySelector("#Nettoyage");
 const Vetements_btn = document.querySelector("#Vetements");
 
+const btn_up = document.getElementById("up-btn");
+
+console.log(btn_up);
+
+
 grille.addEventListener("click", () => {
   list_grille_cards.style.transition = "all 0.3s ease-in-out";
   list_grille_cards.style.opacity = "0";
@@ -156,3 +161,13 @@ function fetch_data(category) {
 }
 
 fetch_data();
+
+// Button up
+
+window.addEventListener("scroll", function () {
+  if (window.scrollY > 100) {
+    btn_up.style.display = "block";
+  } else {
+    btn_up.style.display = "none";
+  }
+});

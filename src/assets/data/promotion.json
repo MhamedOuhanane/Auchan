@@ -83,6 +83,62 @@
             "discount": "13%",
             "category": "Boissons",
             "description": "A rich and aromatic cup of black coffee for a satisfying and energizing drink."
+        },
+        {
+            "id": 13,
+            "img": "../assets/images/promotion/cleaning-products.jpg",
+            "discount": "14%",
+            "category": "Nettoyage",
+            "description": "Cleaning Product for your home with ease and convenience. It helps to keep your home clean and tidy."
+        },
+        {
+            "id": 14,
+            "img": "../assets/images/promotion/cleaning-wipes.jpg",
+            "discount": "17.1%",
+            "category": "Nettoyage",
+            "description": "Cleaning Wipes for your home with ease and convenience. This product helps to keep your home clean and tidy."
+        },
+        {
+            "id": 15,
+            "img": "../assets/images/promotion/fresh-juices-bottles.jpg",
+            "discount": "11%",
+            "category": "Boissons",
+            "description": "Fresh juices for a satisfying and energizing drink. Amazing for any occasion."
+        },
+        {
+            "id": 16,
+            "img": "../assets/images/promotion/keyboard.jpg",
+            "discount": "15%",
+            "category": "Tech",
+            "description": "A sleek and comfortable keyboard for typing and working on your computer."
+        },
+        {
+            "id": 17,
+            "img": "../assets/images/promotion/mouse-pc.jpg",
+            "discount": "12%",
+            "category": "Tech",
+            "description": "This Mouse is a reliable and durable device for typing and working on your computer."
+        },
+        {
+            "id": 18,
+            "img": "../assets/images/promotion/grater-food.jpg",
+            "discount": "15%",
+            "category": "Cuisine",
+            "description": "A versatile and durable tableware set for all your meal needs."
+        },
+        {
+            "id": 19,
+            "img": "../assets/images/promotion/various-utensils.jpg",
+            "discount": "16%",
+            "category": "Cuisine",
+            "description": "A set of various utensils for cooking and serving food. Great for any occasion."
+        },
+        {
+            "id": 20,
+            "img": "../assets/images/promotion/cookware-accessories.jpg",
+            "discount": "17%",
+            "category": "Cuisine",
+            "description": "A set of cookware accessories for cooking and serving food. Great for any occasion."
         }
     ]
 }
