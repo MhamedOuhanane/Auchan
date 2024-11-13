@@ -14,8 +14,7 @@
     <link rel="stylesheet" href="../assets/css/output.css" >
     <link rel="stylesheet" href="../assets/css/panier.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <script type="module" src="../assets/js/home.js" defer></script>
-    <script type="module" src="../assets/js/panier.js" defer></script>
+    <script src="../assets/js/panier.js" defer></script>
 
 </head>
 <body>
@@ -112,43 +111,43 @@
     
     <!-- Panier section -->
     <!-- Partie des carte -->
-    <section class="bg-inherit w-100 rounded-lg flex flex-col items-center  gap-[3vh] my-10 ">
-    <div class="bg-white w-9/12 min-h-[20vw] border-[1px] border-solid border-black rounded-lg flex flex-col items-center justify-evenly">
-        <img class="w-[20%]" src="../assets/images/icône-panier.png" alt="logo de panier">
-        <h2 class="text-[60%] md:text-[80%] lg:text-3xl">Votre panier est vide pour le moment</h2>
+    <section class="bg-inherit w-100 rounded-lg flex flex-col items-center  gap-[3vh] my-10 mx-[11vw]">
+    <div class="bg-white w-[100%] min-h-[50vh] gap-8 py-[10vh] border-[1px] border-solid border-black rounded-lg flex flex-col items-center justify-evenly">
+        <img class="w-[40%] max-w-80" src="../assets/images/icône-panier.png" alt="logo de panier">
+        <h2 class="md:text-2xl lg:text-3xl">Votre panier est vide pour le moment</h2>
 
-        <button class="bg-darkViolet w-auto h-auto py-[2%] px-[3%] lg:py-[1%] rounded-3xl text-white text-[50%] md:text-[80%] lg:text-[100%]">
+        <button class="bg-darkViolet w-auto h-auto py-[2%] px-[3%] lg:py-[1%] rounded-3xl text-white text-xs md:text-lg" >
                 Commencer mes achats</button>
     </div>
     
     <!-- Liste des produit du panier -->
-    <div class="bg-white w-9/12 min-h-[20vw] border-[1px] border-solid border-black rounded-lg flex flex-col items-center justify-evenly">
-        <div>
-        <img class="w-[5%]" src="../assets/images/icône-panier.png" alt="logo de panier">
+    <div class="bg-white w-[100%] min-h-[20vh] border-[1px] border-solid border-black rounded-lg flex flex-col items-center justify-evenly">
+        <div class="w-[100%] h-[15%] flex sm:justify-center md:justify-between px-[2%]">
+            <img class="w-[10%]" src="../assets/images/icône-panier.png" alt="logo de panier">
 
         </div>
         <div></div>
     </div>
 
     <!-- devision des Méthodes de paiement -->
-    <div class="bg-white w-9/12 h-auto border-[1px] border-solid border-black rounded-lg p-[2vw] gap-[2vw]">
-        <h3 class="text-[1.7vw]">Nous acceptons</h3>
-        <div class="w-[65vw] m-[2%] gap-[2%] flex flex-wrap content-evenly">
-            <img class="w-[7vw] shadow-2xl hover:scale-[95%]" src="../assets/images/payments/CASH.webp" alt="paiement-CASH">
-            <img class="w-[7vw] shadow-2xl hover:scale-[95%]" src="../assets/images/payments/Visa.webp" alt="paiement-VISA">
-            <img class="w-[7vw] shadow-2xl hover:scale-[95%]" src="../assets/images/payments/mastercard.webp" alt="paiement-mastercard">
-            <img class="w-[7vw] shadow-2xl hover:scale-[95%]" src="../assets/images/payments/meastro.webp" alt="paiement-maestro">
-            <img class="w-[7vw] shadow-2xl hover:scale-[95%]" src="../assets/images/payments/PayPal.webp" alt="paiement-PayPal">
-            <img class="w-[7vw] shadow-2xl hover:scale-[95%]" src="../assets/images/payments/tabby.webp" alt="paiement-tabby">
-            <img class="w-[7vw] shadow-2xl hover:scale-[95%]" src="../assets/images/payments/Play.webp" alt="paiement-Play">
-            <img class="w-[7vw] shadow-2xl hover:scale-[95%]" src="../assets/images/payments/tamara.webp" alt="paiement-tamara">
-            <img class="w-[7vw] shadow-2xl hover:scale-[95%]" src="../assets/images/payments/JSB.webp" alt="paiement-tamara">
+    <div class="bg-white w-[100%] h-auto border-[1px] border-solid border-black rounded-lg p-[2vw] gap-[2vw]">
+        <h2 class="md:text-2xl lg:text-3xl">Nous acceptons</h2>
+        <div class="w-[65vw] h-[80%] m-[2%] gap-[2%] flex flex-wrap">
+            <img class="w-[20%] md:w-[8rem] shadow-2xl hover:scale-[95%]" src="../assets/images/payments/CASH.webp" alt="paiement-CASH">
+            <img class="w-[20%] md:w-[8rem] shadow-2xl hover:scale-[95%]" src="../assets/images/payments/Visa.webp" alt="paiement-VISA">
+            <img class="w-[20%] md:w-[8rem] shadow-2xl hover:scale-[95%]" src="../assets/images/payments/mastercard.webp" alt="paiement-mastercard">
+            <img class="w-[20%] md:w-[8rem] shadow-2xl hover:scale-[95%]" src="../assets/images/payments/meastro.webp" alt="paiement-maestro">
+            <img class="w-[20%] md:w-[8rem] shadow-2xl hover:scale-[95%]" src="../assets/images/payments/PayPal.webp" alt="paiement-PayPal">
+            <img class="w-[20%] md:w-[8rem] shadow-2xl hover:scale-[95%]" src="../assets/images/payments/tabby.webp" alt="paiement-tabby">
+            <img class="w-[20%] md:w-[8rem] shadow-2xl hover:scale-[95%]" src="../assets/images/payments/Play.webp" alt="paiement-Play">
+            <img class="w-[20%] md:w-[8rem] shadow-2xl hover:scale-[95%]" src="../assets/images/payments/tamara.webp" alt="paiement-tamara">
+            <img class="w-[20%] md:w-[8rem] shadow-2xl hover:scale-[95%]" src="../assets/images/payments/JSB.webp" alt="paiement-tamara">
         </div>
     </div>
 
     <!-- devition de description pour la page Panier  -->
-    <div class="bg-white w-9/12 h-auto border-[1px] border-solid border-black rounded-lg flex justify-center flex-wrap gap-4 p-[3vw]">
-        <p class="text-center text-[1.2vw] max-w-[70%] ">
+    <div class="bg-white w-[100%] min-h-[20vh] border-[1px] border-solid border-black rounded-lg flex justify-center flex-wrap gap-4 p-[3vw]">
+        <p class="text-center lg:w-[65%]">
             Avant de passer à la caisse, prenez un moment pour vous 
             assurer que tout est en ordre. Si vous avez des questions 
             sur nos produits ou sur la procédure de paiement, n'hésitez 
@@ -160,11 +159,11 @@
     </div>
 
     <!-- Ajouter la partie de "À découvrir" -->
-    <div class="w-9/12 h-[20vw] my-[3vw] flex flex-col justify-between">
-        <h3 class="text-[60%] md:text-2xl lg:text-2xl">À découvrir</h3>
+    <div class="w-[100%] min-h-[50vh] flex flex-col justify-between">
+        <h2 class="md:text-2xl lg:text-3xl">À découvrir</h2>
         <div class="h-[80%] w-[100%] flex justify-evenly">
             <div id="buttonleft" class="flex items-center"><i class="fa-solid fa-circle-chevron-left fa-2x"></i></div>
-            <div id="carouselpanier" class="w-[100%] h-[100%] flex gap-[4%] flex-none overflow-x-scroll">
+            <div id="carouselpanier" class="w-[100%] h-[100%] flex gap-[4%] overflow-x-scroll">
                 <div class="bg-black min-w-[20%] "></div>
                 <div class="bg-black min-w-[20%] "></div>
                 <div class="bg-black min-w-[20%] "></div>
