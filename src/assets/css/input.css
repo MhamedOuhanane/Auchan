@@ -48,4 +48,8 @@ html{
     .container {
         width: 100%;
     }
+/* define a style for secondary button */
+.secondary-btn {
+    @apply text-[1rem] max-md:text-[.8rem] max-md:py-1 max-sm:text-[.5rem] bg-lightGray h-full hover:bg-gray-100 py-2 px-6 max-sm:px-3 rounded-lg;
+
 }
