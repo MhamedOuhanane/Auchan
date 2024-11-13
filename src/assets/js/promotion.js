@@ -165,9 +165,15 @@ fetch_data();
 // Button up
 
 window.addEventListener("scroll", function () {
-  if (window.scrollY > 100) {
+  if (window.scrollY > 200) {
+    btn_up.style.transition = "opacity 0.3s ease-in-out, display 0s";
     btn_up.style.display = "block";
+    btn_up.style.opacity = "0.7";
   } else {
-    btn_up.style.display = "none";
+    btn_up.style.transition = "opacity 0.3s ease-in-out, display 0s 0.3s";
+    btn_up.style.opacity = "0";
+    setTimeout(() => {
+      btn_up.style.display = "none";
+    }, 300);
   }
 });
