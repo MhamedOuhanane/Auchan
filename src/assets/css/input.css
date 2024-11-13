@@ -22,7 +22,7 @@ html{
 }
 .check {border: 1px solid red;}
 .container {
-    width: 100%;
+    width: 99.5%;
 }
 @media (max-width: 1740px) {
     html {
@@ -55,5 +55,5 @@ html{
 }
 /* define a style for primary button */
 .primary-btn {
-    @apply text-[1rem] max-md:text-[.8rem] max-md:py-1 max-sm:text-[.5rem] bg-darkViolet h-full hover:bg-darkViolet/90 text-white py-2 px-6 max-sm:px-3 rounded-lg;
+    @apply text-[1rem] max-md:text-[.8rem] max-md:py-1 max-sm:text-[.5rem] bg-darkViolet hover:bg-darkViolet/90 text-white py-2 px-6 max-sm:px-3 rounded-lg;
 }
