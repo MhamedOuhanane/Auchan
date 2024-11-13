@@ -14,8 +14,6 @@ const Vetements_btn = document.querySelector("#Vetements");
 
 const btn_up = document.getElementById("up-btn");
 
-console.log(btn_up);
-
 
 grille.addEventListener("click", () => {
 
