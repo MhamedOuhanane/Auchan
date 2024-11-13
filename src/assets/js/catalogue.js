@@ -31,5 +31,5 @@ listBtn.addEventListener('click', function(){
     gridBtn.classList.remove('active11');
     listBtn.classList.add('active11');
 })
-
+    
 
