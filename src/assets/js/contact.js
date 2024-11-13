@@ -10,4 +10,7 @@ function animateButton(button) {
 //Remplissage auto de formulaire
 document.getElementById("autoFill").addEventListener("click", async (event) => {
     animateButton(event.target); //appliquer l'animation a button remplir auto
+    try {
+        const response = await fetch("https://randomuser.me/api/");
+    }
 })
