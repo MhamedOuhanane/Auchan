@@ -18,6 +18,9 @@ console.log(btn_up);
 
 
 grille.addEventListener("click", () => {
+
+  if (list_cards.style.display === "grid") return;
+
   list_grille_cards.style.transition = "all 0.3s ease-in-out";
   list_grille_cards.style.opacity = "0";
 
@@ -37,6 +40,9 @@ grille.addEventListener("click", () => {
 });
 
 block.addEventListener("click", () => {
+
+  if (list_grille_cards.style.display === "grid") return;
+
   list_grille_cards.style.transition = "all 0.3s ease-in-out";
   list_grille_cards.style.opacity = 1;
 
@@ -63,7 +69,7 @@ const buttons = [Tech_btn, Cuisine_btn, Boissons_btn, Nettoyage_btn, Vetements_b
 // Function to reset all button background colors
 function resetButtonColors() {
   buttons.forEach(button => {
-    button.style.backgroundColor = ""; // Reset to default or any other color you want
+    button.style.backgroundColor = "";
   });
 }
 
@@ -165,7 +171,7 @@ fetch_data();
 // Button up
 
 window.addEventListener("scroll", function () {
-  if (window.scrollY > 200) {
+  if (window.scrollY > 300) {
     btn_up.style.transition = "opacity 0.3s ease-in-out, display 0s";
     btn_up.style.display = "block";
     btn_up.style.opacity = "0.7";
