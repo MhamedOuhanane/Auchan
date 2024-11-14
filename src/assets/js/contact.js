@@ -60,9 +60,10 @@ document.getElementById("contactForm").addEventListener("submit", function (even
     }
     if (!emailRegex.test(email)) {
         alert("E-mail invalide. Veuillez entrer une adresse e-mail valide.");
-event.preventDefault();
-return;
+        event.preventDefault();
+        return;
     }
-     //Si tout les donnees entrer est valide
-     alert("Formulaire soumis avec succès !");
+
+    //Si tout les donnees entrer est valide
+    alert("Formulaire soumis avec succès !");
 });
