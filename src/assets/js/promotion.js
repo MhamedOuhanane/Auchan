@@ -18,6 +18,8 @@ const previous = document.getElementById("previous");
 const next = document.getElementById("next");
 
 
+let Ajouter_au_localStotage = null;
+
 grille.addEventListener("click", () => {
 
   if (list_cards.style.display === "grid") return;
@@ -112,11 +114,11 @@ function fetch_data(category, page) {
         Products_Promo = response.data.filter(product => product.category === category);
       } else {
         Products_Promo = response.data;
-        console.log(response.data);
+        // console.log(response.data);
 
 
         if (page) {
-          console.log("inside", page);
+          // console.log("inside", page);
 
           Products_Promo = Products_Promo.slice((page - 1) * 8, page * 8);
         }
@@ -131,7 +133,7 @@ function fetch_data(category, page) {
 
             <div class="overlay"></div>
 
-            <div id="plus">+</div>
+            <div class="plus">+</div>
 
             <div class="absolute top-[20px] left-[20px] content">
               <p class="w-[75px] h-[25px] flex text-sm items-center justify-center bg-white shadow-xl">
@@ -170,6 +172,9 @@ function fetch_data(category, page) {
             </div>
       `;
       });
+
+      Ajouter_au_localStotage = document.querySelector(".plus");
+      console.log(Ajouter_au_localStotage);
     })
     .catch(error => {
       console.error(error);
@@ -202,15 +207,34 @@ let page = 1;
 next.addEventListener("click", () => {
   page++;
   fetch_data("", page);
-  console.log("outside", page);
+  // console.log("outside", page);
 
 });
 
 previous.addEventListener("click", () => {
   page--;
   fetch_data("", page);
-  console.log("outside", page);
+  // console.log("outside", page);
 
 });
 
-// Ajouter le produit clické au panier
+// Ajouter le produit clické au localStorage
+
+let Products_Panier = [];
+
+// Ajouter_au_localStotage
+
+document.addEventListener("click", (e) => {
+  if (e.target.classList.contains("plus")) {
+    let Card = e.target.closest(".promotion-card");
+
+    if (Products_Panier) {
+
+    }
+    Products_Panier.push(Products_Promo.filter(e => e.id == Card.id));
+
+    console.log(Products_Panier);
+
+
+  }
+})
