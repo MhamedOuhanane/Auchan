@@ -1260,6 +1260,10 @@ video {
   gap: .2vw;
 }
 
+.gap-\[3vw\]{
+  gap: 3vw;
+}
+
 .gap-x-16{
   -moz-column-gap: 4rem;
        column-gap: 4rem;
@@ -1423,6 +1427,11 @@ video {
   --tw-gradient-to: #FFE5FA var(--tw-gradient-to-position);
 }
 
+.decoration-clone{
+  -webkit-box-decoration-break: clone;
+          box-decoration-break: clone;
+}
+
 .object-contain{
   -o-object-fit: contain;
      object-fit: contain;
@@ -1566,6 +1575,11 @@ video {
 .py-\[15\%\]{
   padding-top: 15%;
   padding-bottom: 15%;
+}
+
+.px-\[2vw\]{
+  padding-left: 2vw;
+  padding-right: 2vw;
 }
 
 .pb-1{
@@ -2114,6 +2128,10 @@ html{
     width: 6vw;
   }
 
+  .md\:w-\[30\%\]{
+    width: 30%;
+  }
+
   .md\:grid-cols-8{
     grid-template-columns: repeat(8, minmax(0, 1fr));
   }
@@ -2159,6 +2177,30 @@ html{
 
   .lg\:w-\[150px\]{
     width: 150px;
+  }
+
+  .lg\:w-\[40\%\]{
+    width: 40%;
+  }
+
+  .lg\:w-\[60\%\]{
+    width: 60%;
+  }
+
+  .lg\:w-\[\]{
+    width: ;
+  }
+
+  .lg\:w-\[70px\]{
+    width: 70px;
+  }
+
+  .lg\:w-\[50px\]{
+    width: 50px;
+  }
+
+  .lg\:w-\[30px\]{
+    width: 30px;
   }
 
   .lg\:grid-cols-4{
