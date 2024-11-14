@@ -43,4 +43,8 @@ document.getElementById("contactForm").addEventListener("submit", function (even
     const email = document.getElementById("email").value;
 
     //Valider les champs
+    if (!nameRegex.test(nom)) {
+        alert("Nom invalide. Utilisez uniquement des lettres, des espaces, des apostrophes et des tirets.");
+        event.preventDefault();
+    }
 })
