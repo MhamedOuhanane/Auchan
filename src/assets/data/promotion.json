@@ -1,0 +1,144 @@
+{
+    "promotions": [
+        {
+            "id": 1,
+            "img": "../assets/images/promotion/camera.png",
+            "discount": "12%",
+            "category": "Tech",
+            "description": "A high-quality camera for capturing stunning photographs and videos."
+        },
+        {
+            "id": 2,
+            "img": "../assets/images/promotion/cup.png",
+            "discount": "12%",
+            "category": "Cuisine",
+            "description": "A stylish cup designed for everyday use and special occasions."
+        },
+        {
+            "id": 3,
+            "img": "../assets/images/promotion/t-chert.png",
+            "discount": "15%",
+            "category": "Vetements",
+            "description": "A versatile and durable tableware set for all your meal needs."
+        },
+        {
+            "id": 4,
+            "img": "../assets/images/promotion/boom.jpg",
+            "discount": "5.4%",
+            "category": "Nettoyage",
+            "description": "A powerful and efficient vacuum cleaner for cleaning your home with ease."
+        },
+        {
+            "id": 5,
+            "img": "../assets/images/promotion/watch.png",
+            "discount": "18%",
+            "category": "Tech",
+            "description": "A sleek and accurate smartwatch for tracking your time and staying connected."
+        },
+        {
+            "id": 6,
+            "img": "../assets/images/promotion/cleaning.jpg",
+            "discount": "18%",
+            "category": "Nettoyage",
+            "description": "Cleaning Product for your home with ease and convenience."
+        },
+        {
+            "id": 7,
+            "img": "../assets/images/promotion/blue-jeans.jpg",
+            "discount": "20%",
+            "category": "Vetements",
+            "description": "A comfortable and trendy pair of blue jeans for a stylish look."
+        },
+        {
+            "id": 8,
+            "img": "../assets/images/promotion/light-brown-beige-pants.jpg",
+            "discount": "11%",
+            "category": "Vetements",
+            "description": "A stylish pair of light brown and beige pants for a casual and trendy look."
+        },
+        {
+            "id": 9,
+            "img": "../assets/images/promotion/jacket.jpg",
+            "discount": "13%",
+            "category": "Vetements",
+            "description": "Jacket for a stylish and warm look. Perfect for any occasion."
+        },
+        {
+            "id": 10,
+            "img": "../assets/images/promotion/oranje-juice.jpg",
+            "discount": "13%",
+            "category": "Boissons",
+            "description": "A refreshing orange juice for a healthy and energizing drink."
+        },
+        {
+            "id": 11,
+            "img": "../assets/images/promotion/coffee.jpg",
+            "discount": "13%",
+            "category": "Boissons",
+            "description": "A delicious cup of coffee for a satisfying and energizing drink."
+        },
+        {
+            "id": 12,
+            "img": "../assets/images/promotion/black-coffe.jpg",
+            "discount": "13%",
+            "category": "Boissons",
+            "description": "A rich and aromatic cup of black coffee for a satisfying and energizing drink."
+        },
+        {
+            "id": 13,
+            "img": "../assets/images/promotion/cleaning-products.jpg",
+            "discount": "14%",
+            "category": "Nettoyage",
+            "description": "Cleaning Product for your home with ease and convenience. It helps to keep your home clean and tidy."
+        },
+        {
+            "id": 14,
+            "img": "../assets/images/promotion/cleaning-wipes.jpg",
+            "discount": "17.1%",
+            "category": "Nettoyage",
+            "description": "Cleaning Wipes for your home with ease and convenience. This product helps to keep your home clean and tidy."
+        },
+        {
+            "id": 15,
+            "img": "../assets/images/promotion/fresh-juices-bottles.jpg",
+            "discount": "11%",
+            "category": "Boissons",
+            "description": "Fresh juices for a satisfying and energizing drink. Amazing for any occasion."
+        },
+        {
+            "id": 16,
+            "img": "../assets/images/promotion/keyboard.jpg",
+            "discount": "15%",
+            "category": "Tech",
+            "description": "A sleek and comfortable keyboard for typing and working on your computer."
+        },
+        {
+            "id": 17,
+            "img": "../assets/images/promotion/mouse-pc.jpg",
+            "discount": "12%",
+            "category": "Tech",
+            "description": "This Mouse is a reliable and durable device for typing and working on your computer."
+        },
+        {
+            "id": 18,
+            "img": "../assets/images/promotion/grater-food.jpg",
+            "discount": "15%",
+            "category": "Cuisine",
+            "description": "A versatile and durable tableware set for all your meal needs."
+        },
+        {
+            "id": 19,
+            "img": "../assets/images/promotion/various-utensils.jpg",
+            "discount": "16%",
+            "category": "Cuisine",
+            "description": "A set of various utensils for cooking and serving food. Great for any occasion."
+        },
+        {
+            "id": 20,
+            "img": "../assets/images/promotion/cookware-accessories.jpg",
+            "discount": "17%",
+            "category": "Cuisine",
+            "description": "A set of cookware accessories for cooking and serving food. Great for any occasion."
+        }
+    ]
+}
