@@ -41,4 +41,6 @@ document.getElementById("contactForm").addEventListener("submit", function (even
     const prenom = document.getElementById("prenom").value;
     const telephone = document.getElementById("telephone").value;
     const email = document.getElementById("email").value;
+
+    //Valider les champs
 })
