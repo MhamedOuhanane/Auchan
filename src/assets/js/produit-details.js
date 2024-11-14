@@ -28,7 +28,7 @@ console.log(productDetailsNoeud)
                     
                 </div>
                 <span class="text-darkViolet text-[1.6rem] font-bold pt-4">${products[productDetails_ID].price} $</span>
-                <button class="primary-btn center gap-2 h-10 w-1/2">
+                <button onclick="addToCart(${products[productDetails_ID].id}, ${1}, 's', ${products[productDetails_ID].price})" class="primary-btn center gap-2 h-10 w-1/2">
                     <span class="text-[.8rem] max-sm:text-[.5rem]">AJOUTER AU PANIER</span>
                     <img src="../assets/images/icons/cart-white.svg" class="size-4" alt="">
                 </button>
