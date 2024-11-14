@@ -58,7 +58,7 @@ products.map((product) => {
                 <span class="text-gray-700 max-md:text-[.7rem] max-sm:text-[.5rem] min-h-[60px] max-md:min-h-[50px]">${product.subtitle}</span>
                 <div class="flex items-center justify-between w-full flex-wrap pt-4 gap-4">
                 <span class="font-bold text-darkViolet text-[1.4rem] max-md:text-[1rem]">${product.price.toFixed(2) + "$"}</span>
-                <button class="primary-btn center gap-2 flex-1">
+                <button onclick="addToCart(${product.id}, ${1}, 's', ${product.price})" class="primary-btn center gap-2 flex-1">
                     <span class="text-[.8rem] max-sm:text-[.5rem]">AJOUTER</span>
                     <img src="assets/images/icons/cart-white.svg" class="size-4" alt="">
                 </button>
