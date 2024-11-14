@@ -3,6 +3,11 @@ const cart = productsCart ? JSON.parse(productsCart) : [];
 let productObj;
 
 window.addToCart = function(productID, productQty, productSize, productPrice) {
+    if(productSize == "s") productPrice = productPrice;
+    if(productSize == "m") productPrice += productPrice * 0.05;
+    if(productSize == "l") productPrice += productPrice * 0.10;
+    if(productSize == "xl") productPrice += productPrice * 0.20;
+    
     let isExist;
     cart.map((product) => {
         if(product.id === productID){
