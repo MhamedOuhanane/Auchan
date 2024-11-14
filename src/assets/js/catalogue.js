@@ -82,3 +82,28 @@ function generateCardList(name,desc,price,img){
     return div;
 
 }
+function generateCardGrid(name,desc,price,img){
+    let div = document.createElement('div');
+    div.classList.add('card shadow-sm hover:shadow-md transition-all ease-out delay-75');
+    div.innerHTML = `
+                        <div class="h-[140px] center">
+                <img src="${img}" alt="" class="h-full object-contain">
+              </div>
+              <div class="flex justify-between items-center flex-wrap">
+                <span class="font-bold text-[1.2rem] max-md:text-[1rem] max-sm:text-[.7rem]">${name}</span>
+                <div class="flex items-center gap-2 text-gray-500 max-md:text-xs">
+                  <img src="assets/images/icons/star.svg" alt="star icon" class="size-5">
+                  <span class="">4.5</span>
+                  <span>( 21 )</span>
+                </div>
+                <span class="text-gray-700 max-md:text-[.7rem] max-sm:text-[.5rem] min-h-[60px] max-md:min-h-[50px]">${desc}</span>
+                <div class="flex items-center justify-between w-full flex-wrap pt-4 gap-4">
+                  <span class="font-bold text-darkViolet text-[1.4rem] max-md:text-[1rem]">${price}</span>
+                  <button class="primary-btn center gap-2 flex-1">
+                    <span class="text-[.8rem] max-sm:text-[.5rem]">AJOUTER</span>
+                    <img src="assets/images/icons/cart-white.svg" class="size-4" alt="">
+                  </button>
+                </div>
+              </div>
+    `;
+}
