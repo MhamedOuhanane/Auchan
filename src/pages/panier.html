@@ -14,7 +14,8 @@
     <link rel="stylesheet" href="../assets/css/output.css" >
     <link rel="stylesheet" href="../assets/css/panier.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <script src="../assets/js/panier.js" defer></script>
+    <script src="../assets/js/home.js" defer></script>
+    <script type="module" src="assets/js/home.js" defer></script>
 
 </head>
 <body>
@@ -24,26 +25,26 @@
         <div class="container flex justify-between h-full">
             <div class="flex h-full gap-2">
                 <div class="flex items-center">
-                <img class="h-full p-2 max-sm:py-3" src="assets/images/icons/phone.svg" title="+212-654-504356" alt="phone-icon" />
+                <img class="h-full p-2 max-sm:py-3" src="../assets/images/icons/phone.svg" title="+212-654-504356" alt="phone-icon" />
                 <p class="max-sm:hidden">+212-654-504356</p>
             </div>
             <div class="flex items-center">
-                <img class="h-full p-2 max-sm:py-3" src="assets/images/icons/email.svg" title="auchan-maroc@contact.com"
+                <img class="h-full p-2 max-sm:py-3" src="../assets/images/icons/email.svg" title="auchan-maroc@contact.com"
                     alt="phone-icon" />
                 <p class="max-sm:hidden">auchan-maroc@contact.com</p>
             </div>
         </div>
         <div class="flex h-full gap-2">
             <div class="flex items-center">
-                <a href="pages/panier.html" class="h-full">
-                    <img class="h-full p-2 max-sm:py-3" src="assets/images/icons/cart.svg" title="Panier" alt="phone-icon" />
+                <a href="panier.html" class="h-full">
+                    <img class="h-full p-2 max-sm:py-3" src="../assets/images/icons/cart.svg" title="Panier" alt="phone-icon" />
                 </a>
                 <p class="max-sm:hidden">
-                    <a href="pages/panier.html">Panier</a>
+                    <a href="panier.html">Panier</a>
                 </p>
             </div>
             <div class="flex items-center">
-                <img class="h-full p-2 max-sm:py-3" src="assets/images/icons/user.svg" title="Compte" alt="phone-icon" />
+                <img class="h-full p-2 max-sm:py-3" src="../assets/images/icons/user.svg" title="Compte" alt="phone-icon" />
                 <p class="max-sm:hidden">Compte</p>
             </div>
         </div>
@@ -52,9 +53,9 @@
     <!-- navigation -->
     <nav class="bg-white shadow-md h-14 center select-none">
         <div class="container flex items-center justify-between h-full">
-            <a href="index.html" class="h-full pb-1">
+            <a href="../index.html" class="h-full pb-1">
             <img
-                src="assets/images/large-logo.png"
+                src="../assets/images/large-logo.png"
                 class="h-full max-md:p-2 max-sm:py-4"
                 alt="auchan large logo"
             />
@@ -67,33 +68,35 @@
 
             <ul class="menu" id="menu">
                 <li class="active">
-                <a href="index.html">Acceuill</a>
+                <a href="../index.html">Acceuill</a>
                 </li>
                 <li class="">
-                    <a href="pages/catalogue.html">Catalogue</a>
+                    <a href="catalogue.html">Catalogue</a>
                 </li>
                 <li class="">
-                    <a href="pages/promotion.html">Promotion</a>
+                    <a href="promotion.html">Promotion</a>
                 </li>
                 <li class="">
-                    <a href="pages/contact.html">Contactez-nous</a>
+                    <a href="contact.html">Contactez-nous</a>
                 </li>
             </ul>
 
-            <img id="menu-icon" src="assets/images/icons/burger-menu.svg" class="z-10 hidden h-full p-4 max-sm:p-5 max-md:block"
+            <img id="menu-icon" src="../assets/images/icons/burger-menu.svg" class="z-10 hidden h-full p-4 max-sm:p-5 max-md:block"
                 alt="burger menu icon" />
         </div>
     </nav>
     
-    <!-- Panier section -->
+<!-- Panier section -->
     <!-- Partie des carte -->
     <section class="bg-inherit w-100 rounded-lg flex flex-col items-center  gap-[3vh] my-10 mx-[11vw]">
+        <!-- Si la panier est VIDE -->
     <div class="blocempty bg-white w-[100%] min-h-[50vh] gap-8 py-[10vh] border-[1px] border-solid border-black rounded-lg flex flex-col items-center justify-evenly">
         <img class="w-[20%] max-w-60" src="../assets/images/icône-panier.png" alt="logo de panier">
         <h2 class="md:text-2xl lg:text-3xl">Votre panier est vide pour le moment</h2>
-
-        <button class="bg-darkViolet w-auto h-auto py-[2%] px-[3%] lg:py-[1%] rounded-3xl text-white text-xs md:text-lg" >
-                Commencer mes achats</button>
+        <a class="bg-darkViolet w-auto h-auto py-[2%] px-[3%] lg:py-[1%] rounded-3xl text-white text-xs md:text-lg" href="catalogue.html">
+            <button id="btncommence">
+                    Commencer mes achats</button>
+        </a>
     </div>
     
     <!-- Liste des produit du panier -->
@@ -109,7 +112,7 @@
         <!-- la devition des cartes de la panier -->
         <div class="w-[100%] h-auto flex flex-col gap-[1vw] p-[2vw] ">
             <!-- cartes de panier -->
-            <div class="w-[100%] catre-ajout bg-white flex shadow-md rounded-lg p-[2%] text-xs  md:text-2xl">
+            <div class="w-[100%] catre-ajout bg-white flex shadow-md rounded-lg p-[2%] text-sm  md:text-2xl">
                 <div class="w-auto flex items-center ">
                     <input name="confermecard" type="checkbox" id="checkedcard">
                 </div>
@@ -131,8 +134,8 @@
                     </div>
                     
                 </div>
-                <div class="w-[14vw] flex flex-col items-center justify-between md:w-[6vw] gap-[3vw]">
-                    <svg class="w-[27%] md:w-[25px] lg:w-[30px] " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="#e74040" d="M135.2 17.7L128 32 32 32C14.3 32 0 46.3 0 64S14.3 96 32 96l384 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-96 0-7.2-14.3C307.4 6.8 296.3 0 284.2 0L163.8 0c-12.1 0-23.2 6.8-28.6 17.7zM416 128L32 128 53.2 467c1.6 25.3 22.6 45 47.9 45l245.8 0c25.3 0 46.3-19.7 47.9-45L416 128z"/></svg>
+                <div class="w-[17vw] flex flex-col items-center justify-between md:w-[6vw] gap-[3vw]">
+                    <svg class="w-[27%] md:w-[25px] lg:w-[30px] md:self-end" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="#e74040" d="M135.2 17.7L128 32 32 32C14.3 32 0 46.3 0 64S14.3 96 32 96l384 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-96 0-7.2-14.3C307.4 6.8 296.3 0 284.2 0L163.8 0c-12.1 0-23.2 6.8-28.6 17.7zM416 128L32 128 53.2 467c1.6 25.3 22.6 45 47.9 45l245.8 0c25.3 0 46.3-19.7 47.9-45L416 128z"/></svg>
                     <div class="flex flex-col items-center gap-[1.3vw] ">
                         <h5 class="totalprix text-darkViolet">66.3$</h5>
                         <div class="Qtycard flex justify-evenly gap-[2vw] mb-[1vw] border-2 rounded-lg px-[1.2vw]">
@@ -180,18 +183,43 @@
     </div>
 
     <!-- Ajouter la partie de "À découvrir" -->
-    <div class="w-[100%] h-[20vw] my-[3vw] flex flex-col justify-between">
+    <div class="w-[100%] h-auto my-[3vw] flex flex-col justify-between gap-[2vw]">
         <h3 class="text-[60%] md:text-2xl lg:text-2xl">À découvrir</h3>
-        <div class="h-[80%] w-[100%] flex justify-evenly cursor-pointer">
+        <div class="h-auto w-[100%] flex justify-evenly cursor-pointer">
             <!-- scrolle button to left  -->
-            <div id="buttonleft" class="flex items-center"><span
+            <div id="buttonleft" class="flex items-center "><span
                     class="hidden  px-[1vw] py-[0.5vw] mr-2 text-4xl font-bold border-2 border-black rounded-full md:block">
                     < </span>
             </div>
             <!-- container des produit scroller -->
-            <div id="carouselpanier" class="w-[80%]  h-[90%] flex gap-[4%] mx-auto overflow-x-scroll ">
-                <div class="bg-black min-w-[20%] hover:scale-[95%]"></div>
-                <div class="bg-red-400 min-w-[20%]  hover:scale-[95%]"></div>
+            <div id="carouselpanier" class="w-[80%]  h-auto flex gap-[4%] mx-auto overflow-x-scroll ">
+                <div class="h-auto  hover:scale-[95%]">
+                    <div class="gap-4 w-[20%]">
+                        <div class="card shadow-sm hover:shadow-md transition-all ease-out delay-75">
+                            <div class="h-auto center">
+                                <img src="../assets/images/categories/cuisine.jpg" alt="" class="h-full object-contain">
+                            </div>
+                            <div class="flex justify-between items-center flex-wrap">
+                                <span class="font-bold text-[1.2rem] max-md:text-[1rem] max-sm:text-[.7rem]">Fructis</span>
+                                <div class="flex items-center gap-2 text-gray-500 max-md:text-xs">
+                                    <img src="../assets/images/icons/star.svg" alt="star icon" class="size-5">
+                                    <span class="">4.5</span>
+                                    <span>( 21 )</span>
+                                </div>
+                                <span class="text-gray-700 max-md:text-[.7rem] max-sm:text-[.5rem] min-h-[60px] max-md:min-h-[50px]">Lait naturel lait naturel lait naturel lait naturel</span>
+                                <div class="flex items-center justify-between w-full flex-wrap pt-4 gap-4">
+                                    <span class="font-bold text-darkViolet text-[1.4rem] max-md:text-[1rem]">12.54 $</span>
+                                    <button class="primary-btn center gap-2 flex-1">
+                                        <span class="text-[.8rem] max-sm:text-[.5rem]">AJOUTER</span>
+                                        <img src="../assets/images/icons/cart-white.svg" class="size-4" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- <div class="bg-red-400 min-w-[20%]  hover:scale-[95%]"></div>
                 <div class="bg-green-300 min-w-[20%]  hover:scale-[95%]"></div>
                 <div class="bg-yellow-200 min-w-[20%]  hover:scale-[95%]"></div>
                 <div class="bg-black min-w-[20%]  hover:scale-[95%]"></div>
@@ -199,7 +227,7 @@
                 <div class="bg-green-300 min-w-[20%]  hover:scale-[95%]"></div>
                 <div class="bg-yellow-200 min-w-[20%]  hover:scale-[95%]"></div>
                 <div class="bg-black min-w-[20%]  hover:scale-[95%]"></div>
-                <div class="bg-black min-w-[20%]  hover:scale-[95%]"></div>
+                <div class="bg-black min-w-[20%]  hover:scale-[95%]"></div> -->
             </div>
             <!-- scrolle button to right  -->
             <div id="buttonright" class="flex items-center"><span
@@ -216,17 +244,13 @@
 
     <!-- footer -->
     <footer class="bg-white w-full h-auto center flex-col border text-[1rem]">
-        <div class="container h-full flex flex-col max-sm:px-4">
-            <div class="flex justify-between gap-6 py-8 max-md:flex-col">
-                <div class="flex flex-col gap-4 max-sm:gap-2 w-2/4 max-md:w-full">
-                    <div class="h-10">
-                        <img
-                            src="../assets/images/large-logo.png"
-                            class="h-full max-sm:py-2"
-                            alt="auchan large logo"
-                        >
+        <div class="container flex flex-col h-full max-sm:px-4 max-sm:text-center">
+            <div class="flex justify-between gap-6 py-8 max-md:px-1 max-md:flex-col">
+                <div class="flex flex-col w-2/4 gap-4 max-sm:gap-2 max-md:w-full max-sm:items-center">
+                    <div class="h-10 ">
+                        <img src="../assets/images/large-logo.png" class="h-full max-sm:py-2" alt="auchan large logo" />
                     </div>
-                    <p class="w-5/6 max-md:w-full">
+                    <p class="w-5/6 max-md:w-full text-[1rem] max-sm:text-[.6rem] max-sm:max-w-96">
                         Auchan est un groupe de distribution français fondé en 1961,
                         spécialisé dans les hypermarchés, les supermarchés, et les
                         magasins de proximité. Avec une forte présence en France et en
@@ -237,9 +261,9 @@
                         environnementale.
                     </p>
                 </div>
-                <div class="flex flex-col gap-4 w-1/4 max-md:w-full">
-                    <strong class="text-darkViolet text-lg max-md:text-[1rem] pt-2">Liens directs</strong>
-                    <ul class="flex flex-col gap-1">
+                <div class="flex flex-col w-1/4 gap-4 max-md:w-full">
+                    <strong class="text-darkViolet text-lg max-sm:text-[.8rem] pt-2">Liens directs</strong>
+                    <ul class="flex flex-col gap-1 max-sm:text-[.6rem]">
                         <li><a href="../index.html">Accueill</a></li>
                         <li><a href="catalogue.html">Catalogue</a></li>
                         <li><a href="promotion.html">Promotion</a></li>
@@ -247,116 +271,64 @@
                         <li><a href="../index.html">Profile</a></li>
                     </ul>
                 </div>
-                <div class="flex flex-col gap-4 w-1/4 max-md:w-full">
-                    <strong class="text-darkViolet text-lg max-md:text-[1rem] pt-2">Nous Suivre</strong>
+                <div class="flex flex-col w-1/4 gap-4 max-md:w-full">
+                    <strong class="text-darkViolet text-lg max-sm:text-[.8rem] pt-2">Nous Suivre</strong>
                     <!-- social media links -->
                     <ul class="flex flex-col gap-1 max-md:hidden">
                         <li>
                             <a target="_blank" href="https://www.facebook.com/auchan">Facebook</a>
                         </li>
                         <li>
-                            <a
-                                target="_blank"
-                                href="https://www.instagram.com/auchan_france/"
-                            >Instagram</a>
+                            <a target="_blank" href="https://www.instagram.com/auchan_france/">Instagram</a>
                         </li>
                         <li>
-                            <a target="_blank" href="https://twitter.com/AUCHAN_France"
-                                >Twitter</a>
+                            <a target="_blank" href="https://twitter.com/AUCHAN_France">Twitter</a>
                         </li>
                         <li>
-                            <a
-                                target="_blank"
-                                href="https://www.youtube.com/user/AuchanFrance"
-                                >Youtube</a>
+                            <a target="_blank" href="https://www.youtube.com/user/AuchanFrance">Youtube</a>
                         </li>
                         <li>
-                            <a target="_blank" href="https://www.tiktok.com/@auchan_fr/"
-                                >TikTok</a>
+                            <a target="_blank" href="https://www.tiktok.com/@auchan_fr/">TikTok</a>
                         </li>
                         <li>
-                            <a
-                                target="_blank"
-                                href="https://www.pinterest.fr/auchanfrance/_saved/"
-                                >Pinterest</a>
+                            <a target="_blank" href="https://www.pinterest.fr/auchanfrance/_saved/">Pinterest</a>
                         </li>
                     </ul>
 
                     <!-- social media icons for mobile device -->
-                    <ul class="hidden max-md:flex gap-4 h-6">
+                    <ul class="hidden h-6 gap-4 max-md:flex">
                         <li>
-                            <a
-                                target="_blank"
-                                href="https://www.facebook.com/auchan"
-                                class="h-full"
-                                ><img
-                                class="h-full"
-                                src="../assets/images/icons/facebook.svg"
-                                alt=""
-                            ></a>
+                            <a target="_blank" href="https://www.facebook.com/auchan" class="h-full"><img class="h-full"
+                                src="../assets/images/icons/facebook.svg" alt="" /></a>
                         </li>
                         <li>
-                            <a
-                                target="_blank"
-                                href="https://www.instagram.com/auchan_france/"
-                                class="h-full"
-                                ><img
-                                class="h-full"
-                                src="../assets/images/icons/instagram.svg"
-                                alt=""
-                            ></a>
+                            <a target="_blank" href="https://www.instagram.com/auchan_france/" class="h-full"><img class="h-full"
+                                src="../assets/images/icons/instagram.svg" alt="" /></a>
                         </li>
                         <li>
-                            <a
-                                target="_blank"
-                                href="https://twitter.com/AUCHAN_France"
-                                class="h-full"
-                                ><img
-                                class="h-full"
-                                src="../assets/images/icons/twitter.svg"
-                                alt=""
-                            ></a>
+                            <a target="_blank" href="https://twitter.com/AUCHAN_France" class="h-full"><img class="h-full"
+                                src="../assets/images/icons/twitter.svg" alt="" /></a>
                         </li>
                         <li>
-                            <a
-                                target="_blank"
-                                href="https://www.youtube.com/user/AuchanFrance"
-                                class="h-full"
-                                ><img
-                                class="h-full"
-                                src="../assets/images/icons/youtube.svg"
-                                alt=""
-                            ></a>
+                            <a target="_blank" href="https://www.youtube.com/user/AuchanFrance" class="h-full"><img class="h-full"
+                                src="../assets/images/icons/youtube.svg" alt="" /></a>
                         </li>
                         <li>
-                            <a
-                                target="_blank"
-                                href="https://www.tiktok.com/@auchan_fr/"
-                                class="h-full"
-                                ><img
-                                class="h-full"
-                                src="../assets/images/icons/tiktok.svg"
-                                alt=""
-                            ></a>
+                            <a target="_blank" href="https://www.tiktok.com/@auchan_fr/" class="h-full"><img class="h-full"
+                                src="../assets/images/icons/tiktok.svg" alt="" /></a>
                         </li>
                         <li>
-                            <a
-                                target="_blank"
-                                href="https://www.pinterest.fr/auchanfrance/_saved/"
-                                class="h-full"
-                                ><img
-                                class="h-full"
-                                src="../assets/images/icons/pinterest.svg"
-                                alt=""
-                            ></a>
+                            <a target="_blank" href="https://www.pinterest.fr/auchanfrance/_saved/" class="h-full"><img class="h-full"
+                                src="../assets/images/icons/pinterest.svg" alt="" /></a>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
-        <div class="bg-darkViolet h-auto py-4 w-full center">
-            <p class="text-white">Auchan 2024 © Tous droits réservés</p>
+        <div class="w-full h-auto py-4 bg-darkViolet center">
+            <p class="text-white max-md:text-[.6rem]">Auchan 2024 © Tous droits réservés</p>
         </div>
     </footer>
+
 </body>
 </html>

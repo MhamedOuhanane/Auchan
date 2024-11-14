@@ -18,6 +18,8 @@
 // }
 
 
+
+
 // la partie du carousel "Panier"
 let CarouselPanier = document.querySelector('#carouselpanier');
 let buttonleft = document.querySelector('#buttonleft');
