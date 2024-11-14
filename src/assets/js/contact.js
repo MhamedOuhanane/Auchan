@@ -32,5 +32,8 @@ document.getElementById("contactForm").addEventListener("submit", function (even
     animateButton(submitButton);
 
     //Valider chaque champ
-    
+    const nameRegex = /^[a-zA-ZÀ-ÿ '-]+$/;
+    const phoneRegex = /^\+?[0-9\s-]{10,15}$/;
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
 })
