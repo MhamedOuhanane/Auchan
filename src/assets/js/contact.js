@@ -53,4 +53,10 @@ document.getElementById("contactForm").addEventListener("submit", function (even
         event.preventDefault();
         return;
     }
+    if (!phoneRegex.test(telephone)) {
+        alert("Numéro de téléphone invalide. Utilisez uniquement des chiffres et des signes de ponctuation autorisés.");
+event.preventDefault();
+return;
+    }
+    
 })
