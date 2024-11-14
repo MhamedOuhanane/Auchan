@@ -76,6 +76,8 @@ function resetButtonColors() {
 
 let Products_Promo = [];
 
+
+// fucntion de qui fetch data
 function fetch_data(category, page) {
 
   list_grille_cards.innerHTML = "";
@@ -110,6 +112,8 @@ function fetch_data(category, page) {
         Products_Promo = response.data.filter(product => product.category === category);
       } else {
         Products_Promo = response.data;
+        console.log(response.data);
+
 
         if (page) {
           console.log("inside", page);
@@ -209,3 +213,4 @@ previous.addEventListener("click", () => {
 
 });
 
+// Ajouter le produit clické au panier
