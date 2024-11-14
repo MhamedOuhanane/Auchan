@@ -12,5 +12,13 @@ document.getElementById("autoFill").addEventListener("click", async (event) => {
     animateButton(event.target); //appliquer l'animation a button remplir auto
     try {
         const response = await fetch("https://randomuser.me/api/");
+        const data = await response.json();
+        const user = data.results[0];
+
+        document.getElementById("nom").value = user.name.last;
+        document.getElementById("prenom").value = user.name.first;
+        document.getElementById("telephone").value = user.phone;
+        document.getElementById("email").value = user.email;
+        document.getElementById("message").value = "Bonjour, j'aimerais en savoir plus sur vos services.";
     }
-})
+});
