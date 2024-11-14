@@ -122,6 +122,7 @@
     
     <!-- Liste des produit du panier -->
     <div class="bloccartes w-[100%] min-h-[20vh] border-[1px] border-solid border-black rounded-lg gap-[2vw] flex flex-col justify-between">
+        
         <div class="bg-white w-[100%] h-[15%] sm:flex md:grid md:grid-cols-8 items-center sm:justify-center p-[2%]  rounded-t-lg">
             <div class="col-start-1 col-end-7 grid grid-cols-12 items-center">
                 <img class="h-[80%] col-start-1 col-end-2" src="../assets/images/icône-panier.png" alt="logo de panier">
@@ -129,24 +130,62 @@
             </div>
             <h3 class="Totale md:text-2xl lg:text-3xl col-start-8 col-end-9 hidden md:block text-darkViolet"><span>666.</span>99 $</h3>
         </div>
-        <div class="w-[80%] h-auto flex flex-col gap-[1vw] py-[2vw]">
-            <div class="catre-ajou">
-                <input type="checkbox" id="checkedcard">
-                <img src="../assets/images/categories/cuisine.jpg" alt="">
-                <h5 class="titlecard">titre</h5>
-                <p class="desccard">description</p>
-                <select name="taille" id="taille">
-                    <option name="taille" value="">S</option>
-                    <option name="taille" value="">M</option>
-                    <option name="taille" value="">L</option>
-                </select>
-                <h5 class="prix">prix</h5>
-                <h5 class="totalecard">66.3 $</h5>
-                <div class="Qtycard">
-                    <h6>Qty</h6>
-                    <p class=qty></p>
+        <!-- la devition des cartes de la panier -->
+        <div class="w-[100%] h-auto flex flex-col gap-[1vw] p-[2vw] ">
+            <!-- cartes de panier -->
+            <div class="w-[100%] catre-ajout bg-white flex shadow-md rounded-lg p-[2%]  md:text-2xl">
+                <div class="w-auto flex items-center ">
+                    <input name="confermecard" type="checkbox" id="checkedcard">
+                </div>
+                <div class="flex items-center image w-[15vw]">
+                    <img src="../assets/images/categories/cuisine.jpg" alt="">
+                </div>
+                <div class="w-[50%] px-[3vw] flex flex-col justify-evenly gap-[0.2vw]">
+                    <h5 class="titlecard">titre</h5>
+                    <p class="desccard">description</p>
+                    <select name="confermecard" id="taille" class="border-2 rounded-full p-[0.15vw] h-auto w-[40%] md:w-[20%]">
+                        <option name="confermecard" value="">S</option>
+                        <option name="confermecard" value="">M</option>
+                        <option name="confermecard" value="">L</option>
+                    </select>
+                    <h5 class="prix" class="text-darkViolet h-auto">prix</h5>
+                </div>
+                <div class="flex flex-col justify-between items-center py-[3vw]">
+                    <div >
+                        <h5 class="totalprix" class="text-darkViolet">66.3$</h5>
+                        <div id="Qtycard" class="flex flex-col justify-evenly">
+                            <h6>Qty</h6>
+                            <p class=qty></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-[100%] catre-ajout bg-white flex shadow-md rounded-lg p-[2%]  md:text-2xl">
+                <div class="w-auto flex items-center ">
+                    <input name="confermecard" type="checkbox" id="checkedcard">
+                </div>
+                <div class="flex items-center image w-[15vw]">
+                    <img src="../assets/images/categories/cuisine.jpg" alt="">
                 </div>
 
+                <div class="w-[50%] px-[3vw] flex flex-col justify-evenly gap-[0.2vw]">
+                    <h5 class="titlecard">titre</h5>
+                    <p class="desccard">description</p>
+                    <select name="confermecard" id="taille" class="border-2 h-auto w-[40%] md:w-[20%]">
+                        <option name="confermecard" value="">S</option>
+                        <option name="confermecard" value="">M</option>
+                        <option name="confermecard" value="">L</option>
+                    </select>
+                    <h5 class="prix" class="text-darkViolet h-auto">prix</h5>
+                </div>
+                <div class="flex flex-col justify-between items-center ">
+                    div
+                    <h5 class="totalprix" class="text-darkViolet">66.3$</h5>
+                    <div id="Qtycard" class="flex flex-col justify-evenly">
+                        <h6>Qty</h6>
+                        <p class=qty></p>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="w-[100%] flex justify-end gap-4 p-[2vw] items-center md:justify-center self-end">
