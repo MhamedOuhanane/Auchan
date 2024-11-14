@@ -27,3 +27,7 @@ document.getElementById("autoFill").addEventListener("click", async (event) => {
 });
 
 //Validation de la formulaire
+document.getElementById("contactForm").addEventListener("submit", function (event) {
+    const submitButton = event.submitter;
+    animateButton(submitButton);
+})
