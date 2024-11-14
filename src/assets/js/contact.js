@@ -30,4 +30,7 @@ document.getElementById("autoFill").addEventListener("click", async (event) => {
 document.getElementById("contactForm").addEventListener("submit", function (event) {
     const submitButton = event.submitter;
     animateButton(submitButton);
+
+    //Valider chaque champ
+    
 })
