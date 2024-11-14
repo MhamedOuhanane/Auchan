@@ -38,17 +38,18 @@ async function getdata(){
     try{
         const response = await fetch('../assets/data/Catégorie.json');
         const json = await response.json();
-        console.log(json)
-        return json;
+        displayAllCategoriesGrid(json);
     }
     catch(error){
         console.error(error.message);
     }
 }
-getdata();
+let page1Grid = [];
 
-function displayallcategories(data){
-
+function displayAllCategoriesGrid(data){
+    data.matériel_de_cuisine.forEach(element => {
+        page1Grid.push(generateCardList(element));
+    });
 }
 
 function generateCardList(product){
@@ -60,7 +61,7 @@ function generateCardList(product){
               </div>
               <div class="w-3/4">
                 <div class="flex justify-between items-center text-2xl">
-                  <h2 class="font-bold">${product.name}</h2>
+                  <h2 class="font-bold">${product.titre}</h2>
                 <div class="flex items-center space-x-1">
                     <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
                     <span class="text-[#959595] font-medium">4.5</span>
@@ -71,20 +72,22 @@ function generateCardList(product){
                   ${product.description}
                 </p>
                 <div class="flex justify-between items-center mt-4">
-                  <span class="text-2xl font-bold text-darkViolet">${product.prix}</span>
+                  <span class="text-2xl font-bold text-darkViolet">${product.prix}$</span>
                   <button class="text-2xl bg-darkViolet text-white px-5 py-2 rounded-[20px]">
                     Ajoutez 
                     <i class="fa-solid fa-cart-shopping"></i>  
                   </button>
                 </div>       
               </div>
-    `
+    `;
+
+    
     return div;
 
 }
 function generateCardGrid(product){
     let div = document.createElement('div');
-    div.classList.add('card shadow-sm hover:shadow-md transition-all ease-out delay-75');
+    div.classList='card shadow-sm hover:shadow-md transition-all ease-out delay-75';
     div.innerHTML = `
                         <div class="h-[140px] center">
                 <img src="${product.image}" alt="${product.titre}" class="h-full object-contain">
@@ -98,7 +101,7 @@ function generateCardGrid(product){
                 </div>
                 <span class="text-gray-700 max-md:text-[.7rem] max-sm:text-[.5rem] min-h-[60px] max-md:min-h-[50px]">${product.description}</span>
                 <div class="flex items-center justify-between w-full flex-wrap pt-4 gap-4">
-                  <span class="font-bold text-darkViolet text-[1.4rem] max-md:text-[1rem]">${product.prix}</span>
+                  <span class="font-bold text-darkViolet text-[1.4rem] max-md:text-[1rem]">${product.prix}$</span>
                   <button class="primary-btn center gap-2 flex-1">
                     <span class="text-[.8rem] max-sm:text-[.5rem]">AJOUTER</span>
                     <img src="assets/images/icons/cart-white.svg" class="size-4" alt="">
@@ -106,5 +109,9 @@ function generateCardGrid(product){
                 </div>
               </div>
     `;
+    return div;
 }
+
+getdata();
+
 
