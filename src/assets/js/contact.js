@@ -63,4 +63,6 @@ document.getElementById("contactForm").addEventListener("submit", function (even
 event.preventDefault();
 return;
     }
-})
+     //Si tout les donnees entrer est valide
+     alert("Formulaire soumis avec succès !");
+});
