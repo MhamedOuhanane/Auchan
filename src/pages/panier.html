@@ -21,50 +21,30 @@
     
     <!-- header -->
     <header class="bg-white border-b h-10 center text-[1rem] select-none">
-        <div class="container h-full flex justify-between">
-            <div class="flex gap-2 h-full">
+        <div class="container flex justify-between h-full">
+            <div class="flex h-full gap-2">
                 <div class="flex items-center">
-                    <img
-                        class="h-full p-2"
-                        src="../assets/images/icons/phone.svg"
-                        title="+212-654-504356"
-                        alt="phone-icon"
-                    >
-                    <p class="max-sm:hidden">+212-654-504356</p>
-                </div>
-                <div class="flex items-center">
-                    <img
-                        class="h-full p-2"
-                        src="../assets/images/icons/email.svg"
-                        title="auchan-maroc@contact.com"
-                        alt="phone-icon"
-                    >
-                    <p class="max-sm:hidden">auchan-maroc@contact.com</p>
-                </div>
+                <img class="h-full p-2 max-sm:py-3" src="assets/images/icons/phone.svg" title="+212-654-504356" alt="phone-icon" />
+                <p class="max-sm:hidden">+212-654-504356</p>
             </div>
-            <div class="flex gap-2 h-full">
-                <div class="flex items-center">
-                    <a href="panier.html" class="h-full">
-                    <img
-                        class="h-full p-2"
-                        src="../assets/images/icons/cart.svg"
-                        title="Panier"
-                        alt="phone-icon"
-                    >
-                    </a>
-                    <p class="max-sm:hidden">
-                        <a href="panier.html">Panier</a>
-                    </p>
-                </div>
-                <div class="flex items-center">
-                    <img
-                        class="h-full p-2"
-                        src="../assets/images/icons/user.svg"
-                        title="Compte"
-                        alt="phone-icon"
-                    >
-                    <p class="max-sm:hidden">Compte</p>
-                </div>
+            <div class="flex items-center">
+                <img class="h-full p-2 max-sm:py-3" src="assets/images/icons/email.svg" title="auchan-maroc@contact.com"
+                    alt="phone-icon" />
+                <p class="max-sm:hidden">auchan-maroc@contact.com</p>
+            </div>
+        </div>
+        <div class="flex h-full gap-2">
+            <div class="flex items-center">
+                <a href="pages/panier.html" class="h-full">
+                    <img class="h-full p-2 max-sm:py-3" src="assets/images/icons/cart.svg" title="Panier" alt="phone-icon" />
+                </a>
+                <p class="max-sm:hidden">
+                    <a href="pages/panier.html">Panier</a>
+                </p>
+            </div>
+            <div class="flex items-center">
+                <img class="h-full p-2 max-sm:py-3" src="assets/images/icons/user.svg" title="Compte" alt="phone-icon" />
+                <p class="max-sm:hidden">Compte</p>
             </div>
         </div>
     </header>
@@ -143,7 +123,7 @@
                 <div class="w-[50vw] px-[2vw] flex flex-col justify-evenly gap-[0.2vw]">
                     <h5 class="titlecard">titre</h5>
                     <p class="desccard md:w-[80%]">description</p>
-                    <select name="confermecard" class="taille border-2 rounded-full p-[0.15vw] h-auto w-[40%] md:w-[20%]">
+                    <select name="confermecard" class="taille border-2 rounded-lg p-[0.15vw] h-auto w-[12vw]">
                         <option name="confermecard" value="taille">normale</option>
                         <option name="confermecard" value="">S</option>
                         <option name="confermecard" value="">M</option>
@@ -156,10 +136,10 @@
                     
                 </div>
                 <div class="w-[14vw] flex flex-col items-center justify-between md:w-[6vw] gap-[3vw]">
-                    <svg class="w-[30%] md:w-[20%] lg:w-[30px] " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="#e74040" d="M135.2 17.7L128 32 32 32C14.3 32 0 46.3 0 64S14.3 96 32 96l384 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-96 0-7.2-14.3C307.4 6.8 296.3 0 284.2 0L163.8 0c-12.1 0-23.2 6.8-28.6 17.7zM416 128L32 128 53.2 467c1.6 25.3 22.6 45 47.9 45l245.8 0c25.3 0 46.3-19.7 47.9-45L416 128z"/></svg>
-                    <div class="flex flex-col items-center gap-[.2vw] ">
+                    <svg class="w-[27%] md:w-[25px] lg:w-[30px] " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="#e74040" d="M135.2 17.7L128 32 32 32C14.3 32 0 46.3 0 64S14.3 96 32 96l384 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-96 0-7.2-14.3C307.4 6.8 296.3 0 284.2 0L163.8 0c-12.1 0-23.2 6.8-28.6 17.7zM416 128L32 128 53.2 467c1.6 25.3 22.6 45 47.9 45l245.8 0c25.3 0 46.3-19.7 47.9-45L416 128z"/></svg>
+                    <div class="flex flex-col items-center gap-[1.3vw] ">
                         <h5 class="totalprix text-darkViolet">66.3$</h5>
-                        <div class="Qtycard flex justify-evenly gap-[2vw] mb-[2vw]">
+                        <div class="Qtycard flex justify-evenly gap-[2vw] mb-[1vw] border-2 rounded-lg px-[1.2vw]">
                             <h6>Qty:</h6>
                             <p class="qty">11</p>
                         </div>
