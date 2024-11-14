@@ -21,4 +21,7 @@ document.getElementById("autoFill").addEventListener("click", async (event) => {
         document.getElementById("email").value = user.email;
         document.getElementById("message").value = "Bonjour, j'aimerais en savoir plus sur vos services.";
     }
+    catch (error) {
+        console.error("Erreur lors de la récupératio des données :", error);
+    }
 });
