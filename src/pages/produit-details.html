@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Auchan magasin</title>
+        <link rel="shortcut icon" href="../assets/images/favicons/favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="../assets/css/output.css" />
+        <link rel="stylesheet" href="../assets/css/input.css" />
+        <link rel="stylesheet" href="../assets/css/home.css">
+        <link rel="stylesheet" href="../assets/css/produit-details.css">
+        <script type="module" src="../assets/js/home.js" defer></script>
+        <script type="module" src="../assets/js/produit-details.js" defer></script>
+    </head>
+    <body>
+        <!-- header -->
+        <header class="bg-white border-b h-10 center text-[1rem] select-none">
+            <div class="container flex justify-between h-full">
+            <div class="flex h-full gap-2">
+                <div class="flex items-center">
+                <img class="h-full p-2 max-sm:py-3" src="../assets/images/icons/phone.svg" title="+212-654-504356" alt="phone-icon" />
+                <p class="max-sm:hidden">+212-654-504356</p>
+                </div>
+                <div class="flex items-center">
+                <img class="h-full p-2 max-sm:py-3" src="../assets/images/icons/email.svg" title="auchan-maroc@contact.com"
+                    alt="phone-icon" />
+                <p class="max-sm:hidden">auchan-maroc@contact.com</p>
+                </div>
+            </div>
+            <div class="flex h-full gap-2">
+                <div class="flex items-center">
+                <a href="pages/panier.html" class="h-full">
+                    <img class="h-full p-2 max-sm:py-3" src="../assets/images/icons/cart.svg" title="Panier" alt="phone-icon" />
+                </a>
+                <p class="max-sm:hidden">
+                    <a href="pages/panier.html">Panier</a>
+                </p>
+                </div>
+                <div class="flex items-center">
+                <img class="h-full p-2 max-sm:py-3" src="../assets/images/icons/user.svg" title="Compte" alt="phone-icon" />
+                <p class="max-sm:hidden">Compte</p>
+                </div>
+            </div>
+        </header>
+
+        <!-- navigation -->
+        <nav class="bg-white shadow-md h-14 center select-none">
+        <div class="container flex items-center justify-between h-full">
+            <a href="index.html" class="h-full pb-1">
+            <img
+                src="../assets/images/large-logo.png"
+                class="h-full max-md:p-2 max-sm:py-4"
+                alt="auchan large logo"
+            />
+            <!-- <img
+                src="../assets/images/auchan-mobile-logo.png"
+                class="hidden h-full max-sm:block"
+                alt="auchan small logo"
+            /> -->
+        </a>
+
+        <ul class="menu" id="menu">
+            <li class="active">
+            <a href="index.html">Acceuill</a>
+            </li>
+            <li class="">
+            <a href="pages/catalogue.html">Catalogue</a>
+            </li>
+            <li class="">
+            <a href="pages/promotion.html">Promotion</a>
+            </li>
+            <li class="">
+            <a href="pages/contact.html">Contactez-nous</a>
+            </li>
+        </ul>
+
+        <img id="menu-icon" src="../assets/images/icons/burger-menu.svg" class="z-10 hidden h-full p-4 max-sm:p-5 max-md:block"
+            alt="burger menu icon" />
+        </div>
+        </nav>
+
+        <!-- title side -->
+        <div class="center max-sm:px-2 bg-gradient-to-r from-lightViolet to-white text-darkViolet">
+            <div class="container">
+                <h1 class="text-[2rem] max-md:text-[1.6rem] max-sm:text-[1rem] flex items-center py-3 font-extrabold">Produits</h1>
+            </div>
+        </div>
+
+        <!-- product details side -->
+        <section id="productDetailsNoeud" class="bg-white py-10 h-auto center max-sm:px-2">
+            <!-- <div class="h-full w-full container flex max-sm:flex-col-reverse justify-between max-md:px-1">
+                <div class="w-1/2 max-sm:w-full py-4 flex flex-col gap-2">
+                    <span class="text-[1.6rem] max-sm:text-[1rem] font-bold">Fat free milk</span>
+                    <div class="flex items-center gap-2 text-gray-500 max-md:text-xs">
+                        <img src="../assets/images/icons/star.svg" alt="star icon" class="size-5">
+                        <span class="">4.5</span>
+                        <span>( 21 )</span>
+                    </div>
+                    <p class="text-gray-700 text-[1rem] max-sm:text-[.6rem]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi veniam itaque accusantium similique. Quidem ipsam unde nisi praesentium a reprehenderit nesciunt quo hic corrupti deleniti minus voluptas nulla omnis quae, consectetur dolore non magni cum ut ad? Voluptates numquam maxime facere ipsam iste quos, deserunt a, quae beatae illo neque.</p>
+                    <div class="sizes pt-4 flex gap-4 items-center">
+                        <span class="font-bold">Size: </span>
+
+                        <input type="radio" checked id="xs" name="size">
+                        <label id="xs-size" for="xs">XS</label>
+                        <input type="radio" id="s" name="size">
+                        <label id="s-size" for="s">S</label>
+                        <input type="radio" id="m" name="size">
+                        <label id="m-size" for="m">M</label>
+                        <input type="radio" id="l" name="size">
+                        <label id="l-size" for="l">L</label>
+                        
+                    </div>
+                    <span class="text-darkViolet text-[1.6rem] font-bold pt-4">65.50 $</span>
+                    <button class="primary-btn center gap-2 h-10 w-1/2">
+                        <span class="text-[.8rem] max-sm:text-[.5rem]">AJOUTER AU PANIER</span>
+                        <img src="../assets/images/icons/cart-white.svg" class="size-4" alt="">
+                    </button>
+                </div>
+                <div class="w-1/2 max-sm:w-full center">
+                    <img src="../assets/images/products/garnier-fructis.webp" class="max-h-[250px]" alt="">
+                </div>
+            </div> -->
+        </section>
+
+        <!-- 'A decouvrir' products section -->
+        <section class="bg-white h-auto center max-sm:px-2 py-6">
+            <div class="container flex flex-col gap-4 max-md:px-1 h-full w-full">
+                <span class="text-[1.5rem] max-md:text-[1.3rem] max-sm:text-[1rem] font-bold">À découvrir</span>
+
+                <!-- produit card ( grid ) -->
+                <div id="discover-more-products" class="gap-4 w-full grid grid-cols-6 max-lg:grid-cols-4 max-md:grid-cols-2">
+                </div>
+            </div>
+        </section>
+
+        <!-- footer -->
+        <footer class="bg-white w-full h-auto center flex-col border text-[1rem]">
+            <div class="container flex flex-col h-full max-sm:px-4">
+            <div class="flex justify-between gap-6 py-8 max-md:px-1 max-md:flex-col">
+                <div class="flex flex-col w-2/4 gap-4 max-sm:gap-2 max-md:w-full">
+                <div class="h-10">
+                    <img src="../assets/images/large-logo.png" class="h-full max-sm:py-2" alt="auchan large logo" />
+                </div>
+                <p class="w-5/6 max-md:w-full text-[1rem] max-sm:text-[.6rem]">
+                    Auchan est un groupe de distribution français fondé en 1961,
+                    spécialisé dans les hypermarchés, les supermarchés, et les
+                    magasins de proximité. Avec une forte présence en France et en
+                    Europe, il propose une large gamme de produits alimentaires et non
+                    alimentaires, souvent à des prix attractifs. Auchan se distingue
+                    aussi par ses initiatives en matière de développement durable, en
+                    encourageant les produits locaux et en réduisant son empreinte
+                    environnementale.
+                </p>
+                </div>
+                <div class="flex flex-col w-1/4 gap-4 max-md:w-full">
+                <strong class="text-darkViolet text-lg max-sm:text-[.8rem] pt-2">Liens directs</strong>
+                <ul class="flex flex-col gap-1 max-sm:text-[.6rem]">
+                    <li><a href="index.html">Accueill</a></li>
+                    <li><a href="pages/catalogue.html">Catalogue</a></li>
+                    <li><a href="pages/promotion.html">Promotion</a></li>
+                    <li><a href="pages/contact.html">Contactez-nous</a></li>
+                    <li><a href="index.html">Profile</a></li>
+                </ul>
+                </div>
+                <div class="flex flex-col w-1/4 gap-4 max-md:w-full">
+                <strong class="text-darkViolet text-lg max-sm:text-[.8rem] pt-2">Nous Suivre</strong>
+                <!-- social media links -->
+                <ul class="flex flex-col gap-1 max-md:hidden">
+                    <li>
+                    <a target="_blank" href="https://www.facebook.com/auchan">Facebook</a>
+                    </li>
+                    <li>
+                    <a target="_blank" href="https://www.instagram.com/auchan_france/">Instagram</a>
+                    </li>
+                    <li>
+                    <a target="_blank" href="https://twitter.com/AUCHAN_France">Twitter</a>
+                    </li>
+                    <li>
+                    <a target="_blank" href="https://www.youtube.com/user/AuchanFrance">Youtube</a>
+                    </li>
+                    <li>
+                    <a target="_blank" href="https://www.tiktok.com/@auchan_fr/">TikTok</a>
+                    </li>
+                    <li>
+                    <a target="_blank" href="https://www.pinterest.fr/auchanfrance/_saved/">Pinterest</a>
+                    </li>
+                </ul>
+
+                <!-- social media icons for mobile device -->
+                <ul class="hidden h-6 gap-4 max-md:flex">
+                    <li>
+                    <a target="_blank" href="https://www.facebook.com/auchan" class="h-full"><img class="h-full"
+                        src="../assets/images/icons/facebook.svg" alt="" /></a>
+                    </li>
+                    <li>
+                    <a target="_blank" href="https://www.instagram.com/auchan_france/" class="h-full"><img class="h-full"
+                        src="../assets/images/icons/instagram.svg" alt="" /></a>
+                    </li>
+                    <li>
+                    <a target="_blank" href="https://twitter.com/AUCHAN_France" class="h-full"><img class="h-full"
+                        src="../assets/images/icons/twitter.svg" alt="" /></a>
+                    </li>
+                    <li>
+                    <a target="_blank" href="https://www.youtube.com/user/AuchanFrance" class="h-full"><img class="h-full"
+                        src="../assets/images/icons/youtube.svg" alt="" /></a>
+                    </li>
+                    <li>
+                    <a target="_blank" href="https://www.tiktok.com/@auchan_fr/" class="h-full"><img class="h-full"
+                        src="../assets/images/icons/tiktok.svg" alt="" /></a>
+                    </li>
+                    <li>
+                    <a target="_blank" href="https://www.pinterest.fr/auchanfrance/_saved/" class="h-full"><img class="h-full"
+                        src="../assets/images/icons/pinterest.svg" alt="" /></a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+            </div>
+            <div class="w-full h-auto py-4 bg-darkViolet center">
+            <p class="text-white max-md:text-[.6rem]">Auchan 2024 © Tous droits réservés</p>
+            </div>
+        </footer>
+    </body>
+</html>
