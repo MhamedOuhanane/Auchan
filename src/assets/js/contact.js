@@ -37,5 +37,8 @@ document.getElementById("contactForm").addEventListener("submit", function (even
     const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
     //Recuperer les valeurs dans les champs
-
+    const nom = document.getElementById("nom").value;
+    const prenom = document.getElementById("prenom").value;
+    const telephone = document.getElementById("telephone").value;
+    const email = document.getElementById("email").value;
 })
