@@ -49,6 +49,8 @@ document.getElementById("contactForm").addEventListener("submit", function (even
         return;
     }
     if (!nameRegex.test(prenom)) {
-        
+        alert("Prénom invalide. Utilisez uniquement des lettres, des espaces, des apostrophes et des tirets.");
+        event.preventDefault();
+        return;
     }
 })
