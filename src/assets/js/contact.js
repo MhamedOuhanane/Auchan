@@ -25,3 +25,5 @@ document.getElementById("autoFill").addEventListener("click", async (event) => {
         console.error("Erreur lors de la récupératio des données :", error);
     }
 });
+
+//Validation de la formulaire
