@@ -857,6 +857,10 @@ video {
   height: 120%;
 }
 
+.h-\[90\%\]{
+  height: 90%;
+}
+
 .max-h-\[\]{
   max-height: ;
 }
@@ -1011,6 +1015,18 @@ video {
 
 .w-\[1000\%\]{
   width: 1000%;
+}
+
+.w-\[70\%\]{
+  width: 70%;
+}
+
+.w-\[11\]{
+  width: 11;
+}
+
+.w-\[80\%\]{
+  width: 80%;
 }
 
 .min-w-\[180px\]{
@@ -1197,6 +1213,10 @@ video {
 
 .gap-\[2\]{
   gap: 2;
+}
+
+.gap-\[10\%\]{
+  gap: 10%;
 }
 
 .gap-x-16{
@@ -1470,6 +1490,26 @@ video {
 .px-\[vh\]{
   padding-left: vh;
   padding-right: vh;
+}
+
+.px-\[\]{
+  padding-left: ;
+  padding-right: ;
+}
+
+.px-\[1\%\]{
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+.py-\[\]{
+  padding-top: ;
+  padding-bottom: ;
+}
+
+.py-\[2vw\]{
+  padding-top: 2vw;
+  padding-bottom: 2vw;
 }
 
 .pb-1{
