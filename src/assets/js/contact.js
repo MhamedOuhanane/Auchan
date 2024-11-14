@@ -55,8 +55,12 @@ document.getElementById("contactForm").addEventListener("submit", function (even
     }
     if (!phoneRegex.test(telephone)) {
         alert("Numéro de téléphone invalide. Utilisez uniquement des chiffres et des signes de ponctuation autorisés.");
+        event.preventDefault();
+        return;
+    }
+    if (!emailRegex.test(email)) {
+        alert("E-mail invalide. Veuillez entrer une adresse e-mail valide.");
 event.preventDefault();
 return;
     }
-    
 })
