@@ -14,6 +14,9 @@ const Vetements_btn = document.querySelector("#Vetements");
 
 const btn_up = document.getElementById("up-btn");
 
+const previous = document.getElementById("previous");
+const next = document.getElementById("next");
+
 
 grille.addEventListener("click", () => {
 
@@ -73,7 +76,7 @@ function resetButtonColors() {
 
 let Products_Promo = [];
 
-function fetch_data(category) {
+function fetch_data(category, page) {
 
   list_grille_cards.innerHTML = "";
   list_cards.innerHTML = "";
@@ -107,6 +110,12 @@ function fetch_data(category) {
         Products_Promo = response.data.filter(product => product.category === category);
       } else {
         Products_Promo = response.data;
+
+        if (page) {
+          console.log("inside", page);
+
+          Products_Promo = Products_Promo.slice((page - 1) * 8, page * 8);
+        }
       }
 
       Products_Promo.forEach((product) => {
@@ -164,7 +173,7 @@ function fetch_data(category) {
 
 }
 
-fetch_data();
+fetch_data("", 1);
 
 // Button up
 
@@ -181,3 +190,22 @@ window.addEventListener("scroll", function () {
     }, 300);
   }
 });
+
+// pagination
+
+let page = 1;
+
+next.addEventListener("click", () => {
+  page++;
+  fetch_data("", page);
+  console.log("outside", page);
+
+});
+
+previous.addEventListener("click", () => {
+  page--;
+  fetch_data("", page);
+  console.log("outside", page);
+
+});
+
