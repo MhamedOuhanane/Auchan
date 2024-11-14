@@ -1,17 +1,19 @@
-// Fonction pour l'animation au clic
+// fonction pour l'animation au clic sur les buttons d'envoyer et remplir auto
 function animateButton(button) {
-    button.classList("animate");
-    //apres la fin de la durée l'animation est suprime
+    button.classList.add("animate");
+    // animation est suprimer apres la fin de la duree
     setTimeout(() => {
         button.classList.remove("animate");
-    }, 500); //duree en millisecondes
+    }, 500); // duree en millisecondes
 }
 
-//Remplissage auto de formulaire
+// remlissage auto des champs
 document.getElementById("autoFill").addEventListener("click", async (event) => {
-    animateButton(event.target); //appliquer l'animation a button remplir auto
+    animateButton(event.target); // appliquer l'animation au bouton remplir auto
     try {
         const response = await fetch("https://randomuser.me/api/");
+        if (!response.ok) throw new Error("Erreur de récupération de données");
+        
         const data = await response.json();
         const user = data.results[0];
 
@@ -22,27 +24,27 @@ document.getElementById("autoFill").addEventListener("click", async (event) => {
         document.getElementById("message").value = "Bonjour, j'aimerais en savoir plus sur vos services.";
     }
     catch (error) {
-        console.error("Erreur lors de la récupératio des données :", error);
+        console.error("Erreur lors de la récupération des données :", error);
     }
 });
 
-//Validation de la formulaire
+// valider formulaire
 document.getElementById("contactForm").addEventListener("submit", function (event) {
     const submitButton = event.submitter;
     animateButton(submitButton);
 
-    //Valider chaque champ
+    // valider chaque champ dans formulaire
     const nameRegex = /^[a-zA-ZÀ-ÿ '-]+$/;
-    const phoneRegex = /^\+?[0-9\s-]{10,15}$/;
+    const phoneRegex = /^\+?[0-9\s-()]{10,15}$/;
     const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
-    //Recuperer les valeurs dans les champs
+    // recuperer les valeurs
     const nom = document.getElementById("nom").value;
     const prenom = document.getElementById("prenom").value;
     const telephone = document.getElementById("telephone").value;
     const email = document.getElementById("email").value;
 
-    //Valider les champs
+    // validation des champs
     if (!nameRegex.test(nom)) {
         alert("Nom invalide. Utilisez uniquement des lettres, des espaces, des apostrophes et des tirets.");
         event.preventDefault();
@@ -64,6 +66,6 @@ document.getElementById("contactForm").addEventListener("submit", function (even
         return;
     }
 
-    //Si tout les donnees entrer est valide
+    // si toutes les données entrées sont valides api ou utilisateur
     alert("Formulaire soumis avec succès !");
 });
