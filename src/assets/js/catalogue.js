@@ -51,9 +51,7 @@ function displayallcategories(data){
 
 }
 
-
-
-function generateListCard(name,desc,price,img){
+function generateCardList(name,desc,price,img){
     let div = document.createElement('div');
     div.classList = 'bg-white shadow-sm hover:shadow-md rounded-lg p-4 w-[95%] max-w-3xl flex items-center gap-10';
     div.innerHTML=`
