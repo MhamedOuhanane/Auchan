@@ -295,7 +295,7 @@ function generateCardGrid(product){
             <div class="flex justify-between items-center flex-wrap">
                 <span class="font-bold text-[1.2rem] max-md:text-[1rem] max-sm:text-[.7rem]">${product.title}</span>
                 <div class="flex items-center gap-2 text-gray-500 max-md:text-xs">
-                <img src="assets/images/icons/star.svg" alt="star icon" class="size-5">
+                <img src="../assets/images/icons/star.svg" alt="star icon" class="size-5">
                 <span class="">4.5</span>
                 <span>( 21 )</span>
                 </div>
@@ -304,7 +304,7 @@ function generateCardGrid(product){
                 <span class="font-bold text-darkViolet text-[1.4rem] max-md:text-[1rem]">${product.price.toFixed(2) + "$"}</span>
                 <button onclick="addToCart(${product.id}, ${1}, 's', ${product.price})" class="primary-btn center gap-2 flex-1">
                     <span class="text-[.8rem] max-sm:text-[.5rem]">AJOUTER</span>
-                    <img src="assets/images/icons/cart-white.svg" class="size-4" alt="">
+                    <img src="../assets/images/icons/cart-white.svg" class="size-4" alt="">
                 </button>
                 </div>
             </div>
@@ -316,45 +316,45 @@ getdata();
 
 function displayTechCategory(data){
     for (let index = 0; index < 60; index++) {
-        if(data.products[index].category == 'beauty'){
-            techListPage.appendChild(generateCardList(data.products[index]));
-            techGridPage.appendChild(generateCardGrid(data.products[index]));
+        if(data[index].categories == 'tech'){
+            techListPage.appendChild(generateCardList(data[index]));
+            techGridPage.appendChild(generateCardGrid(data[index]));
         }
     }
 }
 
 function displayCuisineCategory(data){
     for (let index = 0; index < 60; index++) {
-        if(data.products[index].category == 'kitchen-accessories'){
-            cuisineListPage.appendChild(generateCardList(data.products[index]));
-            cuisineGridPage.appendChild(generateCardGrid(data.products[index]));
+        if(data[index].categories == 'cuisine'){
+            cuisineListPage.appendChild(generateCardList(data[index]));
+            cuisineGridPage.appendChild(generateCardGrid(data[index]));
         }
     }
 }
 
 function displayBoissonsCategory(data){
     for (let index = 0; index < 60; index++) {
-        if(data.products[index].category == 'groceries'){
-            boissonsListPage.appendChild(generateCardList(data.products[index]));
-            boissonsGridPage.appendChild(generateCardGrid(data.products[index]));
+        if(data[index].categories == 'boissons'){
+            boissonsListPage.appendChild(generateCardList(data[index]));
+            boissonsGridPage.appendChild(generateCardGrid(data[index]));
         }
     }
 }
 
 function displayNettoyageCategory(data){
     for (let index = 0; index < 60; index++) {
-        if(data.products[index].category == 'furniture'){
-            nettoyageListPage.appendChild(generateCardList(data.products[index]));
-            nettoyageGridPage.appendChild(generateCardGrid(data.products[index]));
+        if(data[index].categories == 'nettoyage'){
+            nettoyageListPage.appendChild(generateCardList(data[index]));
+            nettoyageGridPage.appendChild(generateCardGrid(data[index]));
         }
     }
 }
 
 function displayVetementsCategory(data){
     for (let index = 0; index < 60; index++) {
-        if(data.products[index].category == 'fragrances'){
-            vetementsListPage.appendChild(generateCardList(data.products[index]));
-            vetementsGridPage.appendChild(generateCardGrid(data.products[index]));
+        if(data[index].categories == 'vetements'){
+            vetementsListPage.appendChild(generateCardList(data[index]));
+            vetementsGridPage.appendChild(generateCardGrid(data[index]));
         }
     }
 }
