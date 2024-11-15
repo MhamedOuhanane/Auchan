@@ -24,7 +24,7 @@ listBtn.addEventListener('click', function(){
 
 async function getdata(){
     try{
-        const response = await fetch('https://dummyjson.com/products?limit=60');
+        const response = await fetch('../assets/data/produits.json');
         const json = await response.json();
         console.log(json);
         displayAll(json);
@@ -36,7 +36,7 @@ async function getdata(){
 }
 
 function displayAllCategoriesList(data){
-    data.products.forEach((element,index) => {
+    data.forEach((element,index) => {
         if(index<12){
             listPage1.appendChild(generateCardList(element));
         }
@@ -57,7 +57,7 @@ function displayAllCategoriesList(data){
 }
 
 function displayAllCategoriesGrid(data){
-    data.products.forEach((element,index) => {
+    data.forEach((element,index) => {
         if(index<12){
             gridPage1.appendChild(generateCardGrid(element));
         }
@@ -287,27 +287,27 @@ function generateCardList(product){
 }
 function generateCardGrid(product){
     let div = document.createElement('div');
-    div.classList='card shadow-sm hover:shadow-md transition-all ease-out delay-75';
+    div.classList='card shadow-md hover:shadow-lg transition-all ease-out delay-75';
     div.innerHTML = `
-                        <div class="h-[140px] center">
-                <img src="${product.thumbnail}" alt="${product.title}" class="h-full object-contain">
-              </div>
-              <div class="flex justify-between items-center flex-wrap">
+                <a href="/src/pages/produit-details.html" id="product-image" class="h-[140px] cursor-pointer center" onclick="showProductDetails(${product.id})">
+                <img src=${"../../../" + product.image} alt="" class="h-full object-contain">
+            </a>
+            <div class="flex justify-between items-center flex-wrap">
                 <span class="font-bold text-[1.2rem] max-md:text-[1rem] max-sm:text-[.7rem]">${product.title}</span>
                 <div class="flex items-center gap-2 text-gray-500 max-md:text-xs">
-                  <img src="assets/images/icons/star.svg" alt="star icon" class="size-5">
-                  <span class="">4.5</span>
-                  <span>( 21 )</span>
+                <img src="assets/images/icons/star.svg" alt="star icon" class="size-5">
+                <span class="">4.5</span>
+                <span>( 21 )</span>
                 </div>
-                <span class="text-gray-700 max-md:text-[.7rem] max-sm:text-[.5rem] min-h-[60px] max-md:min-h-[50px]">${product.description}</span>
+                <span class="text-gray-700 max-md:text-[.7rem] max-sm:text-[.5rem] min-h-[60px] max-md:min-h-[50px]">${product.subtitle}</span>
                 <div class="flex items-center justify-between w-full flex-wrap pt-4 gap-4">
-                  <span class="font-bold text-darkViolet text-[1.4rem] max-md:text-[1rem]">${product.price}$</span>
-                  <button class="primary-btn center gap-2 flex-1">
+                <span class="font-bold text-darkViolet text-[1.4rem] max-md:text-[1rem]">${product.price.toFixed(2) + "$"}</span>
+                <button onclick="addToCart(${product.id}, ${1}, 's', ${product.price})" class="primary-btn center gap-2 flex-1">
                     <span class="text-[.8rem] max-sm:text-[.5rem]">AJOUTER</span>
                     <img src="assets/images/icons/cart-white.svg" class="size-4" alt="">
-                  </button>
+                </button>
                 </div>
-              </div>
+            </div>
     `;
     return div;
 }
