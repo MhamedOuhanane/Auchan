@@ -23,7 +23,7 @@ html {
   border: 1px solid red;
 }
 .container {
-  width: 100%;
+  width: 99.5%;
 }
 @media (max-width: 1740px) {
   html {
