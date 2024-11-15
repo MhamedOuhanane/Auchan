@@ -220,21 +220,32 @@ previous.addEventListener("click", () => {
 
 // Ajouter le produit clické au localStorage
 
-let Products_Panier = [];
+let Products_Panier = JSON.parse(localStorage.getItem("Products_Panier")) || [];
+
+function Sauvegarder() {
+  localStorage.setItem("Products_Panier", JSON.stringify(Products_Panier));
+  console.log(Products_Panier);
+}
 
 // Ajouter_au_localStotage
-
 document.addEventListener("click", (e) => {
   if (e.target.classList.contains("plus")) {
     let Card = e.target.closest(".promotion-card");
 
-    if (Products_Panier) {
+    let productExist = Products_Panier.find(product => product.id == Card.id);
 
+    if (productExist) {
+      // If product exists, increment the quantity
+      productExist.quantity++;
+    } else {
+      // If it doesn’t exist, find it in Products_Promo, set its quantity, and add it to Products_Panier
+      let product = Products_Promo.find(p => p.id == Card.id);
+      if (product) {  // Check if product exists in Products_Promo
+        product.quantity = 1;
+        Products_Panier.push(product);
+      }
     }
-    Products_Panier.push(Products_Promo.filter(e => e.id == Card.id));
 
-    console.log(Products_Panier);
-
-
+    Sauvegarder();
   }
-})
+});
