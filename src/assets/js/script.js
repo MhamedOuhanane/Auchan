@@ -22,6 +22,7 @@ window.addToCart = function(productID, productQty, productSize, productPrice) {
     cart.map((product) => {
         if(product.id === productID){
             product.quantity = productQty;
+            product.size = productSize;
             localStorage.setItem("carts", JSON.stringify(cart));
             isExist = true;
         }
