@@ -38,50 +38,76 @@ if (carts.length !== 0) {
                                 </div>
                             </div>
                             <div class="w-[17vw] flex flex-col items-center justify-around pl-[5vw]">
-                                    <span class="totalprix font-bold text-darkViolet text-[.8rem] md:text-[1.3rem] lg:text-[1.7rem] pl-[4vw]">${element.price * element.quantity } $</span>
+                                    <span id="tprix${card_Id}" class=" font-bold text-darkViolet text-[.8rem] md:text-[1.3rem] lg:text-[1.7rem] pl-[4vw]">${element.price * element.quantity } $</span>
                                     <div class="divQty flex justify-evenly gap-[1.6vw]  border-2 rounded-lg px-[1.2vw]">
-                                        <button id="dec${card_Id}" class="text-[170%]">-</button>
+                                        <button id="dec${card_Id}" class="decbtn text-[170%]">-</button>
                                         <span class="font-bold text-[0.7rem] md:text-[1.4rem] lg:text-[1.7rem]">${element.quantity}</span>
-                                        <button id="inc${card_Id}" class="text-[170%]">+</button>
+                                        <button id="inc${card_Id}" class="incbtn text-[170%]">+</button>
                                     </div>
                                     <button class="delete bg-red-400 px-[1.5vw] rounded-md" >delete</button>
                                 </div>
                             </div>
                         </div>`
-                        // decrementation de quentité du produit
-                        document.getElementById(`dec${card_Id}`).addEventListener("click" , ()=>{
-                            element.quantity -= 1; 
-                            document.getElementById(`dec${card_Id}`).parentNode.children[1].textContent = element.quantity;
-
-                            console.log(element.quantity);
+                        // // decrementation de quentité du produit
+                        // document.getElementById(`dec${card_Id}`).addEventListener('click' , ()=>{
+                        //     document.getElementById("dec"+card_Id).parentNode.children[1].textContent = --element.quantity;
+                        //     if (element.quantity == 0) {
+                        //         document.getElementById(card_Id).remove();
+                        //         console.log(element.quantity);
+                                
+                        //     }
                             
-                            if (element.quantity == "0") {
-                                console.log(element.quantity);
-                                element.spl;
-                                console.log(card_Id);
-                            }
-                            
-                        });
-                        // decrementation de quentité du produit
-                        document.getElementById(`inc${card_Id}`).addEventListener("click" , ()=>{
-                            document.getElementById(`inc${card_Id}`).parentNode.children[1].textContent = element.quantity++;                            
-                        });
+                        // });
+                        // // decrementation de quentité du produit
+                        // document.getElementById(`inc${card_Id}`).addEventListener('click' , ()=>{
+                        //     document.getElementById("inc"+card_Id).parentNode.children[1].textContent = element.quantity++;
+                        //     document.getElementById("tprix" + card_Id).textContent =  element.price * element.quantity + " $";   
+                        //     console.log(document.getElementById("torix" + card_Id));
+                                                    
+                        // });
 
                         totale += element.price * element.quantity;
                         console.log(totale);
                         
-                        // let card = document.getElementById
-                        // card_Id.addEventListener("click" , ()=>{
-                        //     card_Id.
+                        
+    
+                        // let dec = document.getElementById("dec" + card_Id);
+                        // dec.addEventListener("click" , ()=>{
+                        //     console.log(element);
+                            
                         // });
 
+    });   
+    
+    let incbtn = document.querySelectorAll(".incbtn");
+    incbtn.forEach((element) =>{
+        let index = 0;
+        element.addEventListener('click' , ()=>{
+            console.log(carts[index]);
+            element.parentNode.children[1].textContent = ++carts[index].quantity;
+            console.log(carts[index]);            
+        });
+        index++;
+    });
+    let decbtn = document.querySelectorAll(".incbtn");
+    decbtn.forEach((element) =>{
+        let index = 0;
+        element.addEventListener('click' , ()=>{
+            console.log(carts[index]);
+            element.parentNode.children[1].textContent = ++carts[index].quantity;
+            console.log(carts[index]);            
+        });
+        index++;
+    });
+    console.log(carts);
     
 
-    });     
 
     Totalemd.textContent = `${totale} \$` ;
     Totalesm.textContent = `${totale} \$` ;
-
+    carts = carts.filter((element) => element.quantity != 0);
+    console.log(carts);
+    
     
 
 }   
