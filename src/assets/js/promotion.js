@@ -207,7 +207,7 @@ let page = 1;
 next.addEventListener("click", () => {
   page++;
   fetch_data("", page);
-  // console.log("outside", page);
+
 
 });
 
