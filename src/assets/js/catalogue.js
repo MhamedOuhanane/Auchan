@@ -14,8 +14,6 @@ iconMenu.onclick = () => {
 var gridBtn = document.getElementById('grid');
 var listBtn = document.getElementById('list');
 
-var gridContainer = document.getElementById('grid-container');
-var listContainer = document.getElementById('list-container');
 
 
 
@@ -44,12 +42,11 @@ async function getdata(){
         console.error(error.message);
     }
 }
-let page1Grid = [];
+
+
 
 function displayAllCategoriesGrid(data){
-    data.matériel_de_cuisine.forEach(element => {
-        page1Grid.push(generateCardList(element));
-    });
+    
 }
 
 function generateCardList(product){
