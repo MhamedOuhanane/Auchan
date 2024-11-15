@@ -14,8 +14,7 @@
     <link rel="stylesheet" href="../assets/css/output.css" >
     <link rel="stylesheet" href="../assets/css/panier.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <script src="../assets/js/home.js" defer></script>
-    <script type="module" src="assets/js/home.js" defer></script>
+    <script type="module" src="../assets/js/panier.js" defer></script>
 
 </head>
 <body>
@@ -90,7 +89,7 @@
     <!-- Partie des carte -->
     <section class="bg-inherit w-100 rounded-lg flex flex-col items-center  gap-[3vh] my-10 mx-[11vw]">
         <!-- Si la panier est VIDE -->
-    <div class="blocempty bg-white w-[100%] min-h-[50vh] gap-8 py-[10vh] border-[1px] border-solid border-black rounded-lg flex flex-col items-center justify-evenly">
+    <div id="blocempty" class="bg-white w-[100%] min-h-[50vh] gap-8 py-[10vh] border-[1px] border-solid border-black rounded-lg flex flex-col items-center justify-evenly">
         <img class="w-[20%] max-w-60" src="../assets/images/icône-panier.png" alt="logo de panier">
         <h2 class="md:text-2xl lg:text-3xl">Votre panier est vide pour le moment</h2>
         <a class="bg-darkViolet w-auto h-auto py-[2%] px-[3%] lg:py-[1%] rounded-3xl text-white text-xs md:text-lg" href="catalogue.html">
@@ -100,55 +99,56 @@
     </div>
     
     <!-- Liste des produit du panier -->
-    <div class="bloccartes w-[100%] min-h-[20vh] border-[1px] border-solid border-black rounded-lg gap-[2vw] flex flex-col justify-between">
+    <div id="bloccartes" class="classbloccartes w-[100%] min-h-[20vh] border-[1px] border-solid border-black rounded-lg gap-[2vw] flex flex-col justify-between">
         
         <div class="bg-white w-[100%] h-[15%] sm:flex md:grid md:grid-cols-8 items-center sm:justify-center p-[2%]  rounded-t-lg">
             <div class="col-start-1 col-end-7 grid grid-cols-12 items-center">
                 <img class="h-[80%] col-start-1 col-end-2" src="../assets/images/icône-panier.png" alt="logo de panier">
                 <h2 class="md:text-2xl lg:text-3xl col-start-2 col-end-3">Panier</h2>
             </div>
-            <h3 class="Totale md:text-2xl lg:text-3xl col-start-8 col-end-9 hidden md:block text-darkViolet"><span>666.</span>99 $</h3>
-        </div>
+                <span class="Totale md:block font-bold hidden text-darkViolet lg:text-[1.8rem] md:text-[1rem] col-start-8 col-end-9">666.99 $</span>
+            </div>
         <!-- la devition des cartes de la panier -->
-        <div class="w-[100%] h-auto flex flex-col gap-[1vw] p-[2vw] ">
+        <div id="container-produit" class="w-[100%] h-auto flex flex-col gap-[1vw] p-[2vw] ">
             <!-- cartes de panier -->
-            <div class="w-[100%] catre-ajout bg-white flex shadow-md rounded-lg p-[2%] text-sm  md:text-2xl">
+            <div class="produit">
                 <div class="w-auto flex items-center ">
-                    <input name="confermecard" type="checkbox" id="checkedcard">
+                    <input name="confermeproduits" type="checkbox" class="checkedprod">
                 </div>
-                <div class="imagecard flex items-center  w-[12vw]">
+                <div class="imageprod flex items-center  w-[16vw] md:w-[10vw]">
                     <img src="../assets/images/categories/cuisine.jpg" alt="">
                 </div>
                 <div class="w-[50vw] px-[2vw] flex flex-col justify-evenly gap-[0.2vw]">
-                    <h5 class="titlecard">titre</h5>
-                    <p class="desccard md:w-[80%]">description</p>
-                    <select name="confermecard" class="taille border-2 rounded-lg p-[0.15vw] h-auto w-[12vw]">
-                        <option name="confermecard" value="taille">normale</option>
-                        <option name="confermecard" value="">S</option>
-                        <option name="confermecard" value="">M</option>
-                        <option name="confermecard" value="">L</option>
-                    </select>
+                    <span class="titleprod font-bold text-[0.7rem] md:text-[1.2rem] lg:text-[1.5rem]">titre</span>
+                    <span class="text-gray-700 text-[.5rem]  md:text-[.9rem] lg:text-[1.2rem] w-[100%] leading-[95%]">Lait naturel lait naturel lait naturel lait naturel</span>
                     <div class="flex">
-                        <h5 class="prix text-darkViolet h-auto pl-[2vw] decoration-clone">prix</h5>
-                        <h5 class="prix text-darkViolet h-auto pl-[2vw]">prix</h5>
+                        <span class="prixprod font-bold text-darkViolet text-[1.5rem] max-md:text-[0.7rem] pl-[2vw] hidden">12.54 $</span>
+                        <span class="prixprod font-bold text-darkViolet text-[1.5rem] max-md:text-[0.7rem] pl-[2vw]">12.54 $</span>
                     </div>
+                    <select name="confermeproduits" class="tailleprod border-2 rounded-lg p-[0.15vw] w-[12vw] text-[.6rem]  md:text-[.9rem] lg:text-[1.2rem]">
+                        <option name="confermeproduits " value="taille">normale</option>
+                        <option name="confermeproduits " value="">S</option>
+                        <option name="confermeproduits " value="">M</option>
+                        <option name="confermeproduits " value="">L</option>
+                    </select>
                     
                 </div>
                 <div class="w-[17vw] flex flex-col items-center justify-between md:w-[6vw] gap-[3vw]">
-                    <svg class="w-[27%] md:w-[25px] lg:w-[30px] md:self-end" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="#e74040" d="M135.2 17.7L128 32 32 32C14.3 32 0 46.3 0 64S14.3 96 32 96l384 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-96 0-7.2-14.3C307.4 6.8 296.3 0 284.2 0L163.8 0c-12.1 0-23.2 6.8-28.6 17.7zM416 128L32 128 53.2 467c1.6 25.3 22.6 45 47.9 45l245.8 0c25.3 0 46.3-19.7 47.9-45L416 128z"/></svg>
+                    <svg class="deleteprod w-[27%] md:w-[25px] lg:w-[30px] md:self-end" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="#e74040" d="M135.2 17.7L128 32 32 32C14.3 32 0 46.3 0 64S14.3 96 32 96l384 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-96 0-7.2-14.3C307.4 6.8 296.3 0 284.2 0L163.8 0c-12.1 0-23.2 6.8-28.6 17.7zM416 128L32 128 53.2 467c1.6 25.3 22.6 45 47.9 45l245.8 0c25.3 0 46.3-19.7 47.9-45L416 128z"/></svg>
                     <div class="flex flex-col items-center gap-[1.3vw] ">
-                        <h5 class="totalprix text-darkViolet">66.3$</h5>
-                        <div class="Qtycard flex justify-evenly gap-[2vw] mb-[1vw] border-2 rounded-lg px-[1.2vw]">
-                            <h6>Qty:</h6>
-                            <p class="qty">11</p>
+                        <span class="totalprix font-bold text-darkViolet text-[.8rem] md:text-[1.3rem] lg:text-[1.7rem] pl-[2vw]">66.3 $</span>
+                        <div class="divQty flex justify-evenly gap-[1vw] mb-[1vw] border-2 rounded-lg px-[1.2vw]">
+                            <span class="Qtyprod font-bold text-[0.5rem] md:text-[1rem] lg:text-[1.3rem]">QTY:</span>
+                            <span class="qty font-bold text-[0.7rem] md:text-[1.4rem] lg:text-[1.7rem]">11</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="w-[100%] flex justify-end gap-4 p-[2vw] items-center md:justify-center self-end">
-            <h3 class="Totale md:text-2xl lg:text-3xl col-start-8 col-end-9 md:hidden  text-darkViolet"><span>666.</span>99 $</h3>
-            <button id="confermecard" type="submit" name="confermeproduits" class="bg-white w-auto h-auto px-[3%] lg:py-[1%]  py-[2%] rounded-3xl border-2 border-solid border-darkViolet text-darkViolet text-xs md:text-lg " >
+
+        <div class="w-[100%] flex justify-end p-[2vw] items-center md:justify-center self-end gap-[4vw]">
+            <span class="Totale md:hidden font-bold text-darkViolet text-[1rem] pl-[2vw]">666.99 $</span>
+            <button id="confermeprod" type="submit" name="confermeproduits" class="bg-white w-auto h-auto px-[3%] lg:py-[1%]  py-[2%] rounded-3xl border-2 border-solid border-darkViolet text-darkViolet text-xs md:text-lg " >
                 Confirmer la commande</button>
         </div>
     </div>
@@ -443,18 +443,8 @@
                         </div>
                     </div>
                 </div>
-                
-                
-                <!-- <div class="bg-red-400 min-w-[20%]  hover:scale-[95%]"></div>
-                <div class="bg-green-300 min-w-[20%]  hover:scale-[95%]"></div>
-                <div class="bg-yellow-200 min-w-[20%]  hover:scale-[95%]"></div>
-                <div class="bg-black min-w-[20%]  hover:scale-[95%]"></div>
-                <div class="bg-red-400 min-w-[20%]  hover:scale-[95%]"></div>
-                <div class="bg-green-300 min-w-[20%]  hover:scale-[95%]"></div>
-                <div class="bg-yellow-200 min-w-[20%]  hover:scale-[95%]"></div>
-                <div class="bg-black min-w-[20%]  hover:scale-[95%]"></div>
-                <div class="bg-black min-w-[20%]  hover:scale-[95%]"></div> -->
             </div>
+
             <!-- scrolle button to right  -->
             <div id="buttonright" class="flex items-center"><span
                     class="hidden  px-[1vw] py-[0.5vw] mr-2 text-4xl font-bold border-2 border-black rounded-full md:block">
@@ -470,13 +460,13 @@
 
     <!-- footer -->
     <footer class="bg-white w-full h-auto center flex-col border text-[1rem]">
-        <div class="container flex flex-col h-full max-sm:px-4 max-sm:text-center">
+        <div class="container flex flex-col h-full max-sm:px-4">
             <div class="flex justify-between gap-6 py-8 max-md:px-1 max-md:flex-col">
-                <div class="flex flex-col w-2/4 gap-4 max-sm:gap-2 max-md:w-full max-sm:items-center">
+                <div class="flex flex-col w-2/4 gap-4 max-sm:gap-2 max-md:w-full">
                     <div class="h-10 ">
                         <img src="../assets/images/large-logo.png" class="h-full max-sm:py-2" alt="auchan large logo" />
                     </div>
-                    <p class="w-5/6 max-md:w-full text-[1rem] max-sm:text-[.6rem] max-sm:max-w-96">
+                    <p class="w-5/6 max-md:w-full text-[1rem] max-sm:text-[.6rem]">
                         Auchan est un groupe de distribution français fondé en 1961,
                         spécialisé dans les hypermarchés, les supermarchés, et les
                         magasins de proximité. Avec une forte présence en France et en
