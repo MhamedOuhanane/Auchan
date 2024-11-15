@@ -39,4 +39,4 @@ Le Centre Commercial AUCHAN souhaite mettre en place un site web moderne et inte
 
 ## Gestion de projet
 - 💪 **Planifier les tâches en suivant les principes du Framework Scrum**.
-- 💪 **Présenter les fonctionnalités lors des sessions de débriefing d'équipe** pour valider les étapes clés.
+- 💪 **Présenter les fonctionnalités lors des sessions de débriefing d'équipe** pour valider les étapes clés.V
