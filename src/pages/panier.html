@@ -109,7 +109,7 @@
                 <span class="Totale md:block font-bold hidden text-darkViolet lg:text-[1.8rem] md:text-[1rem] col-start-8 col-end-9">666.99 $</span>
             </div>
         <!-- la devition des cartes de la panier -->
-        <div id="container-produit" class="w-[100%] h-auto flex flex-col gap-[1vw] p-[2vw] ">
+        <div id="containerproduits" class=".classbloccartes w-[100%] h-auto flex flex-col gap-[1vw] p-[2vw] ">
             <!-- cartes de panier -->
             <div class="produit">
                 <div class="w-auto flex items-center ">
@@ -122,7 +122,7 @@
                     <span class="titleprod font-bold text-[0.7rem] md:text-[1.2rem] lg:text-[1.5rem]">titre</span>
                     <span class="text-gray-700 text-[.5rem]  md:text-[.9rem] lg:text-[1.2rem] w-[100%] leading-[95%]">Lait naturel lait naturel lait naturel lait naturel</span>
                     <div class="flex">
-                        <span class="prixprod font-bold text-darkViolet text-[1.5rem] max-md:text-[0.7rem] pl-[2vw] hidden">12.54 $</span>
+                        <span class="prixprod font-bold text-darkViolet text-[1.5rem] max-md:text-[0.7rem] pl-[2vw] line-through hidden">12.54 $</span>
                         <span class="prixprod font-bold text-darkViolet text-[1.5rem] max-md:text-[0.7rem] pl-[2vw]">12.54 $</span>
                     </div>
                     <select name="confermeproduits" class="tailleprod border-2 rounded-lg p-[0.15vw] w-[12vw] text-[.6rem]  md:text-[.9rem] lg:text-[1.2rem]">
@@ -138,8 +138,9 @@
                     <div class="flex flex-col items-center gap-[1.3vw] ">
                         <span class="totalprix font-bold text-darkViolet text-[.8rem] md:text-[1.3rem] lg:text-[1.7rem] pl-[2vw]">66.3 $</span>
                         <div class="divQty flex justify-evenly gap-[1vw] mb-[1vw] border-2 rounded-lg px-[1.2vw]">
-                            <span class="Qtyprod font-bold text-[0.5rem] md:text-[1rem] lg:text-[1.3rem]">QTY:</span>
+                            <button class="moinqty">-</button>
                             <span class="qty font-bold text-[0.7rem] md:text-[1.4rem] lg:text-[1.7rem]">11</span>
+                            <button class="plusqty" >+</button>
                         </div>
                     </div>
                 </div>

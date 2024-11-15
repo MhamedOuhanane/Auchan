@@ -31,13 +31,13 @@
 }
 
 .produit{
-    width: 100%;
-    height: auto;
+    width: 95%;
+    max-height: 15rem;
     background-color: white;
     display: flex;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: .5rem;
-    padding: 2%;
+    padding: .5%;
     font-size: 0.875rem; 
     line-height: 1.25rem;
 }
