@@ -239,3 +239,90 @@ function ListPagination(){
     });
 }
 
+function gridPagination(){
+    btnGrid1.addEventListener('click', function(){
+        gridPage1.classList.add('grid');
+        gridPage1.classList.remove('hidden');
+        btnGrid1.classList.add('active12');
+
+        gridPage2.classList.add('hidden');
+        btnGrid2.classList.remove('active12');
+
+        gridPage3.classList.add('hidden');
+        btnGrid3.classList.remove('active12');
+
+        gridPage4.classList.add('hidden');
+        btnGrid4.classList.remove('active12');
+
+        gridPage5.classList.add('hidden');
+        btnGrid5.classList.remove('active12');
+    });
+    btnGrid2.addEventListener('click', function(){
+        gridPage2.classList.add('Grid');
+        gridPage2.classList.remove('hidden');
+        btnGrid2.classList.add('active12');
+
+        gridPage1.classList.add('hidden');
+        btnGrid1.classList.remove('active12');
+
+        gridPage3.classList.add('hidden');
+        btnGrid3.classList.remove('active12');
+
+        gridPage4.classList.add('hidden');
+        btnGrid4.classList.remove('active12');
+
+        gridPage5.classList.add('hidden');
+        btnGrid5.classList.remove('active12');
+    });
+    btnGrid3.addEventListener('click', function(){
+        gridPage3.classList.add('grid');
+        gridPage3.classList.remove('hidden');
+        btnGrid3.classList.add('active12');
+
+        gridPage1.classList.add('hidden');
+        btnGrid1.classList.remove('active12');
+
+        gridPage2.classList.add('hidden');
+        btnGrid2.classList.remove('active12');
+
+        gridPage4.classList.add('hidden');
+        btnGrid4.classList.remove('active12');
+
+        gridPage5.classList.add('hidden');
+        btnGrid5.classList.remove('active12');
+    });
+    btnGrid4.addEventListener('click', function(){
+        gridPage4.classList.add('grid');
+        gridPage4.classList.remove('hidden');
+        btnGrid4.classList.add('active12');
+
+        gridPage1.classList.add('hidden');
+        btnGrid1.classList.remove('active12');
+
+        gridPage2.classList.add('hidden');
+        btnGrid2.classList.remove('active12');
+        
+        gridPage3.classList.add('hidden');
+        btnGrid3.classList.remove('active12');
+        
+        gridPage5.classList.add('hidden');
+        btnGrid5.classList.remove('active12');
+    });
+    btnGrid5.addEventListener('click', function(){
+        gridPage5.classList.add('grid');
+        gridPage5.classList.remove('hidden');
+        btnGrid5.classList.add('active12');
+
+        gridPage1.classList.add('hidden');
+        btnGrid1.classList.remove('active12');
+
+        gridPage2.classList.add('hidden');
+        btnGrid2.classList.remove('active12');
+
+        gridPage3.classList.add('hidden');
+        btnGrid3.classList.remove('active12');
+
+        gridPage4.classList.add('hidden');
+        btnGrid4.classList.remove('active12');
+    });
+}
