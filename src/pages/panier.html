@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="../assets/css/panier.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <script type="module" src="../assets/js/panier.js" defer></script>
-    <script  src="../assets/js/home.js" defer></script>
+    <script  src="../js/script.js" defer></script>
 
 </head>
 <body>
@@ -107,10 +107,10 @@
                 <img class="h-[80%] col-start-1 col-end-2" src="../assets/images/icône-panier.png" alt="logo de panier">
                 <h2 class="md:text-2xl lg:text-3xl col-start-2 col-end-3">Panier</h2>
             </div>
-                <span class="Totale md:block font-bold hidden text-darkViolet lg:text-[1.8rem] md:text-[1rem] col-start-8 col-end-9">0 $</span>
+                <span id="Totalemd" class="md:block font-bold hidden text-darkViolet lg:text-[1.8rem] md:text-[1rem] col-start-8 col-end-9">0 $</span>
             </div>
         <!-- la devition des cartes de la panier -->
-        <div id="containerproduits" class=".classbloccartes w-[100%] h-auto flex flex-col gap-[1vw] p-[2vw] ">
+        <div id="containerproduits" class=".classbloccartes w-[100%] max-h-[30rem] md:max-h-[70rem] flex flex-col items-center gap-[1vw] p-[2vw] overflow-y-auto">
             <!-- cartes de panier -->
             <div class="produit">
                 <div class="w-auto flex items-center ">
@@ -149,7 +149,7 @@
         </div>
 
         <div class="w-[100%] flex justify-end p-[2vw] items-center md:justify-center self-end gap-[4vw]">
-            <span class="Totale md:hidden font-bold text-darkViolet text-[1rem] pl-[2vw]">0 $</span>
+            <span id="Totalesm" class="md:hidden font-bold text-darkViolet text-[1rem] pl-[2vw]">0 $</span>
             <button id="confermeprod" type="submit" name="confermeproduits" class="bg-white w-auto h-auto px-[3%] lg:py-[1%]  py-[2%] rounded-3xl border-2 border-solid border-darkViolet text-darkViolet text-xs md:text-lg " >
                 Confirmer la commande</button>
         </div>
@@ -194,7 +194,7 @@
                     < </span>
             </div>
             <!-- container des produit scroller -->
-            <div id="carouselpanier" class="w-[100%]  mdw-[80%]  h-auto flex gap-[4%] mx-auto overflow-x-scroll ">
+            <div id="carouselpanier" class="w-[100%]  mdw-[80%]  h-auto flex  gap-[4%] mx-auto overflow-x-scroll ">
                 <div class="h-auto  hover:scale-[95%]">
                     <div class="gap-4 max-sm:w-44 w-60  ">
                         <div class="card shadow-sm hover:shadow-md transition-all ease-out delay-75">

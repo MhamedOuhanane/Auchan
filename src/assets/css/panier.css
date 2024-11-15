@@ -32,7 +32,7 @@
 
 .produit{
     width: 95%;
-    max-height: 15rem;
+    max-height: 17rem;
     background-color: white;
     display: flex;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -47,4 +47,8 @@
         font-size: 1.5rem;
         line-height: 2rem;
     }
+}
+
+input:checked{
+    color: blue;
 }
