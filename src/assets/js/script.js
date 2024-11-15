@@ -1,3 +1,14 @@
+const body = document.getElementsByTagName("body");
+
+const iconMenu = document.getElementById("menu-icon");
+const menu = document.getElementById("menu");
+
+iconMenu.onclick = () => {
+    // add class 'noScroll' to body to stop scrolling when burger menu is open
+    body[0].classList.toggle("noScroll");
+    menu.classList.toggle("drop-menu");
+};
+
 const productsCart = localStorage.getItem("carts");
 const cart = productsCart ? JSON.parse(productsCart) : [];
 let productObj;
@@ -10,7 +21,7 @@ window.addToCart = function(productID, productQty, productSize, productPrice) {
     let isExist;
     cart.map((product) => {
         if(product.id === productID){
-            product.quantity += 1;
+            product.quantity = productQty;
             localStorage.setItem("carts", JSON.stringify(cart));
             isExist = true;
         }
@@ -31,7 +42,7 @@ window.addToCart = function(productID, productQty, productSize, productPrice) {
     changeCount();
 };
 
-const countCart = document.getElementById("count-cart");
+const countCart = document.getElementById("count-cart") || "<div></div>";
 window.changeCount = function() {
     if(cart.length) {
         countCart.innerHTML += `
