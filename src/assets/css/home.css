@@ -20,7 +20,7 @@
     .menu {
         background: white;
         position: absolute;
-        top: -100%;
+        top: -110%;
         left: 0;
         right: 0;
         height: 100vh;
@@ -34,6 +34,11 @@
         top: 0;
         overflow-y: hidden;
     }
+}
+/* hide the scroll bar in categories and partenaires sections */
+#categories-images::-webkit-scrollbar,
+#sponsors-images::-webkit-scrollbar {
+    display: none;
 }
 .card {
     padding: 1rem;
