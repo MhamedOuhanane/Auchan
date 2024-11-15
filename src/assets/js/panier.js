@@ -7,7 +7,6 @@ console.log(carts);
 import Categorie from "../data/produits.json" with {type: "json"};
 console.log(Categorie[0].image);
 
-
 if (carts.length !== 0) {
     document.getElementById("blocempty").classList.toggle("classblocemty");
     document.getElementById("bloccartes").classList.toggle("classbloccartes");
@@ -59,6 +58,10 @@ if (carts.length !== 0) {
                         totale += element.price * element.quantity;
                         console.log(totale);
                         
+                        let card = document.getElementById
+                        card_Id.addEventListener("click" , ()=>{
+                            card_Id.
+                        });
 
     
 
@@ -66,18 +69,22 @@ if (carts.length !== 0) {
 
     document.getElementsByClassName("Totale").textContent = "totale" + "$" ;
     console.log(document.getElementsByClassName("Totale"));
+
     
 
-}    
+}   
 
-containerproduits.addEventListener("click" , ()=>{
-    
-});
 
-let inputchecked = document.querySelectorAll(".checkedprod")
-inputchecked.forEach(check => {
+// card_Id.addEventListener("click" , ()=>{
+//     card_Id.chil
+
+// });
+// let inputchecked = document.getElementById(".checkedprod");
+// inputchecked.setAttribute.toggle("checked")
+// let inputchecked = document.querySelectorAll(".checkedprod");
+// inputchecked.forEach(check => {
     
-});
+// });
 
 
 
