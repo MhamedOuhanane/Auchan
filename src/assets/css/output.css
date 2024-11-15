@@ -1560,6 +1560,38 @@ html{
     height: 30%;
   }
 
+  .max-sm\:h-60{
+    height: 15rem;
+  }
+
+  .max-sm\:h-6{
+    height: 1.5rem;
+  }
+
+  .max-sm\:h-52{
+    height: 13rem;
+  }
+
+  .max-sm\:w-60{
+    width: 15rem;
+  }
+
+  .max-sm\:w-52{
+    width: 13rem;
+  }
+
+  .max-sm\:w-2\/4{
+    width: 50%;
+  }
+
+  .max-sm\:w-2\/5{
+    width: 40%;
+  }
+
+  .max-sm\:w-3\/5{
+    width: 60%;
+  }
+
   .max-sm\:flex-nowrap{
     flex-wrap: nowrap;
   }
@@ -1632,6 +1664,26 @@ html{
 
   .max-sm\:text-\[\.6rem\]{
     font-size: .6rem;
+  }
+
+  .max-sm\:text-xl{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .max-sm\:text-sm{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .max-sm\:text-xs{
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+
+  .max-sm\:text-base{
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }
 

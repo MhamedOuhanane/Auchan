@@ -86,17 +86,18 @@ function displayAllCategoriesGrid(data){
             gridPage5.appendChild(generateCardGrid(element));
         }
     });
+    gridPagination();
 }
 
 function generateCardList(product){
     let div = document.createElement('div');
     div.classList = 'bg-white shadow-sm hover:shadow-md rounded-lg p-4 w-[95%] max-w-3xl flex items-center gap-10';
     div.innerHTML=`
-                    <div class="w-1/4 flex justify-center">
-                <img src="${product.thumbnail}" alt="${product.title}" class="w-40 h-40 object-contain">
+                    <div class="w-1/4 flex justify-center max-sm:w-2/5">
+                <img src="${product.thumbnail}" alt="${product.title}" class="w-auto h-full">
               </div>
-              <div class="w-3/4">
-                <div class="flex justify-between items-center text-2xl">
+              <div class="w-3/4 max-sm:w-3/5">
+                <div class="flex justify-between items-center text-2xl max-sm:text-sm">
                   <h2 class="font-bold">${product.title}</h2>
                 <div class="flex items-center space-x-1">
                     <i class="fa-regular fa-star" style="color: #FFD43B;"></i>
@@ -104,12 +105,12 @@ function generateCardList(product){
                     <span class="text-[#E4E4E4] ">(12)</span>
                 </div>         
                 </div>
-                <p class="text-base text-[#959595] mt-1">
+                <p class="text-base text-[#959595] mt-1 max-sm:text-xs">
                   ${product.description}
                 </p>
                 <div class="flex justify-between items-center mt-4">
                   <span class="text-2xl font-bold text-darkViolet">${product.price}$</span>
-                  <button class="text-2xl bg-darkViolet text-white px-5 py-2 rounded-[20px]">
+                  <button class="text-2xl bg-darkViolet text-white px-5 py-2 rounded-[20px] max-sm:text-base">
                     Ajoutez 
                     <i class="fa-solid fa-cart-shopping"></i>  
                   </button>
@@ -258,7 +259,7 @@ function gridPagination(){
         btnGrid5.classList.remove('active12');
     });
     btnGrid2.addEventListener('click', function(){
-        gridPage2.classList.add('Grid');
+        gridPage2.classList.add('grid');
         gridPage2.classList.remove('hidden');
         btnGrid2.classList.add('active12');
 
