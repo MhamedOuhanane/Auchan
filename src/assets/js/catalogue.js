@@ -39,6 +39,7 @@ async function getdata(){
         const json = await response.json();
         console.log(json);
         displayAllCategoriesList(json);
+        displayAllCategoriesGrid(json);
     }
     catch(error){
         console.error(error.message);
@@ -67,7 +68,25 @@ function displayAllCategoriesList(data){
     ListPagination();
 }
 
-
+function displayAllCategoriesGrid(data){
+    data.products.forEach((element,index) => {
+        if(index<12){
+            gridPage1.appendChild(generateCardGrid(element));
+        }
+        else if(index<24){
+            gridPage2.appendChild(generateCardGrid(element));
+        }
+        else if(index<36){
+            gridPage3.appendChild(generateCardGrid(element));
+        }
+        else if(index<48){
+            gridPage4.appendChild(generateCardGrid(element));
+        }
+        else if(index<60){
+            gridPage5.appendChild(generateCardGrid(element));
+        }
+    });
+}
 
 function generateCardList(product){
     let div = document.createElement('div');
