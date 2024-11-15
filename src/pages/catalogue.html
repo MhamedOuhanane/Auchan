@@ -122,7 +122,7 @@
 
         <!--cards containers (grid-container/list-container)-->
         <div id="list-container" class="mt-10 hidden">
-          <div class="allCategoriesList">
+          <div id="allCategoriesList">
             <div id="listPage1" class="flex flex-col items-center gap-10">
               <div class="bg-white shadow-sm hover:shadow-md rounded-lg p-4 w-[95%] max-w-3xl flex items-center">
                 <div class="w-1/4 flex justify-center">
@@ -150,27 +150,30 @@
                 </div>      
               </div>
             </div>
-            <div id="listPage2" class="flex flex-col items-center gap-10">
+            <div id="listPage2" class="flex-col items-center gap-10 hidden">
             </div>
-            <div id="listPage3" class="flex flex-col items-center gap-10">
+            <div id="listPage3" class="flex-col items-center gap-10 hidden ">
             </div>
-            <div id="listPage4" class="flex flex-col items-center gap-10">
+            <div id="listPage4" class="flex-col items-center gap- hidden">
             </div>
-            <div id="listPage5" class="flex flex-col items-center gap-10">
+            <div id="listPage5" class="flex-col items-center gap-10 hidden">
             </div>
             <!--Pagination-->
             <div class="flex space-x-4 justify-center mt-10 mb-10">
-              <button class="w-10 h-10 flex items-center justify-center rounded-2xl border-[1px] border-darkViolet text-darkViolet hover:bg-darkViolet active12">
+              <button id="btn1" class="w-10 h-10 flex items-center justify-center rounded-2xl border-[1px] border-darkViolet text-darkViolet hover:bg-darkViolet active12">
                 1
               </button>
-              <button class="w-10 h-10 flex items-center justify-center rounded-2xl border-[1px] border-darkViolet text-darkViolet hover:bg-darkViolet hover:text-white">
+              <button id="btn2" class="w-10 h-10 flex items-center justify-center rounded-2xl border-[1px] border-darkViolet text-darkViolet hover:bg-darkViolet hover:text-white">
                 2
               </button>
-              <button class="w-10 h-10 flex items-center justify-center rounded-2xl border-[1px] border-darkViolet text-darkViolet hover:bg-darkViolet hover:text-white">
+              <button id="btn3" class="w-10 h-10 flex items-center justify-center rounded-2xl border-[1px] border-darkViolet text-darkViolet hover:bg-darkViolet hover:text-white">
                 3
               </button>
-              <button class="w-10 h-10 flex items-center justify-center rounded-2xl border-[1px] border-darkViolet text-darkViolet hover:bg-darkViolet hover:text-white">
+              <button id="btn4" class="w-10 h-10 flex items-center justify-center rounded-2xl border-[1px] border-darkViolet text-darkViolet hover:bg-darkViolet hover:text-white">
                 4
+              </button>
+              <button id="btn5" class="w-10 h-10 flex items-center justify-center rounded-2xl border-[1px] border-darkViolet text-darkViolet hover:bg-darkViolet hover:text-white">
+                5
               </button>
             </div>
           </div>
