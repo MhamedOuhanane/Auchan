@@ -48,59 +48,30 @@ if (carts.length !== 0) {
                                 </div>
                             </div>
                         </div>`
-                        // // decrementation de quentité du produit
-                        // document.getElementById(`dec${card_Id}`).addEventListener('click' , ()=>{
-                        //     document.getElementById("dec"+card_Id).parentNode.children[1].textContent = --element.quantity;
-                        //     if (element.quantity == 0) {
-                        //         document.getElementById(card_Id).remove();
-                        //         console.log(element.quantity);
-                                
-                        //     }
-                            
-                        // });
-                        // // decrementation de quentité du produit
-                        // document.getElementById(`inc${card_Id}`).addEventListener('click' , ()=>{
-                        //     document.getElementById("inc"+card_Id).parentNode.children[1].textContent = element.quantity++;
-                        //     document.getElementById("tprix" + card_Id).textContent =  element.price * element.quantity + " $";   
-                        //     console.log(document.getElementById("torix" + card_Id));
-                                                    
-                        // });
 
                         totale += element.price * element.quantity;
                         console.log(totale);
-                        
-                        
-    
-                        // let dec = document.getElementById("dec" + card_Id);
-                        // dec.addEventListener("click" , ()=>{
-                        //     console.log(element);
-                            
-                        // });
 
     });   
     
     let incbtn = document.querySelectorAll(".incbtn");
-    incbtn.forEach((element) =>{
-        let index = 0;
+    for (let index = 0; index < incbtn.length; index++) {
+        const element = incbtn[index];
         element.addEventListener('click' , ()=>{
             console.log(carts[index]);
             element.parentNode.children[1].textContent = ++carts[index].quantity;
-            console.log(carts[index]);            
+            console.log(carts[index]); 
         });
-        index++;
-    });
-    let decbtn = document.querySelectorAll(".incbtn");
-    decbtn.forEach((element) =>{
-        let index = 0;
+    }
+    let decbtn = document.querySelectorAll(".decbtn");
+    for (let index = 0; index < decbtn.length; index++) {
+        const element = decbtn[index];
         element.addEventListener('click' , ()=>{
             console.log(carts[index]);
-            element.parentNode.children[1].textContent = ++carts[index].quantity;
-            console.log(carts[index]);            
+            element.parentNode.children[1].textContent = --carts[index].quantity;
+            console.log(carts[index]); 
         });
-        index++;
-    });
-    console.log(carts);
-    
+    }
 
 
     Totalemd.textContent = `${totale} \$` ;
