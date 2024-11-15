@@ -256,8 +256,8 @@ function generateCardList(product){
     let div = document.createElement('div');
     div.classList = 'bg-white shadow-sm hover:shadow-md rounded-lg p-4 w-[95%] max-w-3xl flex items-center gap-10';
     div.innerHTML=`
-                    <div class="w-1/4 flex justify-center max-sm:w-2/5">
-                <img src="../../${product.image}" alt="${product.subtitle}" class="w-auto h-full">
+                    <div class="w-1/4 flex justify-center max-sm:w-2/5 max-w:">
+                <img src="../../${product.image}" alt="${product.subtitle}" class="w-full h-full">
               </div>
               <div class="w-3/4 max-sm:w-3/5">
                 <div class="flex justify-between items-center text-2xl max-sm:text-sm">
