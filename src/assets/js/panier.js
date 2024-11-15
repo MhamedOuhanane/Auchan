@@ -57,7 +57,7 @@ if (liste.length !== 0) {
                     </div>`
                     containerproduits.appendChild(card);
 
-    })
+    });
     
 
 }         
