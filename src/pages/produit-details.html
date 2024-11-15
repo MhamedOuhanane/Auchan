@@ -9,8 +9,6 @@
         <link rel="stylesheet" href="../assets/css/input.css" />
         <link rel="stylesheet" href="../assets/css/home.css">
         <link rel="stylesheet" href="../assets/css/produit-details.css">
-        <script type="module" src="../assets/js/home.js" defer></script>
-        <script type="module" src="../assets/js/produit-details.js" defer></script>
     </head>
     <body>
         <!-- header -->
@@ -29,11 +27,11 @@
             </div>
             <div class="flex h-full gap-2">
                 <div class="flex items-center">
-                <a href="pages/panier.html" class="h-full">
+                <a href="panier.html" class="h-full">
                     <img class="h-full p-2 max-sm:py-3" src="../assets/images/icons/cart.svg" title="Panier" alt="phone-icon" />
                 </a>
                 <p class="max-sm:hidden">
-                    <a href="pages/panier.html">Panier</a>
+                    <a href="panier.html">Panier</a>
                 </p>
                 </div>
                 <div class="flex items-center">
@@ -46,7 +44,7 @@
         <!-- navigation -->
         <nav class="bg-white shadow-md h-14 center select-none">
         <div class="container flex items-center justify-between h-full">
-            <a href="index.html" class="h-full pb-1">
+            <a href="../index.html" class="h-full pb-1">
             <img
                 src="../assets/images/large-logo.png"
                 class="h-full max-md:p-2 max-sm:py-4"
@@ -61,16 +59,16 @@
 
         <ul class="menu" id="menu">
             <li class="active">
-            <a href="index.html">Acceuill</a>
+            <a href="../index.html">Acceuill</a>
             </li>
             <li class="">
-            <a href="pages/catalogue.html">Catalogue</a>
+            <a href="catalogue.html">Catalogue</a>
             </li>
             <li class="">
-            <a href="pages/promotion.html">Promotion</a>
+            <a href="promotion.html">Promotion</a>
             </li>
             <li class="">
-            <a href="pages/contact.html">Contactez-nous</a>
+            <a href="contact.html">Contactez-nous</a>
             </li>
         </ul>
 
@@ -80,7 +78,7 @@
         </nav>
 
         <!-- title side -->
-        <div class="center max-sm:px-2 bg-gradient-to-r from-lightViolet to-white text-darkViolet">
+        <div class="center max-sm:px-2 bg-gradient-to-r from-[#EDBEF5] to-[#FFE5FA]  text-darkViolet">
             <div class="container">
                 <h1 class="text-[2rem] max-md:text-[1.6rem] max-sm:text-[1rem] flex items-center py-3 font-extrabold">Produits</h1>
             </div>
@@ -220,5 +218,9 @@
             <p class="text-white max-md:text-[.6rem]">Auchan 2024 © Tous droits réservés</p>
             </div>
         </footer>
+
+        
+        <script type="module" src="../assets/js/produit-details.js"></script>
+        <script src="../assets/js/script.js"></script>
     </body>
 </html>
