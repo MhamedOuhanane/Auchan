@@ -82,7 +82,7 @@ if (liste.length !== 0) {
                     </div>`
 
                     console.log(card);
-                    do
+                    
 }
 
 
