@@ -27,6 +27,9 @@ productDetailsNoeud.innerHTML = `
                 <label id="xl-size" for="XL">XL</label>
                 
             </div>
+            <select class="w-1/6 bg-gray-200 rounded-lg p-1 mt-4 text-[.8rem] max-sm:text-[.6rem]" name="quantity" id="quantity-noeud">
+                <option value="1" selected>1</option>
+            </select>
             <span class="text-darkViolet text-[1.6rem] font-bold pt-4">${products[productDetails_ID].price} $</span>
             <button id="btn" class="primary-btn center gap-2 h-10 w-1/2">
                 <span class="text-[.8rem] max-sm:text-[.5rem]">AJOUTER AU PANIER</span>
@@ -39,6 +42,11 @@ productDetailsNoeud.innerHTML = `
     </div>
 `;
 
+const quantityNoued = document.getElementById("quantity-noeud");
+for(let i=1; i <= products[productDetails_ID].qunatity; i++){
+    quantityNoued.innerHTML += `<option value=${i}>${i}</option>`;
+}
+
 const smallSize = document.getElementById("S");
 const mediumSize = document.getElementById("M");
 const largeSize = document.getElementById("L");
@@ -50,7 +58,7 @@ largeSize.onclick = function () { size = "l" };
 xLargeSize.onclick = function () { size = "xl" };
 
 document.getElementById("btn").onclick = () => {
-    addToCart(products[productDetails_ID].id, 1, size, products[productDetails_ID].price);
+    addToCart(products[productDetails_ID].id, quantityNoued.value, size, products[productDetails_ID].price);
 }
 
 const discoverMoreProducts = document.getElementById("discover-more-products");
