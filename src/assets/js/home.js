@@ -27,16 +27,12 @@ setInterval(() => {
 import products from "../data/produits.json" with { type: "json" };
 const productsContainer = document.getElementById("products-container");
 
-window.showProductDetails = function(id) {
-    sessionStorage.setItem("productDetails", id);
-}
-
 products.map((product) => {
     if(product.categories =='boissons'){
         productsContainer.innerHTML += `
         <div class="card shadow-md hover:shadow-lg transition-all ease-out delay-75">
-            <a href="/src/pages/produit-details.html" id="product-image" class="h-[140px] cursor-pointer center" onclick="showProductDetails(${product.id})">
-                <img src=${"../../../" + product.image} alt="" class="h-full object-contain">
+            <a href="pages/produit-details.html" id="product-image" class="h-[140px] cursor-pointer center" onclick="showProductDetails(${product.id})">
+                <img src=${product.image} alt="" class="h-full object-contain">
             </a>
             <div class="flex justify-between items-center flex-wrap">
                 <span class="font-bold text-[1.2rem] max-md:text-[1rem] max-sm:text-[.7rem]">${product.title}</span>
