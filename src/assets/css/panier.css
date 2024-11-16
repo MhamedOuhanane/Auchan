@@ -1,0 +1,10 @@
+.carouselproduit::-webkit-scrollbar{
+    display: none;
+}
+.card {
+    padding: 1rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}

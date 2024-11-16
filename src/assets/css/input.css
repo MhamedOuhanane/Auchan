@@ -1,0 +1,59 @@
+/* import font-faily "Comfortaa" */
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=League+Spartan:wght@100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* apply 'Comfortaa' font to all html */
+html{ 
+    font-family: "Comfortaa", sans-serif;
+    background: #f8f8f8;
+}
+.noScroll {
+    overflow-y: hidden;
+}
+/* class to center something with flexbox */
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.check {border: 1px solid red;}
+.container {
+    width: 99.5%;
+}
+@media (max-width: 1740px) {
+    html {
+        font-size: 10px;
+    }
+    .container {
+        width: 80%;
+        /* border: 1px solid red; */
+    }
+}
+@media (max-width: 1028px) {
+    html {
+        font-size: 12px;
+    }
+    .container {
+        width: 90%;
+    }
+}
+@media (max-width: 664px) {
+    html {
+        font-size: 14px;
+    }
+    .container {
+        width: 100%;
+    }
+}
+/* define a style for secondary button */
+.secondary-btn {
+    @apply text-[1rem] max-md:text-[.8rem] max-md:py-1 max-sm:text-[.5rem] bg-lightGray h-full hover:bg-gray-100 py-2 px-6 max-sm:px-3 rounded-lg;
+}
+/* define a style for primary button */
+.primary-btn {
+    @apply text-[1rem] max-md:text-[.8rem] max-md:py-1 max-sm:text-[.5rem] bg-darkViolet hover:bg-darkViolet/90 text-white py-2 px-6 max-sm:px-3 rounded-lg;
+}

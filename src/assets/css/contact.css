@@ -1,0 +1,24 @@
+@keyframes buttonClick {
+    0% {
+        transform: scale(1);
+        background-color: #6A1E78; /* Couleur initiale du bouton */
+        color: white;
+        box-shadow: none;
+    }
+    50% {
+        transform: scale(1.15);
+        background-color: #6A0DAD; /* Couleur plus claire au milieu de l'animation */
+        color: white;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); /* Ombre plus visible */
+    }
+    100% {
+        transform: scale(1);
+        background-color: #6A1E78;
+        color: white;
+        box-shadow: none;
+    }
+}
+
+.animate {
+    animation: buttonClick 0.5s ease;
+}
