@@ -1,11 +1,9 @@
 // // declaration des variable utilisé
 let totale = 0;
 // // Return les donner de localStorage
-let carts = JSON.parse(localStorage.getItem("carts"));
-console.log(carts);
+let carts = JSON.parse(localStorage.getItem("carts")) || [];
 
 import Categorie from "../data/produits.json" with {type: "json"};
-console.log(Categorie[0].image);
 
 if (carts.length !== 0) {
     document.getElementById("blocempty").classList.add("classblocemty");
@@ -45,86 +43,101 @@ if (carts.length !== 0) {
                                     <button class="deleteprod bg-red-400 px-[1.5vw] rounded-md" >delete</button>
                                 </div>
                             </div>
-                        </div>`
-
-                        totale += element.price * element.quantity;
-                        console.log(totale);
-
-    });   
+                            </div>`
+                            
+        totale += element.price * element.quantity;
+        
+                            
+                            
+                            
+    });  
+    // Mise à jour de total
+    function MiseTotal() {
+        let total = 0;
+        carts.forEach(element => {
+            total += element.price * element.quantity;
+        });
+        Totalemd.textContent = `${total} \$`;
+        Totalesm.textContent = `${total} \$`;
+    }
     // Incrémentation de la Quantité des produit 
     let incbtn = document.querySelectorAll(".incbtn");
-    for (let index = 0; index < incbtn.length; index++) {
-        const element = incbtn[index];
-        element.addEventListener('click' , ()=>{
+    incbtn.forEach((element,index) =>{
+        index=0;
+        element.onclick= ()=>{
             element.parentNode.children[1].textContent = ++carts[index].quantity;
-        });
-    }
+            console.log(index);
+            
+        };
+        index++;
+        
+    });
 
     // Décrémentation de la Quantité des produit 
     let decbtn = document.querySelectorAll(".decbtn");
-    for (let index = 0; index < decbtn.length; index++) {
-        const element = decbtn[index];
-        element.addEventListener('click' , ()=>{
+    decbtn.forEach((element,index) => {
+        index=0;
+        element.onclick= ()=>{
             element.parentNode.children[1].textContent = --carts[index].quantity;
+            console.log(carts);
+            console.log(index);
+            
             if (carts[index].quantity == 0) {
                 element.parentNode.parentNode.parentNode.remove();
-                carts.splice(index,1);
                 decbtn = [...decbtn].filter((elent) => elent !== element);
-                console.log(decbtn);
-                console.log(carts);
-            
+                carts = carts.filter((element) => element.quantity !== 0);
             };
-            
-            decbtn = [...decbtn].filter((elent) => elent !== element);
-            console.log(decbtn);
-        });
-    }
+            index++; 
+        };
+    });
     
     // Suppression du carte de produit
     let deleteprod = document.querySelectorAll(".deleteprod");
-    console.log(deleteprod);
-    
-    for (let index = 0; index < deleteprod.length; index++) {
-        const element = deleteprod[index];
-        element.addEventListener("click" , ()=>{
+    // deleteprod.forEach((element) =>{
+        
+    // });
+    deleteprod.forEach((element,index) =>{
+        element.onclick= ()=>{
             element.parentNode.parentNode.remove();
-            carts.splice(index,1);
-            console.log(deleteprod);
             deleteprod = [...deleteprod].filter((elent) => elent !== element);
-            console.log(carts);
-        });
-
+            carts[index].quantity = 0;
+            let produit = carts.filter((element) => element.quantity != 0);
+            localStorage.setItem("carts", JSON.stringify(produit));
+            if (deleteprod.length == 0) {
+                document.getElementById("blocempty").classList.remove("classblocemty");
+                document.getElementById("bloccartes").classList.add("classbloccartes");
+            }
+            MiseTotal()
+        };
+    });
+        
+        
     
-    };
-    console.log(carts);
-    
-
-
-
-    Totalemd.textContent = `${totale} \$` ;
-    Totalesm.textContent = `${totale} \$` ;
-    carts = carts.filter((element) => element.quantity != 0);
-    console.log(carts);
+    MiseTotal()
+    let produit = carts.filter((element) => element.quantity != 0);
+    localStorage.removeItem("carts");
+    localStorage.setItem("carts", JSON.stringify(produit));
     
     
+}  
 
-}   
+
 
 
 // card_Id.addEventListener("click" , ()=>{
-//     card_Id.chil
+    //     card_Id.chil
 
-// });
-// let inputchecked = document.getElementById(".checkedprod");
-// inputchecked.setAttribute.toggle("checked")
-// let inputchecked = document.querySelectorAll(".checkedprod");
-// inputchecked.forEach(check => {
-    
-// });
-
-
-
-
+    // });
+    // let inputchecked = document.getElementById(".checkedprod");
+    // inputchecked.setAttribute.toggle("checked")
+    // let inputchecked = document.querySelectorAll(".checkedprod");
+    // inputchecked.forEach(check => {
+        
+        // });
+        
+        
+        
+        
 // letdeletprod = document.getElementsByClassName("deletprod")
 // deletprod.onclick = () =>{
 //     deletprod.
