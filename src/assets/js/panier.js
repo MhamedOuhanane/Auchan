@@ -1,5 +1,6 @@
 // // declaration des variable utilisé
-let totale = 0;
+let totale = Number;
+
 // // Return les donner de localStorage
 let carts = JSON.parse(localStorage.getItem("carts")) || [];
 
@@ -51,62 +52,62 @@ if (carts.length !== 0) {
                             
                             
     });  
-    // Mise à jour de total
+    // Mise à jour de total de prix
     function MiseTotal() {
-        let total = 0;
-        carts.forEach(element => {
+            let total = 0;
+            carts.forEach(element => {
             total += element.price * element.quantity;
         });
-        Totalemd.textContent = `${total} \$`;
-        Totalesm.textContent = `${total} \$`;
+        Totalemd.textContent = total + "$";
+        Totalesm.textContent = total + "$";
     }
+    // Mise à jour de contenut de localStorage
+    function MiselocalStorage(){
+        let produit = carts.filter((element) => element.quantity != 0);
+        localStorage.setItem("carts", JSON.stringify(produit));
+        if (produit.length == 0) {
+            document.getElementById("blocempty").classList.remove("classblocemty");
+            document.getElementById("bloccartes").classList.add("classbloccartes");
+        }
+    }
+
     // Incrémentation de la Quantité des produit 
     let incbtn = document.querySelectorAll(".incbtn");
     incbtn.forEach((element,index) =>{
-        index=0;
         element.onclick= ()=>{
             element.parentNode.children[1].textContent = ++carts[index].quantity;
             console.log(index);
-            
+            MiselocalStorage();
         };
-        index++;
-        
     });
 
     // Décrémentation de la Quantité des produit 
     let decbtn = document.querySelectorAll(".decbtn");
-    decbtn.forEach((element,index) => {
-        index=0;
+    decbtn.forEach((element , index) => {
         element.onclick= ()=>{
             element.parentNode.children[1].textContent = --carts[index].quantity;
-            console.log(carts);
-            console.log(index);
             
             if (carts[index].quantity == 0) {
                 element.parentNode.parentNode.parentNode.remove();
                 decbtn = [...decbtn].filter((elent) => elent !== element);
-                carts = carts.filter((element) => element.quantity !== 0);
+                MiselocalStorage();
             };
-            index++; 
+            MiseTotal();
         };
     });
     
     // Suppression du carte de produit
     let deleteprod = document.querySelectorAll(".deleteprod");
-    // deleteprod.forEach((element) =>{
-        
-    // });
     deleteprod.forEach((element,index) =>{
         element.onclick= ()=>{
+
             element.parentNode.parentNode.remove();
             deleteprod = [...deleteprod].filter((elent) => elent !== element);
+
             carts[index].quantity = 0;
-            let produit = carts.filter((element) => element.quantity != 0);
-            localStorage.setItem("carts", JSON.stringify(produit));
-            if (deleteprod.length == 0) {
-                document.getElementById("blocempty").classList.remove("classblocemty");
-                document.getElementById("bloccartes").classList.add("classbloccartes");
-            }
+
+            // Mise à jour de contenut de localStorage
+            MiselocalStorage()
             MiseTotal()
         };
     });
@@ -114,9 +115,8 @@ if (carts.length !== 0) {
         
     
     MiseTotal()
-    let produit = carts.filter((element) => element.quantity != 0);
-    localStorage.removeItem("carts");
-    localStorage.setItem("carts", JSON.stringify(produit));
+    // Mise à jour de contenut de localStorage
+    MiselocalStorage()
     
     
 }  
