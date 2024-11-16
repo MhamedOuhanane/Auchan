@@ -7,7 +7,7 @@
         "categorie": "boissons",
         "rating": 4.5,
         "reviews": 123,
-        "image": "src/assets/images/products/tropico.webp",
+        "image": "assets/images/products/tropico.webp",
         "price": 12.5,
         "qunatity": 54
     },
@@ -19,7 +19,7 @@
         "categorie": "boissons",
         "rating": 4.5,
         "reviews": 123,
-        "image": "src/assets/images/products/auchan-jus-orange.webp",
+        "image": "assets/images/products/auchan-jus-orange.webp",
         "price": 20.5,
         "qunatity": 31
     },
@@ -31,7 +31,7 @@
         "categorie": "boissons",
         "rating": 4.4,
         "reviews": 12,
-        "image": "src/assets/images/products/eau-naturelle.webp",
+        "image": "assets/images/products/eau-naturelle.webp",
         "price": 6.9,
         "qunatity": 13
     },
@@ -43,7 +43,7 @@
         "categorie": "boissons",
         "rating": 4.4,
         "reviews": 12,
-        "image": "src/assets/images/products/pepsi-zero.webp",
+        "image": "assets/images/products/pepsi-zero.webp",
         "price": 11.9,
         "qunatity": 65
     },
@@ -55,7 +55,7 @@
         "categorie": "boissons",
         "rating": 4.4,
         "reviews": 12,
-        "image": "src/assets/images/products/evian.webp",
+        "image": "assets/images/products/evian.webp",
         "price": 11.9,
         "qunatity": 10
     },
@@ -67,7 +67,7 @@
         "categorie": "boissons",
         "rating": 3.4,
         "reviews": 120,
-        "image": "src/assets/images/products/lorina.webp",
+        "image": "assets/images/products/lorina.webp",
         "price": 11.9,
         "qunatity": 70
     },
@@ -79,7 +79,7 @@
         "categorie": "boissons",
         "rating": 3.4,
         "reviews": 20,
-        "image": "src/assets/images/products/lipton.webp",
+        "image": "assets/images/products/lipton.webp",
         "price": 19.00,
         "qunatity": 19
     },
@@ -91,7 +91,7 @@
         "categorie": "boissons",
         "rating": 3.4,
         "reviews": 20,
-        "image": "src/assets/images/products/seven-up.webp",
+        "image": "assets/images/products/seven-up.webp",
         "price": 19.00,
         "qunatity": 50
     },
@@ -103,7 +103,7 @@
         "categorie": "boissons",
         "rating": 4.2,
         "reviews": 2,
-        "image": "src/assets/images/products/pops.webp",
+        "image": "assets/images/products/pops.webp",
         "price": 9.00,
         "qunatity": 42
     },
@@ -115,7 +115,7 @@
         "categorie": "boissons",
         "rating": 4.0,
         "reviews": 12,
-        "image": "src/assets/images/products/mountain-dew.webp",
+        "image": "assets/images/products/mountain-dew.webp",
         "price": 15.50,
         "qunatity": 23
     },
@@ -127,7 +127,7 @@
         "categorie": "boissons",
         "rating": 3.0,
         "reviews": 112,
-        "image": "src/assets/images/products/schweppes.webp",
+        "image": "assets/images/products/schweppes.webp",
         "price": 8.50,
         "qunatity": 9
     },
@@ -139,7 +139,7 @@
         "categorie": "boissons",
         "rating": 3.0,
         "reviews": 112,
-        "image": "src/assets/images/products/monster-energy.webp",
+        "image": "assets/images/products/monster-energy.webp",
         "price": 8.50,
         "qunatity": 34
     }
