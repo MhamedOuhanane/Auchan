@@ -54,3 +54,7 @@ window.changeCount = function() {
     };
 }
 changeCount();
+
+window.showProductDetails = function(id) {
+    sessionStorage.setItem("productDetails", id);
+}
