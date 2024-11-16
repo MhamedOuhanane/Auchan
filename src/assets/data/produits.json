@@ -7,7 +7,7 @@
         "categories": "nettoyage",
         "rating": 4.5,
         "reviews": 115,
-        "image": "src/assets/images/products/floor-mop-pro.webp",
+        "image": "assets/images/products/floor-mop-pro.webp",
         "price": 19.99
     },
     {
@@ -18,7 +18,7 @@
         "categories": "cuisine",
         "rating": 4.4,
         "reviews": 102,
-        "image": "src/assets/images/products/rice-cooker-deluxe.webp",
+        "image": "assets/images/products/rice-cooker-deluxe.webp",
         "price": 79.99
     },
     {
@@ -29,7 +29,7 @@
         "categories": "boissons",
         "rating": 4.2,
         "reviews": 2,
-        "image": "src/assets/images/products/pops.webp",
+        "image": "assets/images/products/pops.webp",
         "price": 9.0
     },
     {
@@ -40,7 +40,7 @@
         "categories": "tech",
         "rating": 4.7,
         "reviews": 160,
-        "image": "src/assets/images/products/bluetooth-speaker-max.webp",
+        "image": "assets/images/products/bluetooth-speaker-max.webp",
         "price": 99.99
     },
     {
@@ -51,7 +51,7 @@
         "categories": "vetements",
         "rating": 4.6,
         "reviews": 65,
-        "image": "src/assets/images/products/rain-jacket.webp",
+        "image": "assets/images/products/rain-jacket.webp",
         "price": 69.99
     },
     {
@@ -62,7 +62,7 @@
         "categories": "vetements",
         "rating": 4.5,
         "reviews": 130,
-        "image": "src/assets/images/products/boots-leather.webp",
+        "image": "assets/images/products/boots-leather.webp",
         "price": 89.99
     },
     {
@@ -73,7 +73,7 @@
         "categories": "cuisine",
         "rating": 4.2,
         "reviews": 110,
-        "image": "src/assets/images/products/grill-master.webp",
+        "image": "assets/images/products/grill-master.webp",
         "price": 79.99
     },
     {
@@ -84,7 +84,7 @@
         "categories": "boissons",
         "rating": 3.0,
         "reviews": 112,
-        "image": "src/assets/images/products/schweppes.webp",
+        "image": "assets/images/products/schweppes.webp",
         "price": 8.5
     },
     {
@@ -95,7 +95,7 @@
         "categories": "tech",
         "rating": 4.4,
         "reviews": 200,
-        "image": "src/assets/images/products/gaming-mouse-x5.webp",
+        "image": "assets/images/products/gaming-mouse-x5.webp",
         "price": 49.99
     },
     {
@@ -118,7 +118,7 @@
         "categories": "vetements",
         "rating": 4.7,
         "reviews": 115,
-        "image": "src/assets/images/products/formal-pants.webp",
+        "image": "assets/images/products/formal-pants.webp",
         "price": 79.99
     },
     {
@@ -129,7 +129,7 @@
         "categories": "tech",
         "rating": 4.7,
         "reviews": 245,
-        "image": "src/assets/images/products/smartphone-x100.webp",
+        "image": "assets/images/products/smartphone-x100.webp",
         "price": 599.99
     },
     {
@@ -140,7 +140,7 @@
         "categories": "cuisine",
         "rating": 4.6,
         "reviews": 110,
-        "image": "src/assets/images/products/mixer-pro-2000.webp",
+        "image": "assets/images/products/mixer-pro-2000.webp",
         "price": 89.99
     },
     {
@@ -151,7 +151,7 @@
         "categories": "nettoyage",
         "rating": 4.6,
         "reviews": 92,
-        "image": "src/assets/images/products/carpet-cleaner-max.webp",
+        "image": "assets/images/products/carpet-cleaner-max.webp",
         "price": 24.99
     },
     {
@@ -162,7 +162,7 @@
         "categories": "vetements",
         "rating": 4.4,
         "reviews": 89,
-        "image": "src/assets/images/products/hoodie-classic.webp",
+        "image": "assets/images/products/hoodie-classic.webp",
         "price": 39.99
     },
     {
@@ -173,7 +173,7 @@
         "categories": "vetements",
         "rating": 4.3,
         "reviews": 120,
-        "image": "src/assets/images/products/denim-shorts.webp",
+        "image": "assets/images/products/denim-shorts.webp",
         "price": 34.99
     },
     {
@@ -184,7 +184,7 @@
         "categories": "tech",
         "rating": 4.5,
         "reviews": 90,
-        "image": "src/assets/images/products/portable-ssd-1tb.webp",
+        "image": "assets/images/products/portable-ssd-1tb.webp",
         "price": 129.99
     },
     {
@@ -195,7 +195,7 @@
         "categories": "cuisine",
         "rating": 4.4,
         "reviews": 92,
-        "image": "src/assets/images/products/frying-pan-pro.webp",
+        "image": "assets/images/products/frying-pan-pro.webp",
         "price": 59.99
     },
     {
@@ -206,7 +206,7 @@
         "categories": "nettoyage",
         "rating": 4.7,
         "reviews": 160,
-        "image": "src/assets/images/products/trash-bags-ultra.webp",
+        "image": "assets/images/products/trash-bags-ultra.webp",
         "price": 12.99
     },
     {
@@ -229,7 +229,7 @@
         "categories": "boissons",
         "rating": 4.5,
         "reviews": 123,
-        "image": "src/assets/images/products/auchan-jus-orange.webp",
+        "image": "assets/images/products/auchan-jus-orange.webp",
         "price": 20.5
     },
     {
@@ -240,7 +240,7 @@
         "categories": "cuisine",
         "rating": 4.3,
         "reviews": 95,
-        "image": "src/assets/images/products/electric-kettle.webp",
+        "image": "assets/images/products/electric-kettle.webp",
         "price": 29.99
     },
     {
@@ -251,7 +251,7 @@
         "categories": "nettoyage",
         "rating": 4.6,
         "reviews": 92,
-        "image": "src/assets/images/products/all-purpose-cleaner.webp",
+        "image": "assets/images/products/all-purpose-cleaner.webp",
         "price": 9.99
     },
     {
@@ -262,7 +262,7 @@
         "categories": "tech",
         "rating": 4.6,
         "reviews": 134,
-        "image": "src/assets/images/products/laptop-ultrapro.webp",
+        "image": "assets/images/products/laptop-ultrapro.webp",
         "price": 1299.99
     },
     {
@@ -273,7 +273,7 @@
         "categories": "cuisine",
         "rating": 4.3,
         "reviews": 60,
-        "image": "src/assets/images/products/ice-cream-maker.webp",
+        "image": "assets/images/products/ice-cream-maker.webp",
         "price": 49.99
     },
     {
@@ -284,7 +284,7 @@
         "categories": "vetements",
         "rating": 4.4,
         "reviews": 110,
-        "image": "src/assets/images/products/jeans-fit.webp",
+        "image": "assets/images/products/jeans-fit.webp",
         "price": 39.99
     },
     {
@@ -295,7 +295,7 @@
         "categories": "nettoyage",
         "rating": 4.2,
         "reviews": 48,
-        "image": "src/assets/images/products/toilet-brush-set.webp",
+        "image": "assets/images/products/toilet-brush-set.webp",
         "price": 15.99
     },
     {
@@ -306,7 +306,7 @@
         "categories": "tech",
         "rating": 4.6,
         "reviews": 150,
-        "image": "src/assets/images/products/vr-headset-vision.webp",
+        "image": "assets/images/products/vr-headset-vision.webp",
         "price": 399.99
     },
     {
@@ -317,7 +317,7 @@
         "categories": "tech",
         "rating": 4.5,
         "reviews": 110,
-        "image": "src/assets/images/products/tablet-pro10.webp",
+        "image": "assets/images/products/tablet-pro10.webp",
         "price": 399.99
     },
     {
@@ -328,7 +328,7 @@
         "categories": "cuisine",
         "rating": 4.8,
         "reviews": 140,
-        "image": "src/assets/images/products/food-processor-5000.webp",
+        "image": "assets/images/products/food-processor-5000.webp",
         "price": 159.99
     },
     {
@@ -339,7 +339,7 @@
         "categories": "tech",
         "rating": 4.3,
         "reviews": 200,
-        "image": "src/assets/images/products/smart-home-hub.webp",
+        "image": "assets/images/products/smart-home-hub.webp",
         "price": 129.99
     },
     {
@@ -350,7 +350,7 @@
         "categories": "cuisine",
         "rating": 4.6,
         "reviews": 130,
-        "image": "src/assets/images/products/cookware-set.webp",
+        "image": "assets/images/products/cookware-set.webp",
         "price": 159.99
     },
     {
@@ -373,7 +373,7 @@
         "categories": "vetements",
         "rating": 4.8,
         "reviews": 130,
-        "image": "src/assets/images/products/winter-coat.webp",
+        "image": "assets/images/products/winter-coat.webp",
         "price": 199.99
     },
     {
@@ -384,7 +384,7 @@
         "categories": "vetements",
         "rating": 4.3,
         "reviews": 75,
-        "image": "src/assets/images/products/jogging-pants.webp",
+        "image": "assets/images/products/jogging-pants.webp",
         "price": 29.99
     },
     {
@@ -395,7 +395,7 @@
         "categories": "boissons",
         "rating": 4.0,
         "reviews": 12,
-        "image": "src/assets/images/products/mountain-dew.webp",
+        "image": "assets/images/products/mountain-dew.webp",
         "price": 15.5
     },
     {
@@ -406,7 +406,7 @@
         "categories": "nettoyage",
         "rating": 4.5,
         "reviews": 123,
-        "image": "src/assets/images/products/vacuum-v100.webp",
+        "image": "assets/images/products/vacuum-v100.webp",
         "price": 249.99
     },
     {
@@ -417,7 +417,7 @@
         "categories": "boissons",
         "rating": 4.4,
         "reviews": 12,
-        "image": "src/assets/images/products/evian.webp",
+        "image": "assets/images/products/evian.webp",
         "price": 11.9
     },
     {
@@ -428,7 +428,7 @@
         "categories": "boissons",
         "rating": 3.0,
         "reviews": 112,
-        "image": "src/assets/images/products/monster-energy.webp",
+        "image": "assets/images/products/monster-energy.webp",
         "price": 8.5
     },
     {
@@ -439,7 +439,7 @@
         "categories": "nettoyage",
         "rating": 4.8,
         "reviews": 200,
-        "image": "src/assets/images/products/laundry-detergent.webp",
+        "image": "assets/images/products/laundry-detergent.webp",
         "price": 11.99
     },
     {
@@ -450,7 +450,7 @@
         "categories": "nettoyage",
         "rating": 4.3,
         "reviews": 58,
-        "image": "src/assets/images/products/cleaning-cloth-pack.webp",
+        "image": "assets/images/products/cleaning-cloth-pack.webp",
         "price": 14.99
     },
     {
@@ -461,7 +461,7 @@
         "categories": "nettoyage",
         "rating": 4.5,
         "reviews": 72,
-        "image": "src/assets/images/products/air-freshener-spray.webp",
+        "image": "assets/images/products/air-freshener-spray.webp",
         "price": 5.99
     },
     {
@@ -472,7 +472,7 @@
         "categories": "tech",
         "rating": 4.6,
         "reviews": 150,
-        "image": "src/assets/images/products/smartwatch-pro.webp",
+        "image": "assets/images/products/smartwatch-pro.webp",
         "price": 249.99
     },
     {
@@ -483,7 +483,7 @@
         "categories": "vetements",
         "rating": 4.6,
         "reviews": 102,
-        "image": "src/assets/images/products/summer-dress.webp",
+        "image": "assets/images/products/summer-dress.webp",
         "price": 49.99
     },
     {
@@ -494,7 +494,7 @@
         "categories": "boissons",
         "rating": 3.4,
         "reviews": 20,
-        "image": "src/assets/images/products/seven-up.webp",
+        "image": "assets/images/products/seven-up.webp",
         "price": 19.0
     },
     {
@@ -505,7 +505,7 @@
         "categories": "vetements",
         "rating": 4.7,
         "reviews": 150,
-        "image": "src/assets/images/products/leather-jacket.webp",
+        "image": "assets/images/products/leather-jacket.webp",
         "price": 149.99
     },
     {
@@ -516,7 +516,7 @@
         "categories": "tech",
         "rating": 4.3,
         "reviews": 78,
-        "image": "src/assets/images/products/wireless-earbuds.webp",
+        "image": "assets/images/products/wireless-earbuds.webp",
         "price": 129.99
     },
     {
@@ -527,7 +527,7 @@
         "categories": "boissons",
         "rating": 3.4,
         "reviews": 20,
-        "image": "src/assets/images/products/lipton.webp",
+        "image": "assets/images/products/lipton.webp",
         "price": 19.0
     },
     {
@@ -538,7 +538,7 @@
         "categories": "nettoyage",
         "rating": 4.4,
         "reviews": 80,
-        "image": "src/assets/images/products/dishwasher-cleaner.webp",
+        "image": "assets/images/products/dishwasher-cleaner.webp",
         "price": 6.99
     },
     {
@@ -549,7 +549,7 @@
         "categories": "boissons",
         "rating": 4.4,
         "reviews": 12,
-        "image": "src/assets/images/products/pepsi-zero.webp",
+        "image": "assets/images/products/pepsi-zero.webp",
         "price": 11.9
     },
     {
@@ -560,7 +560,7 @@
         "categories": "vetements",
         "rating": 4.6,
         "reviews": 188,
-        "image": "src/assets/images/products/tshirt-classic.webp",
+        "image": "assets/images/products/tshirt-classic.webp",
         "price": 19.99
     },
     {
@@ -571,7 +571,7 @@
         "categories": "tech",
         "rating": 4.8,
         "reviews": 300,
-        "image": "src/assets/images/products/4k-smart-tv-55.webp",
+        "image": "assets/images/products/4k-smart-tv-55.webp",
         "price": 799.99
     },
     {
@@ -582,7 +582,7 @@
         "categories": "tech",
         "rating": 4.7,
         "reviews": 110,
-        "image": "src/assets/images/products/digital-camera-pro.webp",
+        "image": "assets/images/products/digital-camera-pro.webp",
         "price": 599.99
     },
     {
@@ -593,7 +593,7 @@
         "categories": "cuisine",
         "rating": 4.5,
         "reviews": 86,
-        "image": "src/assets/images/products/blender-max.webp",
+        "image": "assets/images/products/blender-max.webp",
         "price": 129.99
     },
     {
@@ -604,7 +604,7 @@
         "categories": "cuisine",
         "rating": 4.5,
         "reviews": 45,
-        "image": "src/assets/images/products/slow-cooker-xl.webp",
+        "image": "assets/images/products/slow-cooker-xl.webp",
         "price": 119.99
     },
     {
@@ -615,7 +615,7 @@
         "categories": "cuisine",
         "rating": 4.6,
         "reviews": 150,
-        "image": "src/assets/images/products/toaster-pro.webp",
+        "image": "assets/images/products/toaster-pro.webp",
         "price": 39.99
     },
     {
@@ -626,7 +626,7 @@
         "categories": "vetements",
         "rating": 4.5,
         "reviews": 80,
-        "image": "src/assets/images/products/flannel-shirt.webp",
+        "image": "assets/images/products/flannel-shirt.webp",
         "price": 39.99
     },
     {
@@ -637,7 +637,7 @@
         "categories": "cuisine",
         "rating": 4.7,
         "reviews": 200,
-        "image": "src/assets/images/products/coffee-maker-elite.webp",
+        "image": "assets/images/products/coffee-maker-elite.webp",
         "price": 99.99
     },
     {
@@ -648,7 +648,7 @@
         "categories": "nettoyage",
         "rating": 4.3,
         "reviews": 125,
-        "image": "src/assets/images/products/steam-cleaner.webp",
+        "image": "assets/images/products/steam-cleaner.webp",
         "price": 149.99
     },
     {
@@ -659,7 +659,7 @@
         "categories": "nettoyage",
         "rating": 4.5,
         "reviews": 101,
-        "image": "src/assets/images/products/window-cleaner-pro.webp",
+        "image": "assets/images/products/window-cleaner-pro.webp",
         "price": 8.99
     }
 ]
