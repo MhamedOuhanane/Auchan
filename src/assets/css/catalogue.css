@@ -1,0 +1,21 @@
+.active10{
+    border-color: #6a1e78 !important;
+    color: #6a1e78 !important;
+    font-weight: bold !important;
+}
+.active11{
+    background-color: #EDBEF5;
+    color: white;
+    border: none;
+}
+.active12{
+    background-color: #6a1e78;
+    color: white !important;
+}
+.card {
+    padding: 1rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}

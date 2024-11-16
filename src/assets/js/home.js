@@ -32,7 +32,8 @@ window.showProductDetails = function(id) {
 }
 
 products.map((product) => {
-    productsContainer.innerHTML += `
+    if(product.categories =='boissons'){
+        productsContainer.innerHTML += `
         <div class="card shadow-md hover:shadow-lg transition-all ease-out delay-75">
             <a href="/src/pages/produit-details.html" id="product-image" class="h-[140px] cursor-pointer center" onclick="showProductDetails(${product.id})">
                 <img src=${product.image} alt="" class="h-full object-contain">
@@ -54,5 +55,6 @@ products.map((product) => {
                 </div>
             </div>
         </div>
-    `;
+        `;
+    }
 })
