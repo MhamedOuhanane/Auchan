@@ -107,13 +107,13 @@ function fetch_data(category, page) {
       break;
   }
 
-  axios.get("http://localhost:3000/promotions")
+  axios.get("https://abderrahmanerabeh.github.io/data/db.json")
     .then(response => {
 
       if (category) {
-        Products_Promo = response.data.filter(product => product.category === category);
+        Products_Promo = response.data.promotions.filter(product => product.category === category);
       } else {
-        Products_Promo = response.data;
+        Products_Promo = response.data.promotions;
         // console.log(response.data);
 
 
@@ -205,15 +205,18 @@ window.addEventListener("scroll", function () {
 let page = 1;
 
 next.addEventListener("click", () => {
-  page++;
-  fetch_data("", page);
 
-
+  if (page <= Products_Promo.length) {
+    page++;
+    fetch_data("", page);
+  }
 });
 
 previous.addEventListener("click", () => {
-  page--;
-  fetch_data("", page);
+  if (page > 1) {
+    page--;
+    fetch_data("", page);
+  }
   // console.log("outside", page);
 
 });
