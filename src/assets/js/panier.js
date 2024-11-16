@@ -15,7 +15,7 @@ if (carts.length !== 0) {
         
         containerproduits.innerHTML += `<div class="produit hover:shadow-xl">
                             <div class="w-auto flex items-center ">
-                                <input name="confermeproduits" type="checkbox" class="checkedprod" checked>
+                                <input name="confermeproduits" type="checkbox" checked>
                             </div>
                             <div class="imageprod flex items-center  w-[17vw] md:w-[11vw]">
                                 <img src=${"../../../" + Categorie[cateId].image} alt="">
@@ -45,46 +45,56 @@ if (carts.length !== 0) {
                                 </div>
                             </div>
                             </div>`
-        total += element.price * element.quantity;                    
+        total += element.price * element.quantity
                             
     }); 
+
 
     // modifier le checked de carte des produits
     let imgproduit = document.querySelectorAll(".imageprod");
     imgproduit.forEach((element) =>{
         element.addEventListener("click" , () =>{
             element.parentNode.children[0].children[0].toggleAttribute("checked");
+            
+            MiseTotale();
         });
+
     });
     
-    // Mise à jour de totale prix de chaque produit 
-    function MiseTotalprix() {
-        let totalprix = document.querySelectorAll(".totalprix");
-        totalprix.forEach((element) =>{
-            let i = 0;
-            if (carts[i].quantity == 0) {
-                element = 0;
-                totalprix = [...totalprix].filter((elent) => elent != 0);
-            }
-            else{
 
-                let prixt = carts[i].price.toFixed(2) * carts[i].quantity.toFixed(2);
-                element.textContent = prixt.toFixed(2) + " $";
-                i++;
-            }
+    // // Mise à jour de totale prix de chaque produit 
+    // function MiseTotalprix() {
+    //     let totalprix = document.querySelectorAll(".totalprix");
+    //     totalprix.forEach((element) =>{
+    //         let i = 0;
+    //         if (carts[i].quantity == 0) {
+    //             element = 0;
+    //             totalprix = [...totalprix].filter((elent) => elent != 0);
+    //         }
+    //         else{
+
+    //             let prixt = carts[i].price.toFixed(2) * carts[i].quantity.toFixed(2);
+    //             element.textContent = prixt.toFixed(2) + " $";
+    //             i++;
+    //         }
             
-        });
-    }
+    //     });
+    // };
+
 
     // Mise à jour de prix totale des produit
     function MiseTotale() {
         let total = 0;
-        carts.forEach((element, index) => {
-            total += carts[index].price * carts[index].quantity;
+        carts.forEach((elent , index) =>{
+            total += elent.price * elent.quantity;
+        
         });
         Totalemd.textContent = total.toFixed(2) + " $";
         Totalesm.textContent = total.toFixed(2) + " $";
     };
+
+    
+    
     // Mise à jour de contenut de localStorage
     function MiselocalStorage(){
         let produit = carts.filter((element) => element.quantity != 0);
@@ -102,7 +112,7 @@ if (carts.length !== 0) {
             element.parentNode.children[1].textContent = ++carts[index].quantity;
             console.log(index);
             MiselocalStorage();
-            MiseTotalprix();
+            // MiseTotalprix();
             MiseTotale();
         };
     });
@@ -118,7 +128,7 @@ if (carts.length !== 0) {
                 decbtn = [...decbtn].filter((elent) => elent !== element);
             };
             MiselocalStorage();
-            MiseTotalprix();
+            // MiseTotalprix();
             MiseTotale();
         };
     });
@@ -130,17 +140,19 @@ if (carts.length !== 0) {
 
             element.parentNode.parentNode.remove();
             deleteprod = [...deleteprod].filter((elent) => elent !== element);
-
             carts[index].quantity = 0;
+            
+            
+            MiselocalStorage();
+            MiseTotale();
+
 
             // Mise à jour de contenut de localStorage
-            MiselocalStorage()
-            MiseTotale()
         };
     });
         
         
-    MiseTotalprix();
+    // MiseTotalprix();
     MiseTotale();
     // Mise à jour de contenut de localStorage
     MiselocalStorage();
