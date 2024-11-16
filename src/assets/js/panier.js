@@ -1,5 +1,5 @@
 // // declaration des variable utilisé
-let totale = Number;
+let total = 0;
 
 // // Return les donner de localStorage
 let carts = JSON.parse(localStorage.getItem("carts")) || [];
@@ -35,7 +35,7 @@ if (carts.length !== 0) {
                                 </div>
                             </div>
                             <div class="w-[17vw] flex flex-col items-center justify-around pl-[5vw]">
-                                    <span class=" font-bold text-darkViolet text-[.8rem] md:text-[1.3rem] lg:text-[1.7rem] ">${element.price * element.quantity } $</span>
+                                    <span class="totalprix font-bold text-darkViolet text-[.8rem] md:text-[1.3rem] lg:text-[1.7rem] ">${element.price * element.quantity } $</span>
                                     <div class="divQty flex justify-evenly gap-[1.6vw]  border-2 rounded-lg px-[1.2vw]">
                                         <button class="decbtn text-[170%]">-</button>
                                         <span class="font-bold text-[0.7rem] md:text-[1.4rem] lg:text-[1.7rem]">${element.quantity}</span>
@@ -45,21 +45,37 @@ if (carts.length !== 0) {
                                 </div>
                             </div>
                             </div>`
+        total += element.price * element.quantity;                    
                             
-        totale += element.price * element.quantity;
-        
-                            
-                            
-                            
-    });  
-    // Mise à jour de total de prix
-    function MiseTotal() {
-            let total = 0;
-            carts.forEach(element => {
-            total += element.price * element.quantity;
+    }); 
+    
+    // Mise à jour de totale prix de chaque produit 
+    function MiseTotalprix() {
+        let totalprix = document.querySelectorAll(".totalprix");
+        totalprix.forEach((element) =>{
+            let i = 0;
+            if (carts[i].quantity == 0) {
+                element = 0;
+                totalprix = [...totalprix].filter((elent) => elent != 0);
+            }
+            else{
+
+                let prixt = carts[i].price.toFixed(2) * carts[i].quantity.toFixed(2);
+                element.textContent = prixt.toFixed(2) + " $";
+                i++;
+            }
+            
         });
-        Totalemd.textContent = total + "$";
-        Totalesm.textContent = total + "$";
+    }
+
+    // Mise à jour de prix totale des produit
+    function MiseTotale() {
+            let total = 0;
+            carts.forEach((element, index) => {
+            total += carts[index].price * carts[index].quantity;
+        });
+        Totalemd.textContent = total.toFixed(2) + " $";
+        Totalesm.textContent = total.toFixed(2) + " $";
     }
     // Mise à jour de contenut de localStorage
     function MiselocalStorage(){
@@ -78,7 +94,8 @@ if (carts.length !== 0) {
             element.parentNode.children[1].textContent = ++carts[index].quantity;
             console.log(index);
             MiselocalStorage();
-            MiseTotal();
+            MiseTotalprix();
+            MiseTotale();
         };
     });
 
@@ -91,9 +108,10 @@ if (carts.length !== 0) {
             if (carts[index].quantity == 0) {
                 element.parentNode.parentNode.parentNode.remove();
                 decbtn = [...decbtn].filter((elent) => elent !== element);
-                MiselocalStorage();
             };
-            MiseTotal();
+            MiselocalStorage();
+            MiseTotalprix();
+            MiseTotale();
         };
     });
     
@@ -109,15 +127,15 @@ if (carts.length !== 0) {
 
             // Mise à jour de contenut de localStorage
             MiselocalStorage()
-            MiseTotal()
+            MiseTotale()
         };
     });
         
         
-    
-    MiseTotal()
+    MiseTotalprix();
+    MiseTotale();
     // Mise à jour de contenut de localStorage
-    MiselocalStorage()
+    MiselocalStorage();
     
     
 }  
