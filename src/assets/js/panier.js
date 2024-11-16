@@ -13,7 +13,7 @@ if (carts.length !== 0) {
     carts.forEach(element => {
         let cateId = element.id - 1;
         
-        containerproduits.innerHTML += `<div class="produit">
+        containerproduits.innerHTML += `<div class="produit hover:shadow-xl">
                             <div class="w-auto flex items-center ">
                                 <input name="confermeproduits" type="checkbox" class="checkedprod" checked>
                             </div>
@@ -48,6 +48,14 @@ if (carts.length !== 0) {
         total += element.price * element.quantity;                    
                             
     }); 
+
+    // modifier le checked de carte des produits
+    let imgproduit = document.querySelectorAll(".imageprod");
+    imgproduit.forEach((element) =>{
+        element.addEventListener("click" , () =>{
+            element.parentNode.children[0].children[0].toggleAttribute("checked");
+        });
+    });
     
     // Mise à jour de totale prix de chaque produit 
     function MiseTotalprix() {
@@ -70,13 +78,13 @@ if (carts.length !== 0) {
 
     // Mise à jour de prix totale des produit
     function MiseTotale() {
-            let total = 0;
-            carts.forEach((element, index) => {
+        let total = 0;
+        carts.forEach((element, index) => {
             total += carts[index].price * carts[index].quantity;
         });
         Totalemd.textContent = total.toFixed(2) + " $";
         Totalesm.textContent = total.toFixed(2) + " $";
-    }
+    };
     // Mise à jour de contenut de localStorage
     function MiselocalStorage(){
         let produit = carts.filter((element) => element.quantity != 0);
