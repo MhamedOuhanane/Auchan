@@ -66,7 +66,7 @@ let array = products.slice(0, 6);
 array.map((product) => {
     discoverMoreProducts.innerHTML += `
         <div class="card shadow-md hover:shadow-lg transition-all ease-out delay-75">
-            <a href="/src/pages/produit-details.html" id="product-image" class="h-[140px] cursor-pointer center" onclick="showProductDetails(${product.id})">
+            <a href="produit-details.html" id="product-image" class="h-[140px] cursor-pointer center" onclick="showProductDetails(${product.id})">
                 <img src="../${product.image}" alt="" class="h-full object-contain">
             </a>
             <div class="flex justify-between items-center flex-wrap">
