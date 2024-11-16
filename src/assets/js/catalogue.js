@@ -256,7 +256,7 @@ function generateCardList(product){
     let div = document.createElement('div');
     div.classList = 'bg-white shadow-sm hover:shadow-md rounded-lg p-4 w-[95%] max-w-3xl flex items-center gap-10';
     div.innerHTML=`
-                    <div class="w-1/4 flex justify-center max-sm:w-2/5 max-w:">
+                    <div class="w-1/4 flex justify-center max-sm:w-2/5">
                     <a href="/src/pages/produit-details.html" onclick="showProductDetails(${product.id})">
                 <img src="../../${product.image}" alt="${product.subtitle}" class="w-full h-full" >
                 </a>
@@ -274,7 +274,7 @@ function generateCardList(product){
                   ${product.description}
                 </p>
                 <div class="flex justify-between items-center mt-4">
-                  <span class="text-2xl font-bold text-darkViolet">${product.price}$</span>
+                  <span class="text-2xl font-bold text-darkViolet max-sm:text-md">${product.price}$</span>
                   <button onclick="addToCart(${product.id}, ${1}, 's', ${product.price})" class="text-2xl bg-darkViolet text-white px-5 py-2 rounded-[20px] max-sm:text-base">
                     Ajoutez 
                     <i class="fa-solid fa-cart-shopping"></i>  
@@ -292,7 +292,7 @@ function generateCardGrid(product){
     div.classList='card shadow-md hover:shadow-lg transition-all ease-out delay-75';
     div.innerHTML = `
                 <a href="/src/pages/produit-details.html" id="product-image" class="h-[140px] cursor-pointer center" onclick="showProductDetails(${product.id})">
-                <img src=${"../../../" + product.image} alt="" class="h-full object-contain">
+                <img src=${"../../../" + product.image} alt="${product.title}" class="h-full object-contain">
             </a>
             <div class="flex justify-between items-center flex-wrap">
                 <span class="font-bold text-[1.2rem] max-md:text-[1rem] max-sm:text-[.7rem]">${product.title}</span>
