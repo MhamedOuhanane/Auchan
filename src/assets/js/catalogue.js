@@ -258,7 +258,7 @@ function generateCardList(product){
     div.innerHTML=`
                     <div class="w-1/4 flex justify-center max-sm:w-2/5">
                     <a href="/src/pages/produit-details.html" onclick="showProductDetails(${product.id})">
-                <img src="../../${product.image}" alt="${product.subtitle}" class="w-full h-full" >
+                <img src="../${product.image}" alt="${product.subtitle}" class="w-full h-full" >
                 </a>
               </div>
               <div class="w-3/4 max-sm:w-3/5">
@@ -292,7 +292,7 @@ function generateCardGrid(product){
     div.classList='card shadow-md hover:shadow-lg transition-all ease-out delay-75';
     div.innerHTML = `
                 <a href="/src/pages/produit-details.html" id="product-image" class="h-[140px] cursor-pointer center" onclick="showProductDetails(${product.id})">
-                <img src=${"../../../" + product.image} alt="${product.title}" class="h-full object-contain">
+                <img src="../${product.image}" alt="${product.title}" class="h-full object-contain">
             </a>
             <div class="flex justify-between items-center flex-wrap">
                 <span class="font-bold text-[1.2rem] max-md:text-[1rem] max-sm:text-[.7rem]">${product.title}</span>
