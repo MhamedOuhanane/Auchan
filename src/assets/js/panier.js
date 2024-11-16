@@ -78,6 +78,7 @@ if (carts.length !== 0) {
             element.parentNode.children[1].textContent = ++carts[index].quantity;
             console.log(index);
             MiselocalStorage();
+            MiseTotal();
         };
     });
 
@@ -120,28 +121,6 @@ if (carts.length !== 0) {
     
     
 }  
-
-
-
-
-// card_Id.addEventListener("click" , ()=>{
-    //     card_Id.chil
-
-    // });
-    // let inputchecked = document.getElementById(".checkedprod");
-    // inputchecked.setAttribute.toggle("checked")
-    // let inputchecked = document.querySelectorAll(".checkedprod");
-    // inputchecked.forEach(check => {
-        
-        // });
-        
-        
-        
-        
-// letdeletprod = document.getElementsByClassName("deletprod")
-// deletprod.onclick = () =>{
-//     deletprod.
-// }
 
 
 
