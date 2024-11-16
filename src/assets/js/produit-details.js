@@ -27,7 +27,7 @@ productDetailsNoeud.innerHTML = `
                 <label id="xl-size" for="XL">XL</label>
                 
             </div>
-            <select class="w-1/6 bg-gray-200 rounded-lg p-1 mt-4 text-[.8rem] max-sm:text-[.6rem]" name="quantity" id="quantity-noeud">
+            <select class="w-1/6 bg-gray-100 border border-gray-300 rounded-lg p-1 mt-4 text-[.8rem] max-sm:text-[.6rem]" name="quantity" id="quantity-noeud">
                 <option value="1" selected>1</option>
             </select>
             <span class="text-darkViolet text-[1.6rem] font-bold pt-4">${products[productDetails_ID].price} $</span>
@@ -43,7 +43,7 @@ productDetailsNoeud.innerHTML = `
 `;
 
 const quantityNoued = document.getElementById("quantity-noeud");
-for(let i=1; i <= products[productDetails_ID].qunatity; i++){
+for(let i=1; i <= products[productDetails_ID].quantity; i++){
     quantityNoued.innerHTML += `<option value=${i}>${i}</option>`;
 }
 
