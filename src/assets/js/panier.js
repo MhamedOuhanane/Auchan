@@ -13,10 +13,8 @@ if (carts.length !== 0) {
 
     carts.forEach(element => {
         let cateId = element.id - 1;
-        let card_Id = Date.now().toString(); // créete un variable et donner le a id de la carte ajoputer
-        console.log(Categorie[cateId].image);
         
-        containerproduits.innerHTML += `<div id=${card_Id} class="produit">
+        containerproduits.innerHTML += `<div class="produit">
                             <div class="w-auto flex items-center ">
                                 <input name="confermeproduits" type="checkbox" class="checkedprod" checked>
                             </div>
@@ -38,11 +36,11 @@ if (carts.length !== 0) {
                                 </div>
                             </div>
                             <div class="w-[17vw] flex flex-col items-center justify-around pl-[5vw]">
-                                    <span id="tprix${card_Id}" class=" font-bold text-darkViolet text-[.8rem] md:text-[1.3rem] lg:text-[1.7rem] ">${element.price * element.quantity } $</span>
+                                    <span class=" font-bold text-darkViolet text-[.8rem] md:text-[1.3rem] lg:text-[1.7rem] ">${element.price * element.quantity } $</span>
                                     <div class="divQty flex justify-evenly gap-[1.6vw]  border-2 rounded-lg px-[1.2vw]">
-                                        <button id="dec${card_Id}" class="decbtn text-[170%]">-</button>
+                                        <button class="decbtn text-[170%]">-</button>
                                         <span class="font-bold text-[0.7rem] md:text-[1.4rem] lg:text-[1.7rem]">${element.quantity}</span>
-                                        <button id="inc${card_Id}" class="incbtn text-[170%]">+</button>
+                                        <button class="incbtn text-[170%]">+</button>
                                     </div>
                                     <button class="deleteprod bg-red-400 px-[1.5vw] rounded-md" >delete</button>
                                 </div>
@@ -71,7 +69,14 @@ if (carts.length !== 0) {
             if (carts[index].quantity == 0) {
                 element.parentNode.parentNode.parentNode.remove();
                 carts.splice(index,1);
-            }
+                decbtn = [...decbtn].filter((elent) => elent !== element);
+                console.log(decbtn);
+                console.log(carts);
+            
+            };
+            
+            decbtn = [...decbtn].filter((elent) => elent !== element);
+            console.log(decbtn);
         });
     }
     
@@ -82,10 +87,14 @@ if (carts.length !== 0) {
     for (let index = 0; index < deleteprod.length; index++) {
         const element = deleteprod[index];
         element.addEventListener("click" , ()=>{
-            console.log(element.parentNode.parentNode);
             element.parentNode.parentNode.remove();
-            
+            carts.splice(index,1);
+            console.log(deleteprod);
+            deleteprod = [...deleteprod].filter((elent) => elent !== element);
+            console.log(carts);
         });
+
+    
     };
     console.log(carts);
     
