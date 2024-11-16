@@ -35,7 +35,7 @@ products.map((product) => {
     productsContainer.innerHTML += `
         <div class="card shadow-md hover:shadow-lg transition-all ease-out delay-75">
             <a href="/src/pages/produit-details.html" id="product-image" class="h-[140px] cursor-pointer center" onclick="showProductDetails(${product.id})">
-                <img src=${"../../../" + product.image} alt="" class="h-full object-contain">
+                <img src=${product.image} alt="" class="h-full object-contain">
             </a>
             <div class="flex justify-between items-center flex-wrap">
                 <span class="font-bold text-[1.2rem] max-md:text-[1rem] max-sm:text-[.7rem]">${product.title}</span>

@@ -37,7 +37,7 @@ productDetailsNoeud.innerHTML = `
             </button>
         </div>
         <div class="w-1/2 max-sm:w-full center">
-            <img src="../../${products[productDetails_ID].image}" class="max-h-[250px]" alt="">
+            <img src="../${products[productDetails_ID].image}" class="max-h-[250px]" alt="">
         </div>
     </div>
 `;
@@ -66,8 +66,8 @@ let array = products.slice(0, 6);
 array.map((product) => {
     discoverMoreProducts.innerHTML += `
         <div class="card shadow-md hover:shadow-lg transition-all ease-out delay-75">
-            <a href="/src/pages/produit-details.html" id="product-image" class="h-[140px] cursor-pointer center"            onclick="showProductDetails(${product.id})">
-                <img src=${"../../../" + product.image} alt="" class="h-full object-contain">
+            <a href="/src/pages/produit-details.html" id="product-image" class="h-[140px] cursor-pointer center" onclick="showProductDetails(${product.id})">
+                <img src="../${product.image}" alt="" class="h-full object-contain">
             </a>
             <div class="flex justify-between items-center flex-wrap">
                 <span class="font-bold text-[1.2rem] max-md:text-[1rem] max-sm:text-[.7rem]">${product.title}</span>
