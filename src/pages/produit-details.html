@@ -14,29 +14,30 @@
         <!-- header -->
         <header class="bg-white border-b h-10 center text-[1rem] select-none">
             <div class="container flex justify-between h-full">
-            <div class="flex h-full gap-2">
-                <div class="flex items-center">
-                <img class="h-full p-2 max-sm:py-3" src="../assets/images/icons/phone.svg" title="+212-654-504356" alt="phone-icon" />
-                <p class="max-sm:hidden">+212-654-504356</p>
+                <div class="flex h-full gap-2">
+                    <div class="flex items-center">
+                    <img class="h-full p-2 max-sm:py-3" src="../assets/images/icons/phone.svg" title="+212-654-504356" alt="phone-icon" />
+                    <p class="max-sm:hidden">+212-654-504356</p>
+                    </div>
+                    <div class="flex items-center">
+                    <img class="h-full p-2 max-sm:py-3" src="../assets/images/icons/email.svg" title="auchan-maroc@contact.com"
+                        alt="phone-icon" />
+                    <p class="max-sm:hidden">auchan-maroc@contact.com</p>
+                    </div>
                 </div>
-                <div class="flex items-center">
-                <img class="h-full p-2 max-sm:py-3" src="../assets/images/icons/email.svg" title="auchan-maroc@contact.com"
-                    alt="phone-icon" />
-                <p class="max-sm:hidden">auchan-maroc@contact.com</p>
-                </div>
-            </div>
-            <div class="flex h-full gap-2">
-                <div class="flex items-center">
-                <a href="panier.html" class="h-full">
-                    <img class="h-full p-2 max-sm:py-3" src="../assets/images/icons/cart.svg" title="Panier" alt="phone-icon" />
-                </a>
-                <p class="max-sm:hidden">
-                    <a href="panier.html">Panier</a>
-                </p>
-                </div>
-                <div class="flex items-center">
-                <img class="h-full p-2 max-sm:py-3" src="../assets/images/icons/user.svg" title="Compte" alt="phone-icon" />
-                <p class="max-sm:hidden">Compte</p>
+                <div class="flex h-full gap-2">
+                    <div id="count-cart" class="flex items-center relative">
+                    <a href="panier.html" class="h-full">
+                        <img class="h-full p-2 max-sm:py-3" src="../assets/images/icons/cart.svg" title="Panier" alt="phone-icon" />
+                    </a>
+                    <p class="max-sm:hidden">
+                        <a href="panier.html">Panier</a>
+                    </p>
+                    </div>
+                    <div class="flex items-center">
+                    <img class="h-full p-2 max-sm:py-3" src="../assets/images/icons/user.svg" title="Compte" alt="phone-icon" />
+                    <p class="max-sm:hidden">Compte</p>
+                    </div>
                 </div>
             </div>
         </header>
@@ -219,6 +220,10 @@
             </div>
         </footer>
 
+        <aside id="toast-notification" class="fixed flex gap-4 max-md:gap-1 items-center bg-green-400 text-white p-4 top-1 -right-full rounded-lg max-md:text-[.5rem] max-md:p-1 max-md:top-2 transition-all ease-in-out 1s">
+            <img src="../assets/images/icons/check-mark.svg" class="h-[20px] max-md:h-[10px]" alt="">
+            <p>Produit ajoutée avec succes</p>
+        </aside>
         
         <script type="module" src="../assets/js/produit-details.js"></script>
         <script src="../assets/js/script.js"></script>
