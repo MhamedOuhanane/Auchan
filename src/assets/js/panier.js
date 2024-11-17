@@ -272,7 +272,7 @@ products.map((product) => {
                     <div class="flex items-center justify-between w-full  pt-4 gap-4">
                         <span class="font-bold text-darkViolet text-[1.4rem] max-md:text-[1rem]">${product.price.toFixed(2) + "$"}</span>
                         <button onclick="addToCart(${product.id}, ${1}, 's', ${product.price})" class="primary-btn center gap-2 flex-1">
-                            <span class="w-[100%] text-[.8rem] max-sm:text-[.5rem]">AJOUTER</span>
+                            <span class="ajouterpanie w-[100%] text-[.8rem] max-sm:text-[.5rem]">AJOUTER</span>
                             <img src="../assets/images/icons/cart-white.svg" class="size-4" alt="">
                         </button>
                     </div>
@@ -283,3 +283,12 @@ products.map((product) => {
     `;
 });
 
+let AjoutAupan = document.querySelectorAll(".ajouterpanie");
+AjoutAupan.forEach((element) =>{
+    
+    element.addEventListener("click" , ()=>{
+        // Refresh the page
+        location.reload();
+    });
+
+});
