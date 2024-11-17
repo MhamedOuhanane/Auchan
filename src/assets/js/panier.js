@@ -103,12 +103,11 @@ if (carts.length !== 0) {
     function MiseTotalprix() {
         let totalprix = document.querySelectorAll(".totalprix");
         totalprix.forEach((element, i) => {
-            if (carts[i].quantity === 0) {
-                element.parentNode.remove();
-            } else {
+            if (carts[i].quantity != 0) {
                 let prixt = (carts[i].price * carts[i].quantity).toFixed(2);
                 element.textContent = prixt + " $";
             }
+            MiselocalStorage()
         });
     };
 
@@ -118,7 +117,10 @@ if (carts.length !== 0) {
     function MiseTotale() {
         let total = 0;
         carts.forEach((elent , index) =>{
-            total += elent.price * elent.quantity;
+            let checkbox = document.querySelectorAll(".produit input[type='checkbox']")[index]; // l'a
+            if (checkbox.checked) {
+                total += elent.price * elent.quantity;
+            }
         
         });
         Totalemd.textContent = total.toFixed(2) + " $";
