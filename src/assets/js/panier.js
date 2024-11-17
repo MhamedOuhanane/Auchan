@@ -11,6 +11,7 @@ if (carts.length !== 0) {
     document.getElementById("bloccartes").classList.remove("classbloccartes");
 
     carts.forEach(element => {
+        let produitId = element.id - 1;
         console.log(element.id);
         
         containerproduits.innerHTML += `<div class="produit hover:shadow-xl">
@@ -18,11 +19,11 @@ if (carts.length !== 0) {
                                 <input name="confermeproduits" type="checkbox" checked>
                             </div>
                             <div class="imageprod flex items-center  w-[17vw] md:w-[11vw]">
-                                <img src=${"../" + Categorie[element.id].image} alt="">
+                                <img src=${"../" + Categorie[produitId].image} alt="">
                             </div>
                             <div class="w-[47vw] px-[2vw] flex flex-col justify-evenly gap-[0.2vw]">
-                                <span class="titleprod font-bold text-[0.7rem] md:text-[1.2rem] lg:text-[1.5rem]">${Categorie[element.id].title}</span>
-                                <span class="text-gray-700 text-[.5rem]  md:text-[.9rem] lg:text-[1.2rem] w-[100%] leading-[95%] md:leading-[96%]">${Categorie[element.id].subtitle}</span>
+                                <span class="titleprod font-bold text-[0.7rem] md:text-[1.2rem] lg:text-[1.5rem]">${Categorie[produitId].title}</span>
+                                <span class="text-gray-700 text-[.5rem]  md:text-[.9rem] lg:text-[1.2rem] w-[100%] leading-[95%] md:leading-[96%]">${Categorie[produitId].subtitle}</span>
                                 <div class="flex gap-[2vw]">
                                     <select name="confermeproduits" class="tailleprod bg-gray-200 rounded-lg pl-[1vw] text-[.6rem]  md:text-[.9rem] lg:text-[1.2rem]">
                                         <option name="confermeproduits" value="s" ${element.size == "s" ? "selected" : ""}>s</option>
@@ -45,7 +46,8 @@ if (carts.length !== 0) {
                                 </div>
                             </div>
                             </div>`
-
+        console.log(element.id);
+        
         prixsize();
         total += element.price * element.quantity
                             
@@ -179,7 +181,7 @@ if (carts.length !== 0) {
         let deleteprod = document.querySelectorAll(".deleteprod");
         deleteprod.forEach((elent, index) => {
             elent.addEventListener("click", () => {
-                
+                carts[index].quantity = 0;
                 deleteproduit(index);
             });
         });
@@ -247,5 +249,37 @@ buttonright.onclick = () => {
 };
 
 
+// import json product data from data folder
+import products from "../data/populare-products.json" with { type: "json" };
 
+products.map((product) => {
+    carouselpanier.innerHTML += `
+
+    <div class="hover:scale-[95%]">
+        <div class="h-[100%] gap-4 max-sm:w-44 w-60  ">
+            <div class="card shadow-sm hover:shadow-md transition-all ease-out delay-75">
+                <a href="produit-details.html" id="product-image" class="h-[140px] cursor-pointer center" onclick="showProductDetails(${product.id})">
+                    <img src=${"../" + product.image} alt="" class="h-full object-contain">
+                </a>
+                <div class="flex justify-between items-start flex-wrap">
+                    <span class="w-[50%] min-h-[60px] font-bold text-[1.2rem] max-md:text-[1rem] max-sm:text-[.7rem]">${product.title}</span>
+                    <div class="flex items-center gap-2 text-gray-500 max-md:text-xs">
+                        <img src="../assets/images/icons/star.svg" alt="star icon" class="size-5">
+                        <span class="">4.5</span>
+                        <span>( 21 )</span>
+                    </div>
+                    <span class="text-gray-700 max-md:text-[.7rem] max-sm:text-[.5rem] h-[60px] max-md:h-[50px]">${product.subtitle}</span>
+                    <div class="flex items-center justify-between w-full  pt-4 gap-4">
+                        <span class="font-bold text-darkViolet text-[1.4rem] max-md:text-[1rem]">${product.price.toFixed(2) + "$"}</span>
+                        <button onclick="addToCart(${product.id}, ${1}, 's', ${product.price})" class="primary-btn center gap-2 flex-1">
+                            <span class="w-[100%] text-[.8rem] max-sm:text-[.5rem]">AJOUTER</span>
+                            <img src="../assets/images/icons/cart-white.svg" class="size-4" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    `;
+});
 
