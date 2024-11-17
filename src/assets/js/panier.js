@@ -103,10 +103,10 @@ if (carts.length !== 0) {
     function MiseTotalprix() {
         let totalprix = document.querySelectorAll(".totalprix");
         totalprix.forEach((element, i) => {
-            if (carts[i].quantity != 0) {
-                let prixt = (carts[i].price * carts[i].quantity).toFixed(2);
-                element.textContent = prixt + " $";
-            }
+
+            let prixt = (carts[i].price * carts[i].quantity).toFixed(2);
+            element.textContent = prixt + " $";
+
             MiselocalStorage()
         });
     };
@@ -160,9 +160,11 @@ if (carts.length !== 0) {
             if (carts[index].quantity == 0) {
                 element.parentNode.parentNode.parentNode.remove();
                 decbtn = [...decbtn].filter((elent) => elent !== element);
-            };
+            }
+            else{
+                MiseTotalprix();
+            }
             MiselocalStorage();
-            MiseTotalprix();
             MiseTotale();
         };
     });
