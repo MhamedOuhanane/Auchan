@@ -114,7 +114,7 @@ function fetch_data(category, page) {
         Products_Promo = response.data.promotions.filter(product => product.category === category);
       } else {
         Products_Promo = response.data.promotions;
-        // console.log(response.data);
+        console.log("data", response.data.promotions);
 
 
         if (page) {
