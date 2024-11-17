@@ -1,10 +1,23 @@
-.carouselproduit::-webkit-scrollbar{
-    display: none;
+.carouselproduit::-webkit-scrollbar {
+  display: none;
 }
 .card {
-    padding: 1rem;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    border-radius: 10px;
+  padding: 1rem;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+#carouselpanier {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+#carouselpanier div {
+  transition: all 0.5s ease-in-out;
+}
+
+#carouselpanier::-webkit-scrollbar {
+  display: none;
 }
