@@ -25,10 +25,10 @@ if (carts.length !== 0) {
                                 <span class="text-gray-700 text-[.5rem]  md:text-[.9rem] lg:text-[1.2rem] w-[100%] leading-[95%] md:leading-[96%]">${Categorie[element.id].subtitle}</span>
                                 <div class="flex gap-[2vw]">
                                     <select name="confermeproduits" class="tailleprod bg-gray-200 rounded-lg pl-[1vw] text-[.6rem]  md:text-[.9rem] lg:text-[1.2rem]">
-                                        <option name="confermeproduits " value="s">s</option>
-                                        <option name="confermeproduits " value="m" >m</option>
-                                        <option name="confermeproduits " value="l" >l</option>
-                                        <option name="confermeproduits " value="xl">xl</option>
+                                        <option name="confermeproduits" value="s" ${element.size === "s" ? "selected" : ""}>s</option>
+                                        <option name="confermeproduits" value="m" ${element.size === "m" ? "selected" : ""}>m</option>
+                                        <option name="confermeproduits" value="l" ${element.size === "l" ? "selected" : ""}>l</option>
+                                        <option name="confermeproduits" value="xl" ${element.size === "xl" ? "selected" : ""}>xl</option>
                                     </select>
                                     <span class="prixprod font-bold text-darkViolet text-[1.5rem] max-md:text-[0.7rem] pl-[2vw] line-through hidden">${element.price} $</span>
                                     <span class="prixprod font-bold text-darkViolet text-[1.5rem] max-md:text-[0.7rem] pl-[2vw]">${element.price} $</span>
@@ -45,40 +45,47 @@ if (carts.length !== 0) {
                                 </div>
                             </div>
                             </div>`
+
         prixsize();
         total += element.price * element.quantity
                             
     }); 
 
-    // remplair la taille choisis des produit 
-    function prixsize(){
+    // Fonction pour mettre à jour le prix en fonction de la taille choisie
+    function prixsize() {
         let tailleprod = document.querySelectorAll(".tailleprod");
-        tailleprod.forEach((element , index) =>{
-            let nouvprix = carts[index].price ;
-            element.addEventListener("click" , ()=>{
-                switch (element.value) {
-                    case "s":
-                        nouvprix =carts[index].price ;
-                        break;
+        tailleprod.forEach((element, index) => {
+            element.addEventListener("change", () => {
+                let pricebase = carts[index].prix;
 
-                    case "m":
-                        nouvprix =carts[index].price + carts[index].price * 0.05 ;
-                        break;
+                
+                if (carts[index].size !== element.value) {
+                    let pricenouv = pricebase;
 
-                    case "l":
-                        nouvprix =carts[index].price + carts[index].price * 0.10 ;
-                        break;
+                    switch (element.value) {
+                        case "m":
+                            pricenouv += pricebase * 0.05;
+                            break;
+                        case "l":
+                            pricenouv += pricebase * 0.10;
+                            break;
+                        case "xl":
+                            pricenouv += pricebase * 0.20;
+                            break;
+                        default:
+                            pricenouv = pricebase;
+                            break;
+                    }
 
-                    case "xl":
-                        nouvprix =carts[index].price + carts[index].price * 0.20 ;
-                        break;
+                    carts[index].price = pricenouv.toFixed(2);
+                    carts[index].size = element.value;
+                    element.parentNode.children[2].textContent = carts[index].price + " $";
+                
+                    localStorage.setItem("carts", JSON.stringify(carts));
                 }
-                element.parentNode.children[2].textContent = nouvprix.toFixed(2) + " $";
-
             });
         });
-
-    }
+    };
 
     // modifier le checked de carte des produits
     let imgproduit = document.querySelectorAll(".imageprod");
@@ -183,7 +190,7 @@ if (carts.length !== 0) {
     MiselocalStorage();
     
     
-}  
+};
 
 
 
