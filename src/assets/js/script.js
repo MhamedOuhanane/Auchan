@@ -1,4 +1,5 @@
 const body = document.getElementsByTagName("body");
+const toastMssg = document.getElementById("toast-notification");
 
 const iconMenu = document.getElementById("menu-icon");
 const menu = document.getElementById("menu");
@@ -43,6 +44,10 @@ window.addToCart = function(productID, productQty, productSize, productPrice) {
         localStorage.setItem("carts", JSON.stringify(cart));
     }
     changeCount();
+    toastMssg.style.right = "0%";
+    setTimeout(() => {
+        toastMssg.style.right = "-100%";
+    }, 2000);
 };
 
 const countCart = document.getElementById("count-cart") || "<div></div>";

@@ -14,6 +14,11 @@ const Vetements_btn = document.querySelector("#Vetements");
 
 const btn_up = document.getElementById("up-btn");
 
+const previous = document.getElementById("previous");
+const next = document.getElementById("next");
+
+
+let Ajouter_au_localStotage = null;
 
 grille.addEventListener("click", () => {
 
@@ -73,7 +78,9 @@ function resetButtonColors() {
 
 let Products_Promo = [];
 
-function fetch_data(category) {
+
+// fucntion de qui fetch data
+function fetch_data(category, page) {
 
   list_grille_cards.innerHTML = "";
   list_cards.innerHTML = "";
@@ -100,13 +107,21 @@ function fetch_data(category) {
       break;
   }
 
-  axios.get("http://localhost:3000/promotions")
+  axios.get("https://abderrahmanerabeh.github.io/data/db.json")
     .then(response => {
 
       if (category) {
-        Products_Promo = response.data.filter(product => product.category === category);
+        Products_Promo = response.data.promotions.filter(product => product.category === category);
       } else {
-        Products_Promo = response.data;
+        Products_Promo = response.data.promotions;
+        console.log("data", response.data.promotions);
+
+
+        if (page) {
+          // console.log("inside", page);
+
+          Products_Promo = Products_Promo.slice((page - 1) * 8, page * 8);
+        }
       }
 
       Products_Promo.forEach((product) => {
@@ -118,7 +133,7 @@ function fetch_data(category) {
 
             <div class="overlay"></div>
 
-            <div id="plus">+</div>
+            <div class="plus">+</div>
 
             <div class="absolute top-[20px] left-[20px] content">
               <p class="w-[75px] h-[25px] flex text-sm items-center justify-center bg-white shadow-xl">
@@ -157,6 +172,9 @@ function fetch_data(category) {
             </div>
       `;
       });
+
+      Ajouter_au_localStotage = document.querySelector(".plus");
+      console.log(Ajouter_au_localStotage);
     })
     .catch(error => {
       console.error(error);
@@ -164,7 +182,7 @@ function fetch_data(category) {
 
 }
 
-fetch_data();
+fetch_data("", 1);
 
 // Button up
 
@@ -179,5 +197,58 @@ window.addEventListener("scroll", function () {
     setTimeout(() => {
       btn_up.style.display = "none";
     }, 300);
+  }
+});
+
+// pagination
+
+let page = 1;
+
+next.addEventListener("click", () => {
+
+  if (page <= Products_Promo.length) {
+    page++;
+    fetch_data("", page);
+  }
+});
+
+previous.addEventListener("click", () => {
+  if (page > 1) {
+    page--;
+    fetch_data("", page);
+  }
+  // console.log("outside", page);
+
+});
+
+// Ajouter le produit clické au localStorage
+
+let Products_Panier = JSON.parse(localStorage.getItem("Products_Panier")) || [];
+
+function Sauvegarder() {
+  localStorage.setItem("Products_Panier", JSON.stringify(Products_Panier));
+  console.log(Products_Panier);
+}
+
+// Ajouter_au_localStotage
+document.addEventListener("click", (e) => {
+  if (e.target.classList.contains("plus")) {
+    let Card = e.target.closest(".promotion-card");
+
+    let productExist = Products_Panier.find(product => product.id == Card.id);
+
+    if (productExist) {
+      // If product exists, increment the quantity
+      productExist.quantity++;
+    } else {
+      // If it doesn’t exist, find it in Products_Promo, set its quantity, and add it to Products_Panier
+      let product = Products_Promo.find(p => p.id == Card.id);
+      if (product) {  // Check if product exists in Products_Promo
+        product.quantity = 1;
+        Products_Panier.push(product);
+      }
+    }
+
+    Sauvegarder();
   }
 });
