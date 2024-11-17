@@ -14,6 +14,7 @@ const cart = productsCart ? JSON.parse(productsCart) : [];
 let productObj;
 
 window.addToCart = function(productID, productQty, productSize, productPrice) {
+    let prix = productPrice;
     if(productSize == "m") productPrice += productPrice * 0.05;
     if(productSize == "l") productPrice += productPrice * 0.10;
     if(productSize == "xl") productPrice += productPrice * 0.20;
@@ -22,6 +23,7 @@ window.addToCart = function(productID, productQty, productSize, productPrice) {
     cart.map((product) => {
         if(product.id === productID){
             product.quantity = productQty;
+            product.size = productSize;
             localStorage.setItem("carts", JSON.stringify(cart));
             isExist = true;
         }
@@ -32,7 +34,8 @@ window.addToCart = function(productID, productQty, productSize, productPrice) {
             id: productID,
             quantity: productQty,
             size: productSize,
-            price: productPrice
+            price: productPrice,
+            prix: prix,
         }
         
         cart.push(productObj);
@@ -53,3 +56,10 @@ window.changeCount = function() {
     };
 }
 changeCount();
+
+window.showProductDetails = function(id) {
+    sessionStorage.setItem("productDetails", id);
+}
+window.showCategorieDetails = function(category) {
+    sessionStorage.setItem("categorieTarget", category);
+}
