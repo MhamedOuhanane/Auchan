@@ -58,3 +58,6 @@ changeCount();
 window.showProductDetails = function(id) {
     sessionStorage.setItem("productDetails", id);
 }
+window.showCategorieDetails = function(category) {
+    sessionStorage.setItem("categorieTarget", category);
+}
