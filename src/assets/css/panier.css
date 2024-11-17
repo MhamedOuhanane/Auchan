@@ -1,5 +1,5 @@
-.carouselproduit::-webkit-scrollbar{
-    display: none;
+.carouselproduit::-webkit-scrollbar {
+  display: none;
 }
 .card {
     padding: 1rem;
