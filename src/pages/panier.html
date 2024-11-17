@@ -14,8 +14,7 @@
     <link rel="stylesheet" href="../assets/css/output.css" >
     <link rel="stylesheet" href="../assets/css/panier.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <script type="module" src="../assets/js/panier.js" defer></script>
-    <script  src="../js/script.js" defer></script>
+    
 
 </head>
 <body>
@@ -25,27 +24,28 @@
         <div class="container flex justify-between h-full">
             <div class="flex h-full gap-2">
                 <div class="flex items-center">
-                <img class="h-full p-2 max-sm:py-3" src="../assets/images/icons/phone.svg" title="+212-654-504356" alt="phone-icon" />
-                <p class="max-sm:hidden">+212-654-504356</p>
+                    <img class="h-full p-2 max-sm:py-3" src="../assets/images/icons/phone.svg" title="+212-654-504356" alt="phone-icon" >
+                    <p class="max-sm:hidden">+212-654-504356</p>
+                </div>
+                <div class="flex items-center">
+                    <img class="h-full p-2 max-sm:py-3" src="../assets/images/icons/email.svg" title="auchan-maroc@contact.com"
+                        alt="phone-icon" >
+                    <p class="max-sm:hidden">auchan-maroc@contact.com</p>
+                </div>
             </div>
-            <div class="flex items-center">
-                <img class="h-full p-2 max-sm:py-3" src="../assets/images/icons/email.svg" title="auchan-maroc@contact.com"
-                    alt="phone-icon" />
-                <p class="max-sm:hidden">auchan-maroc@contact.com</p>
-            </div>
-        </div>
-        <div class="flex h-full gap-2">
-            <div class="flex items-center">
-                <a href="panier.html" class="h-full">
-                    <img class="h-full p-2 max-sm:py-3" src="../assets/images/icons/cart.svg" title="Panier" alt="phone-icon" />
-                </a>
-                <p class="max-sm:hidden">
-                    <a href="panier.html">Panier</a>
-                </p>
-            </div>
-            <div class="flex items-center">
-                <img class="h-full p-2 max-sm:py-3" src="../assets/images/icons/user.svg" title="Compte" alt="phone-icon" />
-                <p class="max-sm:hidden">Compte</p>
+            <div class="flex h-full gap-2">
+                <div class="flex items-center">
+                    <a href="panier.html" class="h-full">
+                        <img class="h-full p-2 max-sm:py-3" src="../assets/images/icons/cart.svg" title="Panier" alt="phone-icon" >
+                    </a>
+                    <p class="max-sm:hidden">
+                        <a href="panier.html">Panier</a>
+                    </p>
+                </div>
+                <div class="flex items-center">
+                    <img class="h-full p-2 max-sm:py-3" src="../assets/images/icons/user.svg" title="Compte" alt="phone-icon" >
+                    <p class="max-sm:hidden">Compte</p>
+                </div>
             </div>
         </div>
     </header>
@@ -58,12 +58,12 @@
                 src="../assets/images/large-logo.png"
                 class="h-full max-md:p-2 max-sm:py-4"
                 alt="auchan large logo"
-            />
+            >
             <!-- <img
                 src="assets/images/auchan-mobile-logo.png"
                 class="hidden h-full max-sm:block"
                 alt="auchan small logo"
-            /> -->
+            > -->
             </a>
 
             <ul class="menu" id="menu">
@@ -82,7 +82,7 @@
             </ul>
 
             <img id="menu-icon" src="../assets/images/icons/burger-menu.svg" class="z-10 hidden h-full p-4 max-sm:p-5 max-md:block"
-                alt="burger menu icon" />
+                alt="burger menu icon" >
         </div>
     </nav>
     
@@ -94,8 +94,7 @@
         <img class="w-[20%] max-w-60" src="../assets/images/icône-panier.png" alt="logo de panier">
         <h2 class="md:text-2xl lg:text-3xl">Votre panier est vide pour le moment</h2>
         <a class="bg-darkViolet w-auto h-auto py-[2%] px-[3%] lg:py-[1%] rounded-3xl text-white text-xs md:text-lg" href="catalogue.html">
-            <button id="btncommence">
-                    Commencer mes achats</button>
+            Commencer mes achats
         </a>
     </div>
     
@@ -157,263 +156,12 @@
         <div class="h-auto w-[100%] flex justify-evenly cursor-pointer">
             <!-- scrolle button to left  -->
             <div id="buttonleft" class="flex items-center "><span
-                    class="hidden  px-[1vw] py-[0.5vw] mr-2 text-4xl font-bold border-2 border-black rounded-full md:block">
-                    < </span>
+                    class="hidden  px-[1vw] py-[0.5vw] mr-2 text-4xl font-bold border-2 border-black rounded-full md:block scale-[-1]">
+                    > </span>
             </div>
             <!-- container des produit scroller -->
-            <div id="carouselpanier" class="w-[100%]  mdw-[80%]  h-auto flex  gap-[4%] mx-auto overflow-x-scroll ">
-                <div class="h-auto  hover:scale-[95%]">
-                    <div class="gap-4 max-sm:w-44 w-60  ">
-                        <div class="card shadow-sm hover:shadow-md transition-all ease-out delay-75">
-                            <div class="h-auto center ">
-                                <img src="../assets/images/categories/cuisine.jpg" alt="" class="h-full object-contain">
-                            </div>
-                            <div class="flex justify-between items-center flex-wrap">
-                                <span class="font-bold text-[1.2rem] max-md:text-[1rem] max-sm:text-[.7rem]">Fructis</span>
-                                <div class="flex items-center gap-2 text-gray-500 max-md:text-xs">
-                                    <img src="../assets/images/icons/star.svg" alt="star icon" class="size-5">
-                                    <span class="">4.5</span>
-                                    <span>( 21 )</span>
-                                </div>
-                                <span class="text-gray-700 max-md:text-[.7rem] max-sm:text-[.5rem] min-h-[60px] max-md:min-h-[50px]">Lait naturel lait naturel lait naturel lait naturel</span>
-                                <div class="flex items-center justify-between w-full flex-wrap pt-4 gap-4">
-                                    <span class="font-bold text-darkViolet text-[1.4rem] max-md:text-[1rem]">12.54 $</span>
-                                    <button class="primary-btn center gap-2 flex-1">
-                                        <span class="text-[.8rem] max-sm:text-[.5rem]">AJOUTER</span>
-                                        <img src="../assets/images/icons/cart-white.svg" class="size-4" alt="">
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="h-auto  hover:scale-[95%]">
-                    <div class="gap-4 max-sm:w-44 w-60  ">
-                        <div class="card shadow-sm hover:shadow-md transition-all ease-out delay-75">
-                            <div class="h-auto center ">
-                                <img src="../assets/images/categories/cuisine.jpg" alt="" class="h-full object-contain">
-                            </div>
-                            <div class="flex justify-between items-center flex-wrap">
-                                <span class="font-bold text-[1.2rem] max-md:text-[1rem] max-sm:text-[.7rem]">Fructis</span>
-                                <div class="flex items-center gap-2 text-gray-500 max-md:text-xs">
-                                    <img src="../assets/images/icons/star.svg" alt="star icon" class="size-5">
-                                    <span class="">4.5</span>
-                                    <span>( 21 )</span>
-                                </div>
-                                <span class="text-gray-700 max-md:text-[.7rem] max-sm:text-[.5rem] min-h-[60px] max-md:min-h-[50px]">Lait naturel lait naturel lait naturel lait naturel</span>
-                                <div class="flex items-center justify-between w-full flex-wrap pt-4 gap-4">
-                                    <span class="font-bold text-darkViolet text-[1.4rem] max-md:text-[1rem]">12.54 $</span>
-                                    <button class="primary-btn center gap-2 flex-1">
-                                        <span class="text-[.8rem] max-sm:text-[.5rem]">AJOUTER</span>
-                                        <img src="../assets/images/icons/cart-white.svg" class="size-4" alt="">
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="h-auto  hover:scale-[95%]">
-                    <div class="gap-4 max-sm:w-44 w-60  ">
-                        <div class="card shadow-sm hover:shadow-md transition-all ease-out delay-75">
-                            <div class="h-auto center ">
-                                <img src="../assets/images/categories/cuisine.jpg" alt="" class="h-full object-contain">
-                            </div>
-                            <div class="flex justify-between items-center flex-wrap">
-                                <span class="font-bold text-[1.2rem] max-md:text-[1rem] max-sm:text-[.7rem]">Fructis</span>
-                                <div class="flex items-center gap-2 text-gray-500 max-md:text-xs">
-                                    <img src="../assets/images/icons/star.svg" alt="star icon" class="size-5">
-                                    <span class="">4.5</span>
-                                    <span>( 21 )</span>
-                                </div>
-                                <span class="text-gray-700 max-md:text-[.7rem] max-sm:text-[.5rem] min-h-[60px] max-md:min-h-[50px]">Lait naturel lait naturel lait naturel lait naturel</span>
-                                <div class="flex items-center justify-between w-full flex-wrap pt-4 gap-4">
-                                    <span class="font-bold text-darkViolet text-[1.4rem] max-md:text-[1rem]">12.54 $</span>
-                                    <button class="primary-btn center gap-2 flex-1">
-                                        <span class="text-[.8rem] max-sm:text-[.5rem]">AJOUTER</span>
-                                        <img src="../assets/images/icons/cart-white.svg" class="size-4" alt="">
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="h-auto  hover:scale-[95%]">
-                    <div class="gap-4 max-sm:w-44 w-60  ">
-                        <div class="card shadow-sm hover:shadow-md transition-all ease-out delay-75">
-                            <div class="h-auto center ">
-                                <img src="../assets/images/categories/cuisine.jpg" alt="" class="h-full object-contain">
-                            </div>
-                            <div class="flex justify-between items-center flex-wrap">
-                                <span class="font-bold text-[1.2rem] max-md:text-[1rem] max-sm:text-[.7rem]">Fructis</span>
-                                <div class="flex items-center gap-2 text-gray-500 max-md:text-xs">
-                                    <img src="../assets/images/icons/star.svg" alt="star icon" class="size-5">
-                                    <span class="">4.5</span>
-                                    <span>( 21 )</span>
-                                </div>
-                                <span class="text-gray-700 max-md:text-[.7rem] max-sm:text-[.5rem] min-h-[60px] max-md:min-h-[50px]">Lait naturel lait naturel lait naturel lait naturel</span>
-                                <div class="flex items-center justify-between w-full flex-wrap pt-4 gap-4">
-                                    <span class="font-bold text-darkViolet text-[1.4rem] max-md:text-[1rem]">12.54 $</span>
-                                    <button class="primary-btn center gap-2 flex-1">
-                                        <span class="text-[.8rem] max-sm:text-[.5rem]">AJOUTER</span>
-                                        <img src="../assets/images/icons/cart-white.svg" class="size-4" alt="">
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="h-auto  hover:scale-[95%]">
-                    <div class="gap-4 max-sm:w-44 w-60  ">
-                        <div class="card shadow-sm hover:shadow-md transition-all ease-out delay-75">
-                            <div class="h-auto center ">
-                                <img src="../assets/images/categories/cuisine.jpg" alt="" class="h-full object-contain">
-                            </div>
-                            <div class="flex justify-between items-center flex-wrap">
-                                <span class="font-bold text-[1.2rem] max-md:text-[1rem] max-sm:text-[.7rem]">Fructis</span>
-                                <div class="flex items-center gap-2 text-gray-500 max-md:text-xs">
-                                    <img src="../assets/images/icons/star.svg" alt="star icon" class="size-5">
-                                    <span class="">4.5</span>
-                                    <span>( 21 )</span>
-                                </div>
-                                <span class="text-gray-700 max-md:text-[.7rem] max-sm:text-[.5rem] min-h-[60px] max-md:min-h-[50px]">Lait naturel lait naturel lait naturel lait naturel</span>
-                                <div class="flex items-center justify-between w-full flex-wrap pt-4 gap-4">
-                                    <span class="font-bold text-darkViolet text-[1.4rem] max-md:text-[1rem]">12.54 $</span>
-                                    <button class="primary-btn center gap-2 flex-1">
-                                        <span class="text-[.8rem] max-sm:text-[.5rem]">AJOUTER</span>
-                                        <img src="../assets/images/icons/cart-white.svg" class="size-4" alt="">
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="h-auto  hover:scale-[95%]">
-                    <div class="gap-4 max-sm:w-44 w-60  ">
-                        <div class="card shadow-sm hover:shadow-md transition-all ease-out delay-75">
-                            <div class="h-auto center ">
-                                <img src="../assets/images/categories/cuisine.jpg" alt="" class="h-full object-contain">
-                            </div>
-                            <div class="flex justify-between items-center flex-wrap">
-                                <span class="font-bold text-[1.2rem] max-md:text-[1rem] max-sm:text-[.7rem]">Fructis</span>
-                                <div class="flex items-center gap-2 text-gray-500 max-md:text-xs">
-                                    <img src="../assets/images/icons/star.svg" alt="star icon" class="size-5">
-                                    <span class="">4.5</span>
-                                    <span>( 21 )</span>
-                                </div>
-                                <span class="text-gray-700 max-md:text-[.7rem] max-sm:text-[.5rem] min-h-[60px] max-md:min-h-[50px]">Lait naturel lait naturel lait naturel lait naturel</span>
-                                <div class="flex items-center justify-between w-full flex-wrap pt-4 gap-4">
-                                    <span class="font-bold text-darkViolet text-[1.4rem] max-md:text-[1rem]">12.54 $</span>
-                                    <button class="primary-btn center gap-2 flex-1">
-                                        <span class="text-[.8rem] max-sm:text-[.5rem]">AJOUTER</span>
-                                        <img src="../assets/images/icons/cart-white.svg" class="size-4" alt="">
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="h-auto  hover:scale-[95%]">
-                    <div class="gap-4 max-sm:w-44 w-60  ">
-                        <div class="card shadow-sm hover:shadow-md transition-all ease-out delay-75">
-                            <div class="h-auto center ">
-                                <img src="../assets/images/categories/cuisine.jpg" alt="" class="h-full object-contain">
-                            </div>
-                            <div class="flex justify-between items-center flex-wrap">
-                                <span class="font-bold text-[1.2rem] max-md:text-[1rem] max-sm:text-[.7rem]">Fructis</span>
-                                <div class="flex items-center gap-2 text-gray-500 max-md:text-xs">
-                                    <img src="../assets/images/icons/star.svg" alt="star icon" class="size-5">
-                                    <span class="">4.5</span>
-                                    <span>( 21 )</span>
-                                </div>
-                                <span class="text-gray-700 max-md:text-[.7rem] max-sm:text-[.5rem] min-h-[60px] max-md:min-h-[50px]">Lait naturel lait naturel lait naturel lait naturel</span>
-                                <div class="flex items-center justify-between w-full flex-wrap pt-4 gap-4">
-                                    <span class="font-bold text-darkViolet text-[1.4rem] max-md:text-[1rem]">12.54 $</span>
-                                    <button class="primary-btn center gap-2 flex-1">
-                                        <span class="text-[.8rem] max-sm:text-[.5rem]">AJOUTER</span>
-                                        <img src="../assets/images/icons/cart-white.svg" class="size-4" alt="">
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="h-auto  hover:scale-[95%]">
-                    <div class="gap-4 max-sm:w-44 w-60  ">
-                        <div class="card shadow-sm hover:shadow-md transition-all ease-out delay-75">
-                            <div class="h-auto center ">
-                                <img src="../assets/images/categories/cuisine.jpg" alt="" class="h-full object-contain">
-                            </div>
-                            <div class="flex justify-between items-center flex-wrap">
-                                <span class="font-bold text-[1.2rem] max-md:text-[1rem] max-sm:text-[.7rem]">Fructis</span>
-                                <div class="flex items-center gap-2 text-gray-500 max-md:text-xs">
-                                    <img src="../assets/images/icons/star.svg" alt="star icon" class="size-5">
-                                    <span class="">4.5</span>
-                                    <span>( 21 )</span>
-                                </div>
-                                <span class="text-gray-700 max-md:text-[.7rem] max-sm:text-[.5rem] min-h-[60px] max-md:min-h-[50px]">Lait naturel lait naturel lait naturel lait naturel</span>
-                                <div class="flex items-center justify-between w-full flex-wrap pt-4 gap-4">
-                                    <span class="font-bold text-darkViolet text-[1.4rem] max-md:text-[1rem]">12.54 $</span>
-                                    <button class="primary-btn center gap-2 flex-1">
-                                        <span class="text-[.8rem] max-sm:text-[.5rem]">AJOUTER</span>
-                                        <img src="../assets/images/icons/cart-white.svg" class="size-4" alt="">
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="h-auto  hover:scale-[95%]">
-                    <div class="gap-4 max-sm:w-44 w-60  ">
-                        <div class="card shadow-sm hover:shadow-md transition-all ease-out delay-75">
-                            <div class="h-auto center ">
-                                <img src="../assets/images/categories/cuisine.jpg" alt="" class="h-full object-contain">
-                            </div>
-                            <div class="flex justify-between items-center flex-wrap">
-                                <span class="font-bold text-[1.2rem] max-md:text-[1rem] max-sm:text-[.7rem]">Fructis</span>
-                                <div class="flex items-center gap-2 text-gray-500 max-md:text-xs">
-                                    <img src="../assets/images/icons/star.svg" alt="star icon" class="size-5">
-                                    <span class="">4.5</span>
-                                    <span>( 21 )</span>
-                                </div>
-                                <span class="text-gray-700 max-md:text-[.7rem] max-sm:text-[.5rem] min-h-[60px] max-md:min-h-[50px]">Lait naturel lait naturel lait naturel lait naturel</span>
-                                <div class="flex items-center justify-between w-full flex-wrap pt-4 gap-4">
-                                    <span class="font-bold text-darkViolet text-[1.4rem] max-md:text-[1rem]">12.54 $</span>
-                                    <button class="primary-btn center gap-2 flex-1">
-                                        <span class="text-[.8rem] max-sm:text-[.5rem]">AJOUTER</span>
-                                        <img src="../assets/images/icons/cart-white.svg" class="size-4" alt="">
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="h-auto  hover:scale-[95%]">
-                    <div class="gap-4 max-sm:w-44 w-60  ">
-                        <div class="card shadow-sm hover:shadow-md transition-all ease-out delay-75">
-                            <div class="h-auto center ">
-                                <img src="../assets/images/categories/cuisine.jpg" alt="" class="h-full object-contain">
-                            </div>
-                            <div class="flex justify-between items-center flex-wrap">
-                                <span class="font-bold text-[1.2rem] max-md:text-[1rem] max-sm:text-[.7rem]">Fructis</span>
-                                <div class="flex items-center gap-2 text-gray-500 max-md:text-xs">
-                                    <img src="../assets/images/icons/star.svg" alt="star icon" class="size-5">
-                                    <span class="">4.5</span>
-                                    <span>( 21 )</span>
-                                </div>
-                                <span class="text-gray-700 max-md:text-[.7rem] max-sm:text-[.5rem] min-h-[60px] max-md:min-h-[50px]">Lait naturel lait naturel lait naturel lait naturel</span>
-                                <div class="flex items-center justify-between w-full flex-wrap pt-4 gap-4">
-                                    <span class="font-bold text-darkViolet text-[1.4rem] max-md:text-[1rem]">12.54 $</span>
-                                    <button class="primary-btn center gap-2 flex-1">
-                                        <span class="text-[.8rem] max-sm:text-[.5rem]">AJOUTER</span>
-                                        <img src="../assets/images/icons/cart-white.svg" class="size-4" alt="">
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+            <div id="carouselpanier" class="w-[100%]  mdw-[80%]  h-auto flex  gap-[4%] mx-auto overflow-x-scroll "></div>
+                
             <!-- scrolle button to right  -->
             <div id="buttonright" class="flex items-center"><span
                     class="hidden  px-[1vw] py-[0.5vw] mr-2 text-4xl font-bold border-2 border-black rounded-full md:block">
@@ -433,7 +181,7 @@
             <div class="flex justify-between gap-6 py-8 max-md:px-1 max-md:flex-col">
                 <div class="flex flex-col w-2/4 gap-4 max-sm:gap-2 max-md:w-full">
                     <div class="h-10 ">
-                        <img src="../assets/images/large-logo.png" class="h-full max-sm:py-2" alt="auchan large logo" />
+                        <img src="../assets/images/large-logo.png" class="h-full max-sm:py-2" alt="auchan large logo" >
                     </div>
                     <p class="w-5/6 max-md:w-full text-[1rem] max-sm:text-[.6rem]">
                         Auchan est un groupe de distribution français fondé en 1961,
@@ -484,27 +232,27 @@
                     <ul class="hidden h-6 gap-4 max-md:flex">
                         <li>
                             <a target="_blank" href="https://www.facebook.com/auchan" class="h-full"><img class="h-full"
-                                src="../assets/images/icons/facebook.svg" alt="" /></a>
+                                src="../assets/images/icons/facebook.svg" alt="" ></a>
                         </li>
                         <li>
                             <a target="_blank" href="https://www.instagram.com/auchan_france/" class="h-full"><img class="h-full"
-                                src="../assets/images/icons/instagram.svg" alt="" /></a>
+                                src="../assets/images/icons/instagram.svg" alt="" ></a>
                         </li>
                         <li>
                             <a target="_blank" href="https://twitter.com/AUCHAN_France" class="h-full"><img class="h-full"
-                                src="../assets/images/icons/twitter.svg" alt="" /></a>
+                                src="../assets/images/icons/twitter.svg" alt="" ></a>
                         </li>
                         <li>
                             <a target="_blank" href="https://www.youtube.com/user/AuchanFrance" class="h-full"><img class="h-full"
-                                src="../assets/images/icons/youtube.svg" alt="" /></a>
+                                src="../assets/images/icons/youtube.svg" alt="" ></a>
                         </li>
                         <li>
                             <a target="_blank" href="https://www.tiktok.com/@auchan_fr/" class="h-full"><img class="h-full"
-                                src="../assets/images/icons/tiktok.svg" alt="" /></a>
+                                src="../assets/images/icons/tiktok.svg" alt="" ></a>
                         </li>
                         <li>
                             <a target="_blank" href="https://www.pinterest.fr/auchanfrance/_saved/" class="h-full"><img class="h-full"
-                                src="../assets/images/icons/pinterest.svg" alt="" /></a>
+                                src="../assets/images/icons/pinterest.svg" alt="" ></a>
                         </li>
                     </ul>
                 </div>
@@ -514,6 +262,9 @@
             <p class="text-white max-md:text-[.6rem]">Auchan 2024 © Tous droits réservés</p>
         </div>
     </footer>
+
+    <script type="module" src="../assets/js/panier.js"></script>
+    <script  src="../assets/js/script.js" defer></script>
 
 </body>
 </html>

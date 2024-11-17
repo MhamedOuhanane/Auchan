@@ -18,17 +18,17 @@ if (carts.length !== 0) {
                                 <input name="confermeproduits" type="checkbox" checked>
                             </div>
                             <div class="imageprod flex items-center  w-[17vw] md:w-[11vw]">
-                                <img src=${"../../../" + Categorie[element.id].image} alt="">
+                                <img src=${"../" + Categorie[element.id].image} alt="">
                             </div>
                             <div class="w-[47vw] px-[2vw] flex flex-col justify-evenly gap-[0.2vw]">
                                 <span class="titleprod font-bold text-[0.7rem] md:text-[1.2rem] lg:text-[1.5rem]">${Categorie[element.id].title}</span>
                                 <span class="text-gray-700 text-[.5rem]  md:text-[.9rem] lg:text-[1.2rem] w-[100%] leading-[95%] md:leading-[96%]">${Categorie[element.id].subtitle}</span>
                                 <div class="flex gap-[2vw]">
                                     <select name="confermeproduits" class="tailleprod bg-gray-200 rounded-lg pl-[1vw] text-[.6rem]  md:text-[.9rem] lg:text-[1.2rem]">
-                                        <option name="confermeproduits" value="s" ${element.size === "s" ? "selected" : ""}>s</option>
-                                        <option name="confermeproduits" value="m" ${element.size === "m" ? "selected" : ""}>m</option>
-                                        <option name="confermeproduits" value="l" ${element.size === "l" ? "selected" : ""}>l</option>
-                                        <option name="confermeproduits" value="xl" ${element.size === "xl" ? "selected" : ""}>xl</option>
+                                        <option name="confermeproduits" value="s" ${element.size == "s" ? "selected" : ""}>s</option>
+                                        <option name="confermeproduits" value="m" ${element.size == "m" ? "selected" : ""}>m</option>
+                                        <option name="confermeproduits" value="l" ${element.size == "l" ? "selected" : ""}>l</option>
+                                        <option name="confermeproduits" value="xl" ${element.size == "xl" ? "selected" : ""}>xl</option>
                                     </select>
                                     <span class="prixprod font-bold text-darkViolet text-[1.5rem] max-md:text-[0.7rem] pl-[2vw] line-through hidden">${element.price} $</span>
                                     <span class="prixprod font-bold text-darkViolet text-[1.5rem] max-md:text-[0.7rem] pl-[2vw]">${element.price} $</span>
@@ -48,7 +48,6 @@ if (carts.length !== 0) {
 
         prixsize();
         total += element.price * element.quantity
-        ModifiQty();
                             
     }); 
 
@@ -165,6 +164,7 @@ if (carts.length !== 0) {
                     carts[index].quantity--;
                     element.parentNode.children[1].textContent = carts[index].quantity;
                 } else {
+                    
                     deleteproduit(index);
                 }
                 MiseTotalprix();
@@ -177,6 +177,7 @@ if (carts.length !== 0) {
         let deleteprod = document.querySelectorAll(".deleteprod");
         deleteprod.forEach((elent, index) => {
             elent.addEventListener("click", () => {
+                
                 deleteproduit(index);
             });
         });
