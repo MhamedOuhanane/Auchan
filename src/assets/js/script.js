@@ -14,6 +14,7 @@ const cart = productsCart ? JSON.parse(productsCart) : [];
 let productObj;
 
 window.addToCart = function(productID, productQty, productSize, productPrice) {
+    let prix = productPrice;
     if(productSize == "m") productPrice += productPrice * 0.05;
     if(productSize == "l") productPrice += productPrice * 0.10;
     if(productSize == "xl") productPrice += productPrice * 0.20;
@@ -33,7 +34,8 @@ window.addToCart = function(productID, productQty, productSize, productPrice) {
             id: productID,
             quantity: productQty,
             size: productSize,
-            price: productPrice
+            price: productPrice,
+            prix: prix,
         }
         
         cart.push(productObj);
@@ -57,4 +59,7 @@ changeCount();
 
 window.showProductDetails = function(id) {
     sessionStorage.setItem("productDetails", id);
+}
+window.showCategorieDetails = function(category) {
+    sessionStorage.setItem("categorieTarget", category);
 }
