@@ -29,6 +29,7 @@ async function getdata(){
         console.log(json);
         displayAll(json);
         categoriesFilter();
+        checkSessionStorageForCategory();
     }
     catch(error){
         console.error(error.message);
@@ -542,4 +543,33 @@ function categoriesFilter(){
 
 window.showProductDetails = function(id) {
     sessionStorage.setItem("productDetails", id);
+}
+
+
+function checkSessionStorageForCategory(){
+    let targetCategory = sessionStorage.getItem("categorieTarget");
+    
+    if(targetCategory) {
+        switch (targetCategory) {
+            case "tech":
+                techFilter.click();
+                break;
+            case "cuisine":
+                cuisineFilter.click();
+                break;
+            case "boissons":
+                boissonsFilter.click();
+                break;
+            case "nettoyage":
+                nettoyageFilter.click();
+                break;
+            case "vetements":
+                vetementsFilter.click();
+                break;
+            default:
+                allCategoriesFilter.click();
+        }
+    } else {
+        allCategoriesFilter.click();
+    }
 }
