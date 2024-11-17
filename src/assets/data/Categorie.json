@@ -1,12 +1,12 @@
-{
-  "matériel_de_cuisine": [
+
+[    
     {
       "id": 1,
       "titre": "Casserole en acier inoxydable",
       "description": "Casserole robuste en acier inoxydable avec fond épais pour une diffusion uniforme de la chaleur.",
       "taille": "20 cm",
       "prix": 29.99,
-      "image": "../images/categories/cuisine/casserol.jpg"
+      "image": "../assets/images/categories/cuisine/casserol.jpg"
     },
     {
       "id": 2,
@@ -14,7 +14,7 @@
       "description": "Mixeur plongeant puissant avec plusieurs vitesses pour mélanger, mixer et hacher vos ingrédients.",
       "taille": "Mixeur",
       "prix": 49.99,
-      "image": "../images/categories/cuisine/Mixeur plongeant.jpg"
+      "image": "../assets/images/categories/cuisine/Mixeur plongeant.jpg"
     },
     {
       "id": 3,
@@ -22,7 +22,7 @@
       "description": "Tasse de grande qualité pour les amateurs de café ou de thé.",
       "taille": "300 ml",
       "prix": 8.99,
-      "image": "../images/categories/cuisine/Tasse en céramique.jpg"
+      "image": "../assets/images/categories/cuisine/Tasse en céramique.jpg"
     },
     {
       "id": 4,
@@ -30,7 +30,7 @@
       "description": "Poêle en fonte pré-assaisonnée pour une cuisson uniforme et une grande durabilité.",
       "taille": "24 cm",
       "prix": 45.50,
-      "image": "../images/categories/cuisine/Poêle en fonte.jpg"
+      "image": "../assets/images/categories/cuisine/Poêle en fonte.jpg"
     },
     {
       "id": 5,
@@ -38,7 +38,7 @@
       "description": "Planche à découper en bambou écologique, résistant et facile à nettoyer.",
       "taille": "30 x 20 cm",
       "prix": 19.99,
-      "image": "../images/categories/cuisine/Planche à découper en bambou.jpg"
+      "image": "../assets/images/categories/cuisine/Planche à découper en bambou.jpg"
     },
     {
       "id": 6,
@@ -46,7 +46,7 @@
       "description": "Set de 6 couteaux de cuisine avec poignées ergonomiques et lames en acier inoxydable.",
       "taille": "6 pièces",
       "prix": 69.99,
-      "image": "../images/categories/cuisine/Ensemble de couteaux de cuisine.webp"
+      "image": "../assets/images/categories/cuisine/Ensemble de couteaux de cuisine.webp"
     },
     {
       "id": 7,
@@ -54,7 +54,7 @@
       "description": "Grille-pain avec 4 fentes et réglage de brunissage pour un toast parfait à chaque fois.",
       "taille": "4 tranches",
       "prix": 39.99,
-      "image": "../images/categories/cuisine/Grille-pain 4 tranches.jpg"
+      "image": "../assets/images/categories/cuisine/Grille-pain 4 tranches.jpg"
     },
     {
       "id": 8,
@@ -62,7 +62,7 @@
       "description": "Bouilloire électrique avec contrôle de température et arrêt automatique.",
       "taille": "1,7 L",
       "prix": 24.99,
-      "image": "../images/categories/cuisine/Bouilloire électrique.jpg"
+      "image": "../assets/images/categories/cuisine/Bouilloire électrique.jpg"
     },
     {
       "id": 9,
@@ -70,7 +70,7 @@
       "description": "Moulin à poivre en bois avec mécanisme en céramique réglable.",
       "taille": "20 cm",
       "prix": 14.99,
-      "image": "../images/categories/cuisine/Moulin à poivre.jpg"
+      "image": "../assets/images/categories/cuisine/Moulin à poivre.jpg"
     },
     {
       "id": 10,
@@ -78,7 +78,7 @@
       "description": "Cafetière à piston en verre borosilicaté pour une infusion parfaite de café.",
       "taille": "1 L",
       "prix": 18.50,
-      "image": "../images/categories/cuisine/Cafetière à piston.jpg"
+      "image": "../assets/images/categories/cuisine/Cafetière à piston.jpg"
     },
     {
       "id": 11,
@@ -86,7 +86,7 @@
       "description": "Thermomètre numérique pour mesurer la température des viandes et des aliments en toute précision.",
       "taille": "20 cm",
       "prix": 12.99,
-      "image": "../images/categories/cuisine/Thermomètre de cuisine.jpg"
+      "image": "../assets/images/categories/cuisine/Thermomètre de cuisine.jpg"
     },
     {
       "id": 12,
@@ -94,17 +94,15 @@
       "description": "Tapis en silicone anti-adhésif pour une cuisson sans huile et facile à nettoyer.",
       "taille": "40 x 30 cm",
       "prix": 9.99,
-      "image": "../images/categories/cuisine/Tapis de cuisson en silicone.jpg"
-    }
-  ],
-  "vêtements": [
+      "image": "../assets/images/categories/cuisine/Tapis de cuisson en silicone.jpg"
+    },
     {
       "id": 1,
       "titre": "T-shirt en coton",
       "description": "T-shirt classique en coton doux et respirant, disponible en plusieurs couleurs.",
       "taille": "M",
       "prix": 15.99,
-      "image": "../images/categories/Vêtements/T-shirt en coton.jpg"
+      "image": "../assets/images/categories/Vêtements/T-shirt en coton.jpg"
     },
     {
       "id": 2,
@@ -112,7 +110,7 @@
       "description": "Jeans slim fit pour un look moderne et confortable.",
       "taille": "32",
       "prix": 39.99,
-      "image": "../images/categories/Vêtements/Jeans Slim.jpg"
+      "image": "../assets/images/categories/Vêtements/Jeans Slim.jpg"
     },
     {
       "id": 3,
@@ -120,7 +118,7 @@
       "description": "Veste en cuir véritable, coupe ajustée et finition premium.",
       "taille": "L",
       "prix": 99.99,
-      "image": "../images/categories/Vêtements/Veste en cuir.jpg"
+      "image": "../assets/images/categories/Vêtements/Veste en cuir.jpg"
     },
     {
       "id": 4,
@@ -128,7 +126,7 @@
       "description": "Robe légère et élégante idéale pour les journées ensoleillées.",
       "taille": "S",
       "prix": 29.99,
-      "image": "../images/categories/Vêtements/Robe d'été.jpg"
+      "image": "../assets/images/categories/Vêtements/Robe d'été.jpg"
     },
     {
       "id": 5,
@@ -136,7 +134,7 @@
       "description": "Pull en laine mérinos, doux et chaud pour l'hiver.",
       "taille": "M",
       "prix": 49.99,
-      "image": "../images/categories/Vêtements/Pull en laine.jpg"
+      "image": "../assets/images/categories/Vêtements/Pull en laine.jpg"
     },
     {
       "id": 6,
@@ -144,7 +142,7 @@
       "description": "Chemise en flanelle à carreaux, confortable et stylée pour l'automne.",
       "taille": "M",
       "prix": 29.99,
-      "image": "../images/categories/Vêtements/Chemise.jpg"
+      "image": "../assets/images/categories/Vêtements/Chemise.jpg"
     },
     {
       "id": 7,
@@ -152,7 +150,7 @@
       "description": "Pantalon de survêtement en coton, parfait pour les activités sportives ou décontractées.",
       "taille": "L",
       "prix": 24.99,
-      "image": "../images/categories/Vêtements/Pantalon de survêtement.jpg"
+      "image": "../assets/images/categories/Vêtements/Pantalon de survêtement.jpg"
     },
     {
       "id": 8,
@@ -160,7 +158,7 @@
       "description": "Short en jean léger, idéal pour les journées chaudes.",
       "taille": "S",
       "prix": 19.99,
-      "image": "../images/categories/Vêtements/Short en jean.jpg"
+      "image": "../assets/images/categories/Vêtements/Short en jean.jpg"
     },
     {
       "id": 9,
@@ -168,7 +166,7 @@
       "description": "Chapeau en paille pour se protéger du soleil tout en restant stylé.",
       "taille": "Taille unique",
       "prix": 14.99,
-      "image": "../images/categories/Vêtements/Chapeau en paille.jpg"
+      "image": "../assets/images/categories/Vêtements/Chapeau en paille.jpg"
     },
     {
       "id": 10,
@@ -176,7 +174,7 @@
       "description": "Manteau chaud en duvet pour l'hiver avec capuche et poches.",
       "taille": "L",
       "prix": 129.99,
-      "image": "../images/categories/Vêtements/Manteau en duvet.jpg"
+      "image": "../assets/images/categories/Vêtements/Manteau en duvet.jpg"
     },
     {
       "id": 11,
@@ -184,7 +182,7 @@
       "description": "Chaussures légères en toile, parfaites pour un look décontracté.",
       "taille": "42",
       "prix": 29.99,
-      "image": "../images/categories/Vêtements/Tennis en toile.jpg"
+      "image": "../assets/images/categories/Vêtements/Tennis en toile.jpg"
     },
     {
       "id": 12,
@@ -192,17 +190,15 @@
       "description": "Chaussettes chaudes en laine mérinos, idéales pour l'hiver.",
       "taille": "M",
       "prix": 9.99,
-      "image": "../images/categories/Vêtements/Chaussettes en laine.jpg"
-    }
-  ],
-  "boisson": [
+      "image": "../assets/images/categories/Vêtements/Chaussettes en laine.jpg"
+    },
       {
         "id": 1,
         "titre": "Gazou Cola",
         "description": "Une boisson gazeuse classique au goût rafraîchissant de cola, parfaite pour toute la famille.",
         "taille": "33cl",
         "prix": 1.50,
-        "image": "../images/categories/Boisson/cola.jpg"
+        "image": "../assets/images/categories/Boisson/cola.jpg"
       },
       {
         "id": 2,
@@ -210,7 +206,7 @@
         "description": "Une boisson pétillante au goût d'orange juteuse, idéale pour un rafraîchissement immédiat.",
         "taille": "50cl",
         "prix": 1.80,
-        "image": "../images/categories/Boisson/gazou orange.jpg"
+        "image": "../assets/images/categories/Boisson/gazou orange.jpg"
       },
       {
         "id": 3,
@@ -218,7 +214,7 @@
         "description": "Un mélange parfait de citron et de bulles, pour ceux qui aiment une boisson à la fois acidulée et effervescente.",
         "taille": "33cl",
         "prix": 1.60,
-        "image": "../images/categories/Boisson/Gazou Citron.jpg"
+        "image": "../assets/images/categories/Boisson/Gazou Citron.jpg"
       },
       {
         "id": 4,
@@ -226,7 +222,7 @@
         "description": "Une boisson pétillante à la menthe, rafraîchissante et légère, idéale pour les journées chaudes.",
         "taille": "50cl",
         "prix": 1.70,
-        "image": "../images/categories/Boisson/Gazou Menthe.jpg"
+        "image": "../assets/images/categories/Boisson/Gazou Menthe.jpg"
       },
       {
         "id": 5,
@@ -234,7 +230,7 @@
         "description": "Un mélange exotique de fruits tropicaux, avec des notes de mangue, ananas et passion, pour une expérience rafraîchissante unique.",
         "taille": "33cl",
         "prix": 2.00,
-        "image": "../images/categories/Boisson/Gazou Tropical.jpg"
+        "image": "../assets/images/categories/Boisson/Gazou Tropical.jpg"
       },
       {
         "id": 6,
@@ -242,7 +238,7 @@
         "description": "Une boisson à base de pommes fraîches, avec des bulles délicates pour une sensation de légèreté.",
         "taille": "50cl",
         "prix": 1.60,
-        "image": "../images/categories/Boisson/Gazou Pomme.jpg"
+        "image": "../assets/images/categories/Boisson/Gazou Pomme.jpg"
       },
       {
         "id": 7,
@@ -250,7 +246,7 @@
         "description": "Boisson gazeuse au goût délicieux de cerise, un équilibre parfait entre douceur et pétillance.",
         "taille": "33cl",
         "prix": 1.90,
-        "image": "../images/categories/Boisson/Gazou Cerise.jpg"
+        "image": "../assets/images/categories/Boisson/Gazou Cerise.jpg"
       },
       {
         "id": 8,
@@ -258,7 +254,7 @@
         "description": "Une boisson délicieusement fruitée au goût de framboise, avec une touche de douceur et beaucoup de bulles.",
         "taille": "50cl",
         "prix": 1.80,
-        "image": "../images/categories/Boisson/Gazou Framboise.jpg"
+        "image": "../assets/images/categories/Boisson/Gazou Framboise.jpg"
       },
       {
         "id": 9,
@@ -266,7 +262,7 @@
         "description": "Une boisson gazeuse au goût citron-lime, avec une explosion de fraîcheur et une effervescence agréable.",
         "taille": "33cl",
         "prix": 1.70,
-        "image": "../images/categories/Boisson/Sprite.jpg"
+        "image": "../assets/images/categories/Boisson/Sprite.jpg"
       },
       {
         "id": 10,
@@ -274,7 +270,7 @@
         "description": "Un jus 100% naturel à base de pêches fraîches, idéal pour une pause rafraîchissante et pleine de saveurs.",
         "taille": "50cl",
         "prix": 1.80,
-        "image": "../images/categories/Boisson/Jus de Pêche.jpg"
+        "image": "../assets/images/categories/Boisson/Jus de Pêche.jpg"
       },
       {
         "id": 11,
@@ -282,7 +278,7 @@
         "description": "Un goût classique de cola avec une touche de vanille douce pour une expérience unique et agréable.",
         "taille": "33cl",
         "prix": 1.80,
-        "image": "../images/categories/Boisson/Gazou Cola Vanille.jpg"
+        "image": "../assets/images/categories/Boisson/Gazou Cola Vanille.jpg"
       },
       {
         "id": 12,
@@ -290,17 +286,15 @@
         "description": "Boisson gazeuse énergisante au goût fruité, idéale pour un coup de boost en milieu de journée.",
         "taille": "50cl",
         "prix": 2.20,
-        "image": "../images/categories/Boisson/Gazou Énergie.jpg"
-      }
-    ],
-  "nettoyage": [
+        "image": "../assets/images/categories/Boisson/Gazou Énergie.jpg"
+      },
     {
       "id": 1,
       "titre": "Désinfectant multi-surfaces",
       "description": "Désinfectant puissant pour une hygiène optimale sur toutes les surfaces.",
       "taille": "500 ml",
       "prix": 3.99,
-      "image": "../images/categories/nettoyage/Désinfectant multi-surfaces.jpg"
+      "image": "../assets/images/categories/nettoyage/Désinfectant multi-surfaces.jpg"
     },
     {
       "id": 2,
@@ -308,7 +302,7 @@
       "description": "Nettoyant pour vitres avec spray, pour des surfaces sans traces.",
       "taille": "500 ml",
       "prix": 2.99,
-      "image": "../images/categories/nettoyage/Nettoyant pour vitres.jpg"
+      "image": "../assets/images/categories/nettoyage/Nettoyant pour vitres.jpg"
     },
     {
       "id": 3,
@@ -316,7 +310,7 @@
       "description": "Pochon de lessive à base de savon naturel, efficace contre les taches.",
       "taille": "1 kg",
       "prix": 5.99,
-      "image": "../images/categories/nettoyage/Pochon de lessive.webp"
+      "image": "../assets/images/categories/nettoyage/Pochon de lessive.webp"
     },
     {
       "id": 4,
@@ -324,7 +318,7 @@
       "description": "Gants de ménage en latex, résistants et durables pour toutes les tâches ménagères.",
       "taille": "Taille unique",
       "prix": 2.50,
-      "image": "../images/categories/nettoyage/Gant de ménage en latex.jpg"
+      "image": "../assets/images/categories/nettoyage/Gant de ménage en latex.jpg"
     },
     {
       "id": 5,
@@ -332,7 +326,7 @@
       "description": "Lingettes désinfectantes pratiques pour un nettoyage rapide et efficace.",
       "taille": "30 lingettes",
       "prix": 1.99,
-      "image": "../images/categories/nettoyage/Lingettes désinfectantes.jpg"
+      "image": "../assets/images/categories/nettoyage/Lingettes désinfectantes.jpg"
     },
     {
       "id": 6,
@@ -340,7 +334,7 @@
       "description": "Éponge grattante pour nettoyer efficacement les surfaces sans les rayer.",
       "taille": "2 pièces",
       "prix": 1.50,
-      "image": "../images/categories/nettoyage/Éponge.jpg"
+      "image": "../assets/images/categories/nettoyage/Éponge.jpg"
     },
     {
       "id": 7,
@@ -348,7 +342,7 @@
       "description": "Sac poubelle solide, idéal pour les déchets ménagers.",
       "taille": "50 sacs",
       "prix": 4.99,
-      "image": "../images/categories/nettoyage/Sac poubelle.jfif"
+      "image": "../assets/images/categories/nettoyage/Sac poubelle.jfif"
     },
     {
       "id": 8,
@@ -356,7 +350,7 @@
       "description": "Détartrant puissant pour éliminer le calcaire et les taches dans les WC.",
       "taille": "750 ml",
       "prix": 3.49,
-      "image": "../images/categories/nettoyage/Détartrant WC.jpg"
+      "image": "../assets/images/categories/nettoyage/Détartrant WC.jpg"
     },
     {
       "id": 9,
@@ -364,7 +358,7 @@
       "description": "Brosse robuste pour récurer et frotter les surfaces difficiles.",
       "taille": "1 brosse",
       "prix": 1.99,
-      "image": "../images/categories/nettoyage/Brosse à récurer.jpg"
+      "image": "../assets/images/categories/nettoyage/Brosse à récurer.jpg"
     },
     {
       "id": 10,
@@ -372,7 +366,7 @@
       "description": "Tablettes pour lave-vaisselle, efficaces contre la graisse et les résidus.",
       "taille": "30 tablettes",
       "prix": 7.99,
-      "image": "../images/categories/nettoyage/Produit pour le lave-vaisselle.jpg"
+      "image": "../assets/images/categories/nettoyage/Produit pour le lave-vaisselle.jpg"
     },
     {
       "id": 11,
@@ -380,7 +374,7 @@
       "description": "Mop en microfibre, idéal pour un nettoyage sans traces et rapide.",
       "taille": "1 mop",
       "prix": 8.99,
-      "image": "../images/categories/nettoyage/Mop en microfibre.jpg"
+      "image": "../assets/images/categories/nettoyage/Mop en microfibre.jpg"
     },
     {
       "id": 12,
@@ -388,17 +382,15 @@
       "description": "Produit anti-calcaire pour éliminer les résidus de calcaire sur toutes les surfaces.",
       "taille": "500 ml",
       "prix": 4.99,
-      "image": "../images/categories/nettoyage/Produit anti-calcaire.jpg"
-    }
-  ],
-  "technologie": [
+      "image": "../assets/images/categories/nettoyage/Produit anti-calcaire.jpg"
+    },
     {
       "id": 1,
       "titre": "Smartphone Android",
       "description": "Smartphone Android avec écran 6.5 pouces, caméra de 48 MP et processeur rapide.",
       "taille": "128 Go",
       "prix": 299.99,
-      "image": "../images/categories/technologie/Smartphone Android.jpg"
+      "image": "../assets/images/categories/technologie/Smartphone Android.jpg"
     },
     {
       "id": 2,
@@ -406,7 +398,7 @@
       "description": "Casque Bluetooth sans fil avec réduction de bruit active et autonomie de 20 heures.",
       "taille": "Taille unique",
       "prix": 79.99,
-      "image": "../images/categories/technologie/Casque Bluetooth.jpg"
+      "image": "../assets/images/categories/technologie/Casque Bluetooth.jpg"
     },
     {
       "id": 3,
@@ -414,7 +406,7 @@
       "description": "Montre connectée avec suivi de la santé, notifications et autonomie de 7 jours.",
       "taille": "Taille unique",
       "prix": 69.99,
-      "image": "../images/categories/technologie/Montre.jpg"
+      "image": "../assets/images/categories/technologie/Montre.jpg"
     },
     {
       "id": 4,
@@ -422,7 +414,7 @@
       "description": "Enceinte Bluetooth portable, idéale pour écouter de la musique en extérieur.",
       "taille": "Petit",
       "prix": 29.99,
-      "image": "../images/categories/technologie/Enceinte.jpg"
+      "image": "../assets/images/categories/technologie/Enceinte.jpg"
     },
     {
       "id": 5,
@@ -430,7 +422,7 @@
       "description": "Écouteurs sans fil avec chargeur sans fil et son de haute qualité.",
       "taille": "Taille unique",
       "prix": 49.99,
-      "image": "../images/categories/technologie/Écouteurs sans fil.jpg"
+      "image": "../assets/images/categories/technologie/Écouteurs sans fil.jpg"
     },
     {
       "id": 6,
@@ -438,7 +430,7 @@
       "description": "Chargeur sans fil rapide pour smartphone et autres appareils.",
       "taille": "1 chargeur",
       "prix": 19.99,
-      "image": "../images/categories/technologie/Chargeur.webp"
+      "image": "../assets/images/categories/technologie/Chargeur.webp"
     },
     {
       "id": 7,
@@ -446,7 +438,7 @@
       "description": "Tablette tactile de 10 pouces avec processeur rapide et capacité de stockage élevée.",
       "taille": "64 Go",
       "prix": 179.99,
-      "image": "../images/categories/technologie/Tablette tactile.jpg"
+      "image": "../assets/images/categories/technologie/Tablette tactile.jpg"
     },
     {
       "id": 8,
@@ -454,7 +446,7 @@
       "description": "Ordinateur portable léger avec processeur Intel Core i5 et écran Full HD.",
       "taille": "256 Go SSD",
       "prix": 549.99,
-      "image": "../images/categories/technologie/Ordinateur portable.jpg"
+      "image": "../assets/images/categories/technologie/Ordinateur portable.jpg"
     },
     {
       "id": 9,
@@ -462,7 +454,7 @@
       "description": "Clé USB avec capacité de 64 Go pour le stockage rapide et sécurisé de vos fichiers.",
       "taille": "64 Go",
       "prix": 12.99,
-      "image": "../images/categories/technologie/Clé USB.jpg"
+      "image": "../assets/images/categories/technologie/Clé USB.jpg"
     },
     {
       "id": 10,
@@ -470,7 +462,7 @@
       "description": "Appareil photo numérique avec objectif 18-55 mm, pour des photos de haute qualité.",
       "taille": "24 MP",
       "prix": 399.99,
-      "image": "../images/categories/technologie/Appareil.jpg"
+      "image": "../assets/images/categories/technologie/Appareil.jpg"
     },
     {
       "id": 11,
@@ -478,7 +470,7 @@
       "description": "Télévision 4K LED de 55 pouces, avec Smart TV intégré et son surround.",
       "taille": "55 pouces",
       "prix": 499.99,
-      "image": "../images/categories/technologie/Télévision.jpg"
+      "image": "../assets/images/categories/technologie/Télévision.jpg"
     },
     {
       "id": 12,
@@ -486,7 +478,6 @@
       "description": "Imprimante sans fil, idéale pour les impressions à domicile ou au bureau.",
       "taille": "1 imprimante",
       "prix": 79.99,
-      "image": "../images/categories/technologie/Imprimante sans fil.jpg"
-    }
-  ]
+      "image": "../assets/images/categories/technologie/Imprimante sans fil.jpg"
 }
+]

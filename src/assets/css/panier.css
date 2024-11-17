@@ -2,22 +2,53 @@
   display: none;
 }
 .card {
-  padding: 1rem;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  border-radius: 10px;
+    padding: 1rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
 }
 
 #carouselpanier {
-  overflow-x: auto;
-  overflow-y: hidden;
+    overflow-x: auto;
+    overflow-y: hidden;
 }
 
 #carouselpanier div {
-  transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 #carouselpanier::-webkit-scrollbar {
-  display: none;
+    display: none;
+}
+
+.classbloccartes{
+    display: none;
+}
+
+.classblocemty{
+    display: none;
+}
+
+.produit{
+    width: 95%;
+    max-height: 17rem;
+    background-color: white;
+    display: flex;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: .5rem;
+    padding: .5%;
+    font-size: 0.875rem; 
+    line-height: 1.25rem;
+}
+
+@media (min-width: 768px){
+    .produit{
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+}
+
+input:checked{
+    color: blue;
 }
