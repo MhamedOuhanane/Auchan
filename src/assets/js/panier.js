@@ -48,6 +48,7 @@ if (carts.length !== 0) {
 
         prixsize();
         total += element.price * element.quantity
+        ModifiQty();
                             
     }); 
 
@@ -117,8 +118,9 @@ if (carts.length !== 0) {
     function MiseTotale() {
         let total = 0;
         carts.forEach((elent , index) =>{
-            let checkbox = document.querySelectorAll(".produit input[type='checkbox']")[index]; // l'a
-            if (checkbox.checked) {
+
+            let checkbox = document.querySelectorAll(".produit input[type='checkbox']")[index];
+            if (checkbox && checkbox.checked) {
                 total += elent.price * elent.quantity;
             }
         
@@ -131,67 +133,80 @@ if (carts.length !== 0) {
     
     // Mise à jour de contenut de localStorage
     function MiselocalStorage(){
-        let produit = carts.filter((element) => element.quantity != 0);
+        let produit = carts.filter((element) => element.quantity > 0);
         localStorage.setItem("carts", JSON.stringify(produit));
+
         if (produit.length == 0) {
             document.getElementById("blocempty").classList.remove("classblocemty");
             document.getElementById("bloccartes").classList.add("classbloccartes");
         };
     };
 
-    // Incrémentation de la Quantité des produit 
-    let incbtn = document.querySelectorAll(".incbtn");
-    incbtn.forEach((element,index) =>{
-        element.onclick= ()=>{
-            element.parentNode.children[1].textContent = ++carts[index].quantity;
-            console.log(index);
-            MiselocalStorage();
-            MiseTotalprix();
-            MiseTotale();
-        };
-    });
+    //foctionnement de modifié la quantité des produit et suppression du produit
+    function ModifiQty() {
 
-    // Décrémentation de la Quantité des produit 
-    let decbtn = document.querySelectorAll(".decbtn");
-    decbtn.forEach((element , index) => {
-        element.onclick= ()=>{
-            element.parentNode.children[1].textContent = --carts[index].quantity;
-            
-            if (carts[index].quantity == 0) {
-                element.parentNode.parentNode.parentNode.remove();
-                decbtn = [...decbtn].filter((elent) => elent !== element);
-            }
-            else{
+        // Incrémentation
+        let incbtn = document.querySelectorAll(".incbtn");
+        incbtn.forEach((element, index) => {
+            element.onclick = () => {
+                carts[index].quantity++;
+                element.parentNode.children[1].textContent = carts[index].quantity;
                 MiseTotalprix();
-            }
-            MiselocalStorage();
-            MiseTotale();
-        };
+                MiselocalStorage();
+                MiseTotale();
+            };
+        });
+
+        // Décrémentation
+        let decbtn = document.querySelectorAll(".decbtn");
+        decbtn.forEach((element, index) => {
+            element.onclick = () => {
+                if (carts[index].quantity > 1) {
+                    carts[index].quantity--;
+                    element.parentNode.children[1].textContent = carts[index].quantity;
+                } else {
+                    deleteproduit(index);
+                }
+                MiseTotalprix();
+                MiselocalStorage();
+                MiseTotale();
+            };
+        });
+
+        // Suppression
+        let deleteprod = document.querySelectorAll(".deleteprod");
+        deleteprod.forEach((elent, index) => {
+            elent.addEventListener("click", () => {
+                deleteproduit(index);
+            });
+        });
+    };
+
+    // Fonction pour supprimer un produit du panier
+    function deleteproduit(index) {
+        carts.splice(index, 1);
+        MiselocalStorage();
+        document.querySelectorAll(".produit")[index].remove(); 
+        ModifiQty();
+        MiseTotale(); 
+    }
+
+    // Confirmation de la commande
+    confermeprod.addEventListener("click", () => {
+
+        let checkedItems = document.querySelectorAll(".produit input[type='checkbox']:checked");
+
+        checkedItems.forEach((checkbox, index) => {
+            let indexprod = [...document.querySelectorAll(".produit input[type='checkbox']")].indexOf(checkbox);
+            deleteproduit(indexprod);
+        });
+
+        MiseTotale();
     });
-    
-    // Suppression du carte de produit
-    let deleteprod = document.querySelectorAll(".deleteprod");
-    deleteprod.forEach((element,index) =>{
-        element.onclick= ()=>{
 
-            element.parentNode.parentNode.remove();
-            deleteprod = [...deleteprod].filter((elent) => elent !== element);
-            carts[index].quantity = 0;
-            
-            
-            MiselocalStorage();
-            MiseTotale();
-
-
-            // Mise à jour de contenut de localStorage
-        };
-    });
         
-        
-    MiseTotalprix();
-    MiseTotale();
-    // Mise à jour de contenut de localStorage
-    MiselocalStorage();
+    // Initialisation des événements
+    ModifiQty();
     
     
 };
@@ -228,12 +243,4 @@ buttonright.onclick = () => {
     });
 };
 
-// liee le devision de card avec l'input checked
-// console.log(prod);
-
-// prod.onclick= function() {
-//     console.log(checkedprod);
-    
-//     checkedprod.setAttribute("chacked");
-// };
 
