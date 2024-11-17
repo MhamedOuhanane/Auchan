@@ -86,7 +86,7 @@
     <!-- Partie des carte -->
     <section class="bg-inherit w-100 rounded-lg flex flex-col items-center  gap-[3vh] my-10 ">
         <div
-            class="bg-white w-9/12 min-h-[20vw] border-[1px] border-solid border-black rounded-lg flex flex-col items-center justify-evenly">
+            class="bg-white w-9/12 min-h-[20vw] border-[1px] border-solid border-black rounded-lg flex flex-col  items-center justify-evenly">
             <img class="w-[20%]" src="../assets/images/icône-panier.png" alt="logo de panier">
             <h2 class="text-[60%] md:text-[80%] lg:text-3xl">Votre panier est vide pour le moment</h2>
 
@@ -96,13 +96,10 @@
         </div>
 
         <!-- Liste des produit du panier -->
-        <div
-            class="bg-white w-9/12 min-h-[20vw] border-[1px] border-solid border-black rounded-lg flex flex-col items-center justify-evenly">
-            <div>
-                <img class="w-[5%]" src="../assets/images/icône-panier.png" alt="logo de panier">
 
-            </div>
-            <div></div>
+        <div class="bg-white w-9/12 min-h-[20vw] border-[1px] border-solid border-black rounded-lg flex flex-wrap gap-4  items-center justify-evenly"
+            id="panier-data">
+
         </div>
 
         <!-- devision des Méthodes de paiement -->
@@ -263,6 +260,29 @@
             <p class="text-white">Auchan 2024 © Tous droits réservés</p>
         </div>
     </footer>
+
+    <script>
+        const panierData = document.getElementById("panier-data");
+        const produits = JSON.parse(localStorage.getItem("Products_Panier")) || [];
+        panierData.innerHTML = "";
+
+        if (produits.length === 0) {
+            panierData.innerHTML = "<p class='text-center text-gray-500'>Your cart is empty.</p>";
+        } else {
+            produits.forEach((produit) => {
+                const produitHTML = `
+                    <div class="product-card bg-gray-100 border-[1px] border-gray-300 rounded-lg p-4 flex flex-col items-center shadow-md">
+                        <img src="${produit.img}" alt="${produit.name}" class="object-cover w-20 h-20 mb-2 rounded-md">
+                        <p class="mb-2 text-sm text-center text-gray-600">${produit.description}</p>
+                        <p class="mb-1 text-sm font-bold text-center">Price: €${produit.price}</p>
+                        <p class="text-sm text-center">Quantity: ${produit.quantity}</p>
+                    </div>
+                `;
+                panierData.innerHTML += produitHTML;
+            });
+        }
+
+    </script>
 </body>
 
 </html>

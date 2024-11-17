@@ -5,140 +5,200 @@
             "img": "../assets/images/promotion/camera.png",
             "discount": "12%",
             "category": "Tech",
-            "description": "A high-quality camera for capturing stunning photographs and videos."
+            "description": "A high-quality camera for capturing stunning photographs and videos.",
+            "price": 249.99,
+            "size": "N",
+            "quantity": 1
         },
         {
             "id": 2,
             "img": "../assets/images/promotion/cup.png",
             "discount": "12%",
             "category": "Cuisine",
-            "description": "A stylish cup designed for everyday use and special occasions."
+            "description": "A stylish cup designed for everyday use and special occasions.",
+            "price": 9.99,
+            "size": "M",
+            "quantity": 1
         },
         {
             "id": 3,
             "img": "../assets/images/promotion/t-chert.png",
             "discount": "15%",
             "category": "Vetements",
-            "description": "A versatile and durable tableware set for all your meal needs."
+            "description": "A versatile and durable tableware set for all your meal needs.",
+            "price": 39.99,
+            "size": "L",
+            "quantity": 1
         },
         {
             "id": 4,
             "img": "../assets/images/promotion/boom.jpg",
             "discount": "5.4%",
             "category": "Nettoyage",
-            "description": "A powerful and efficient vacuum cleaner for cleaning your home with ease."
+            "description": "A powerful and efficient vacuum cleaner for cleaning your home with ease.",
+            "price": 149.99,
+            "size": "L",
+            "quantity": 1
         },
         {
             "id": 5,
             "img": "../assets/images/promotion/watch.png",
             "discount": "18%",
             "category": "Tech",
-            "description": "A sleek and accurate smartwatch for tracking your time and staying connected."
+            "description": "A sleek and accurate smartwatch for tracking your time and staying connected.",
+            "price": 199.99,
+            "size": "XL",
+            "quantity": 1
         },
         {
             "id": 6,
             "img": "../assets/images/promotion/cleaning.jpg",
             "discount": "18%",
             "category": "Nettoyage",
-            "description": "Cleaning Product for your home with ease and convenience."
+            "description": "Cleaning Product for your home with ease and convenience.",
+            "price": 29.99,
+            "size": "XL",
+            "quantity": 1
         },
         {
             "id": 7,
             "img": "../assets/images/promotion/blue-jeans.jpg",
             "discount": "20%",
             "category": "Vetements",
-            "description": "A comfortable and trendy pair of blue jeans for a stylish look."
+            "description": "A comfortable and trendy pair of blue jeans for a stylish look.",
+            "price": 49.99,
+            "size": "N",
+            "quantity": 1
         },
         {
             "id": 8,
             "img": "../assets/images/promotion/light-brown-beige-pants.jpg",
             "discount": "11%",
             "category": "Vetements",
-            "description": "A stylish pair of light brown and beige pants for a casual and trendy look."
+            "description": "A stylish pair of light brown and beige pants for a casual and trendy look.",
+            "price": 39.99,
+            "size": "M",
+            "quantity": 1
         },
         {
             "id": 9,
             "img": "../assets/images/promotion/jacket.jpg",
             "discount": "13%",
             "category": "Vetements",
-            "description": "Jacket for a stylish and warm look. Perfect for any occasion."
+            "description": "Jacket for a stylish and warm look. Perfect for any occasion.",
+            "price": 69.99,
+            "size": "L",
+            "quantity": 1
         },
         {
             "id": 10,
             "img": "../assets/images/promotion/oranje-juice.jpg",
             "discount": "13%",
             "category": "Boissons",
-            "description": "A refreshing orange juice for a healthy and energizing drink."
+            "description": "A refreshing orange juice for a healthy and energizing drink.",
+            "price": 4.99,
+            "size": "N",
+            "quantity": 1
         },
         {
             "id": 11,
             "img": "../assets/images/promotion/coffee.jpg",
             "discount": "13%",
             "category": "Boissons",
-            "description": "A delicious cup of coffee for a satisfying and energizing drink."
+            "description": "A delicious cup of coffee for a satisfying and energizing drink.",
+            "price": 2.99,
+            "size": "XL",
+            "quantity": 1
         },
         {
             "id": 12,
             "img": "../assets/images/promotion/black-coffe.jpg",
             "discount": "13%",
             "category": "Boissons",
-            "description": "A rich and aromatic cup of black coffee for a satisfying and energizing drink."
+            "description": "A rich and aromatic cup of black coffee for a satisfying and energizing drink.",
+            "price": 3.99,
+            "size": "L",
+            "quantity": 1
         },
         {
             "id": 13,
             "img": "../assets/images/promotion/cleaning-products.jpg",
             "discount": "14%",
             "category": "Nettoyage",
-            "description": "Cleaning Product for your home with ease and convenience. It helps to keep your home clean and tidy."
+            "description": "Cleaning Product for your home with ease and convenience. It helps to keep your home clean and tidy.",
+            "price": 19.99,
+            "size": "N",
+            "quantity": 1
         },
         {
             "id": 14,
             "img": "../assets/images/promotion/cleaning-wipes.jpg",
             "discount": "17.1%",
             "category": "Nettoyage",
-            "description": "Cleaning Wipes for your home with ease and convenience. This product helps to keep your home clean and tidy."
+            "description": "Cleaning Wipes for your home with ease and convenience. This product helps to keep your home clean and tidy.",
+            "price": 14.99,
+            "size": "N",
+            "quantity": 1
         },
         {
             "id": 15,
             "img": "../assets/images/promotion/fresh-juices-bottles.jpg",
             "discount": "11%",
             "category": "Boissons",
-            "description": "Fresh juices for a satisfying and energizing drink. Amazing for any occasion."
+            "description": "Fresh juices for a satisfying and energizing drink. Amazing for any occasion.",
+            "price": 12.99,
+            "size": "M",
+            "quantity": 1
         },
         {
             "id": 16,
             "img": "../assets/images/promotion/keyboard.jpg",
             "discount": "15%",
             "category": "Tech",
-            "description": "A sleek and comfortable keyboard for typing and working on your computer."
+            "description": "A sleek and comfortable keyboard for typing and working on your computer.",
+            "price": 79.99,
+            "size": "L",
+            "quantity": 1
         },
         {
             "id": 17,
             "img": "../assets/images/promotion/mouse-pc.jpg",
             "discount": "12%",
             "category": "Tech",
-            "description": "This Mouse is a reliable and durable device for typing and working on your computer."
+            "description": "This Mouse is a reliable and durable device for typing and working on your computer.",
+            "price": 29.99,
+            "size": "XL",
+            "quantity": 1
         },
         {
             "id": 18,
             "img": "../assets/images/promotion/grater-food.jpg",
             "discount": "15%",
             "category": "Cuisine",
-            "description": "A versatile and durable tableware set for all your meal needs."
+            "description": "A versatile and durable tableware set for all your meal needs.",
+            "price": 24.99,
+            "size": "M",
+            "quantity": 1
         },
         {
             "id": 19,
             "img": "../assets/images/promotion/various-utensils.jpg",
             "discount": "16%",
             "category": "Cuisine",
-            "description": "A set of various utensils for cooking and serving food. Great for any occasion."
+            "description": "A set of various utensils for cooking and serving food. Great for any occasion.",
+            "price": 39.99,
+            "size": "L",
+            "quantity": 1
         },
         {
             "id": 20,
             "img": "../assets/images/promotion/cookware-accessories.jpg",
             "discount": "17%",
             "category": "Cuisine",
-            "description": "A set of cookware accessories for cooking and serving food. Great for any occasion."
+            "description": "A set of cookware accessories for cooking and serving food. Great for any occasion.",
+            "price": 49.99,
+            "size": "XL",
+            "quantity": 1
         }
     ]
 }

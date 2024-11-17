@@ -14,7 +14,7 @@ html {
   z-index: 1;
 }
 
-#plus {
+.plus {
   display: none;
   position: absolute;
   top: 50%;
@@ -41,7 +41,7 @@ html {
       display: block;
     }
 
-    #plus {
+    .plus {
       display: block;
     }
   }
