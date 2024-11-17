@@ -48,16 +48,38 @@ if (carts.length !== 0) {
                             </div>`
         console.log(element.id);
         
-        prixsize();
         total += element.price * element.quantity
-                            
+        prixsize();
     }); 
 
+    // Fonction pour supprimer un produit du panier
+    function deleteproduit(index) {
+        carts.splice(index, 1);
+        MiselocalStorage();
+        let produitdel = document.querySelectorAll(".produit");
+        if (produitdel) {
+            produitdel[index].remove(); 
+            prixsize();
+        }
+        if (carts.length > 0) {
+            countCart.innerHTML += `
+                <span class="absolute -right-5 text-[.8rem] bg-lightViolet size-6 max-sm:-right-4 center rounded-full">
+                    ${carts.length}
+                </span>
+            `
+        }
+        else{
+            document.querySelectorAll(".absolute").forEach((element) => element.remove());
+
+        }
+        ModifiQty();
+        MiseTotale(); 
+    };
     // Fonction pour mettre à jour le prix en fonction de la taille choisie
     function prixsize() {
         let tailleprod = document.querySelectorAll(".tailleprod");
         tailleprod.forEach((element, index) => {
-            element.addEventListener("change", () => {
+            element.onclick= () => {
                 let pricebase = carts[index].prix;
 
                 
@@ -82,11 +104,12 @@ if (carts.length !== 0) {
                     carts[index].price = pricenouv.toFixed(2);
                     carts[index].size = element.value;
                     element.parentNode.children[2].textContent = carts[index].price + " $";
-                
+                    
                     localStorage.setItem("carts", JSON.stringify(carts));
                     MiseTotalprix();
+                    MiseTotale();
                 }
-            });
+            };
         });
     };
 
@@ -110,8 +133,7 @@ if (carts.length !== 0) {
             let prixt = (carts[i].price * carts[i].quantity).toFixed(2);
             element.textContent = prixt + " $";
 
-            MiselocalStorage()
-            prixsize()
+            MiselocalStorage();
         });
     };
 
@@ -121,7 +143,6 @@ if (carts.length !== 0) {
     function MiseTotale() {
         let total = 0;
         carts.forEach((elent , index) =>{
-
             let checkbox = document.querySelectorAll(".produit input[type='checkbox']")[index];
             if (checkbox && checkbox.checked) {
                 total += elent.price * elent.quantity;
@@ -157,6 +178,7 @@ if (carts.length !== 0) {
                 MiseTotalprix();
                 MiselocalStorage();
                 MiseTotale();
+                produitdel();
             };
         });
 
@@ -168,7 +190,6 @@ if (carts.length !== 0) {
                     carts[index].quantity--;
                     element.parentNode.children[1].textContent = carts[index].quantity;
                 } else {
-                    
                     deleteproduit(index);
                 }
                 MiseTotalprix();
@@ -186,14 +207,6 @@ if (carts.length !== 0) {
         });
     };
 
-    // Fonction pour supprimer un produit du panier
-    function deleteproduit(index) {
-        carts.splice(index, 1);
-        MiselocalStorage();
-        document.querySelectorAll(".produit")[index].remove(); 
-        ModifiQty();
-        MiseTotale(); 
-    }
 
     // Confirmation de la commande
     confermeprod.addEventListener("click", () => {
@@ -204,14 +217,12 @@ if (carts.length !== 0) {
             let indexprod = [...document.querySelectorAll(".produit input[type='checkbox']")].indexOf(checkbox);
             deleteproduit(indexprod);
         });
-
         MiseTotale();
     });
 
     MiseTotale();
     // Initialisation des événements
     ModifiQty();
-    
     
 };
 
