@@ -240,12 +240,10 @@ let buttonright = document.querySelector('#buttonright');
 // console.log(CarouselPanier);
 
 CarouselPanier.addEventListener("wheel", (evt) => {
-CarouselPanier.addEventListener("wheel", (evt) => {
     evt.preventDefault();
     CarouselPanier.scrollLeft += evt.deltaY;
 })
 
-buttonleft.onclick = () => {
 buttonleft.onclick = () => {
     console.log(CarouselPanier.scrollLeft);
     CarouselPanier.scrollBy({
@@ -254,7 +252,6 @@ buttonleft.onclick = () => {
     });
 };
 
-buttonright.onclick = () => {
 
 buttonright.onclick = () => {
     console.log(CarouselPanier.scrollLeft);
