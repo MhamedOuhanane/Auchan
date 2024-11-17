@@ -82,6 +82,7 @@ if (carts.length !== 0) {
                     element.parentNode.children[2].textContent = carts[index].price + " $";
                 
                     localStorage.setItem("carts", JSON.stringify(carts));
+                    MiseTotalprix();
                 }
             });
         });
@@ -108,6 +109,7 @@ if (carts.length !== 0) {
             element.textContent = prixt + " $";
 
             MiselocalStorage()
+            prixsize()
         });
     };
 
@@ -205,7 +207,7 @@ if (carts.length !== 0) {
         MiseTotale();
     });
 
-        
+    MiseTotale();
     // Initialisation des événements
     ModifiQty();
     
@@ -243,5 +245,7 @@ buttonright.onclick = () => {
         behavior: 'smooth'
     });
 };
+
+
 
 
