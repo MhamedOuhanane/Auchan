@@ -62,7 +62,9 @@ document.getElementById("btn").onclick = () => {
 }
 
 const discoverMoreProducts = document.getElementById("discover-more-products");
-let array = products.slice(0, 6);
+const filtredArray = products.filter((product) => product.categories == products[productDetails_ID].categories);
+let array = filtredArray.slice(0, 6);
+
 array.map((product) => {
     discoverMoreProducts.innerHTML += `
         <div class="card shadow-md hover:shadow-lg transition-all ease-out delay-75">
