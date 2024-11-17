@@ -576,6 +576,10 @@ video {
   right: -1.25rem;
 }
 
+.-right-full{
+  right: -100%;
+}
+
 .bottom-0{
   bottom: 0px;
 }
@@ -594,6 +598,10 @@ video {
 
 .right-0{
   right: 0px;
+}
+
+.top-1{
+  top: 0.25rem;
 }
 
 .top-1\/2{
@@ -1255,6 +1263,11 @@ video {
   background-color: rgb(134 239 172 / var(--tw-bg-opacity));
 }
 
+.bg-green-400{
+  --tw-bg-opacity: 1;
+  background-color: rgb(74 222 128 / var(--tw-bg-opacity));
+}
+
 .bg-inherit{
   background-color: inherit;
 }
@@ -1720,40 +1733,75 @@ html {
   .container {
     width: 100%;
   }
+}
 
-  /* define a style for secondary button */
+/* define a style for secondary button */
 
+.secondary-btn{
+  height: 100%;
+  border-radius: 0.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 248 248 / var(--tw-bg-opacity));
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  font-size: 1rem;
+}
+
+.secondary-btn:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+}
+
+@media not all and (min-width: 768px){
   .secondary-btn{
-    height: 100%;
-    border-radius: 0.5rem;
-    --tw-bg-opacity: 1;
-    background-color: rgb(248 248 248 / var(--tw-bg-opacity));
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    font-size: 1rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    font-size: .8rem;
   }
+}
 
-  .secondary-btn:hover{
-    --tw-bg-opacity: 1;
-    background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+@media not all and (min-width: 640px){
+  .secondary-btn{
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    font-size: .5rem;
   }
+}
 
-  @media not all and (min-width: 768px){
-    .secondary-btn{
-      padding-top: 0.25rem;
-      padding-bottom: 0.25rem;
-      font-size: .8rem;
-    }
+/* define a style for primary button */
+
+.primary-btn{
+  border-radius: 0.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(106 30 120 / var(--tw-bg-opacity));
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  font-size: 1rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.primary-btn:hover{
+  background-color: rgb(106 30 120 / 0.9);
+}
+
+@media not all and (min-width: 768px){
+  .primary-btn{
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    font-size: .8rem;
   }
+}
 
-  @media not all and (min-width: 640px){
-    .secondary-btn{
-      padding-left: 0.75rem;
-      padding-right: 0.75rem;
-      font-size: .5rem;
-    }
+@media not all and (min-width: 640px){
+  .primary-btn{
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    font-size: .5rem;
   }
 }
 
@@ -1836,6 +1884,12 @@ html {
   background-color: rgb(31 41 55 / var(--tw-bg-opacity));
 }
 
+@media not all and (min-width: 1280px){
+  .max-xl\:basis-\[100\%\]{
+    flex-basis: 100%;
+  }
+}
+
 @media not all and (min-width: 1024px){
   .max-lg\:size-12{
     width: 3rem;
@@ -1848,6 +1902,10 @@ html {
 }
 
 @media not all and (min-width: 768px){
+  .max-md\:top-2{
+    top: 0.5rem;
+  }
+
   .max-md\:block{
     display: block;
   }
@@ -1863,6 +1921,10 @@ html {
   .max-md\:size-8{
     width: 2rem;
     height: 2rem;
+  }
+
+  .max-md\:h-\[10px\]{
+    height: 10px;
   }
 
   .max-md\:h-\[250px\]{
@@ -1905,6 +1967,14 @@ html {
     flex-direction: column;
   }
 
+  .max-md\:gap-1{
+    gap: 0.25rem;
+  }
+
+  .max-md\:p-1{
+    padding: 0.25rem;
+  }
+
   .max-md\:p-2{
     padding: 0.5rem;
   }
@@ -1921,6 +1991,10 @@ html {
   .max-md\:py-4{
     padding-top: 1rem;
     padding-bottom: 1rem;
+  }
+
+  .max-md\:text-\[\.5rem\]{
+    font-size: .5rem;
   }
 
   .max-md\:text-\[\.6rem\]{
@@ -2139,6 +2213,10 @@ html {
 }
 
 @media (min-width: 1024px){
+  .lg\:mb-4{
+    margin-bottom: 1rem;
+  }
+
   .lg\:h-\[200px\]{
     height: 200px;
   }
